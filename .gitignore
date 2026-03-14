@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Secrets — NEVER commit
+.env
+
+# Data (large files — use DVC or manual backup)
+data/raw/*.parquet
+data/processed/*.parquet
+data/artifacts/*.pkl
+data/reports/*.json
+data/reports/*.csv
+data/reports/*.jsonl
+data/reports/*.jsonl.gz
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+notebooks/
+
+.claude/
+.env*
+
+
+# Data (large files — use DVC or manual backup)
+data/raw/*.parquet
+data/processed/*.parquet
+data/artifacts/*.pkl
+data/reports/*.json
+data/reports/*.csv
+data/reports/*.jsonl
+data/reports/*.jsonl.gz

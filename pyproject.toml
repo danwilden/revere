@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medallion"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "Medallion — Forex Strategy Research and Trading Platform"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["backend*", "apps*"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

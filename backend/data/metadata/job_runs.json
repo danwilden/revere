@@ -1,0 +1,255 @@
+{
+  "efec3711-7b5a-40ec-b3d6-d71950e8ef4b": {
+    "id": "efec3711-7b5a-40ec-b3d6-d71950e8ef4b",
+    "job_type": "ingestion",
+    "status": "failed",
+    "progress_pct": 0.0,
+    "stage_label": "fetching EUR_USD from oanda",
+    "requested_by": "system",
+    "created_at": "2026-03-07 22:50:00.177448",
+    "started_at": "2026-03-07T22:50:00.178351",
+    "completed_at": "2026-03-07T22:50:00.330622",
+    "error_code": "OandaConnectorError",
+    "error_message": "{\"errorMessage\":\"Insufficient authorization to perform request.\"}",
+    "params_json": {
+      "instruments": [
+        "EUR_USD"
+      ],
+      "source": "oanda",
+      "start_date": "2024-01-01T00:00:00",
+      "end_date": "2024-01-31T00:00:00"
+    },
+    "result_ref": null,
+    "logs_ref": null
+  },
+  "6ddfed6f-1327-4ad1-aa52-9529667b2ef4": {
+    "id": "6ddfed6f-1327-4ad1-aa52-9529667b2ef4",
+    "job_type": "hmm_training",
+    "status": "failed",
+    "progress_pct": 10.0,
+    "stage_label": "Computing features",
+    "requested_by": "system",
+    "created_at": "2026-03-08 13:44:14.599629",
+    "started_at": "2026-03-08T13:44:14.603981",
+    "completed_at": "2026-03-08T13:44:14.639976",
+    "error_code": "HMM_TRAINING_FAILED",
+    "error_message": "No bars found for EUR_USD H1 in [2022-01-01 00:00:00, 2023-12-31 00:00:00)",
+    "params_json": {
+      "instrument": "EUR_USD",
+      "timeframe": "H1",
+      "train_start": "2022-01-01T00:00:00",
+      "train_end": "2023-12-31T00:00:00",
+      "num_states": 7,
+      "feature_set_name": "default_v1"
+    },
+    "result_ref": null,
+    "logs_ref": null
+  },
+  "715071b4-e1c1-41e2-835c-c69eb015f0f6": {
+    "id": "715071b4-e1c1-41e2-835c-c69eb015f0f6",
+    "job_type": "ingestion",
+    "status": "failed",
+    "progress_pct": 0.0,
+    "stage_label": "fetching EUR_USD from oanda",
+    "requested_by": "system",
+    "created_at": "2026-03-08 13:50:36.127086",
+    "started_at": "2026-03-08T13:50:36.128496",
+    "completed_at": "2026-03-08T13:50:36.308480",
+    "error_code": "OandaConnectorError",
+    "error_message": "{\"errorMessage\":\"Insufficient authorization to perform request.\"}",
+    "params_json": {
+      "instruments": [
+        "EUR_USD"
+      ],
+      "source": "oanda",
+      "start_date": "2024-01-01T00:00:00",
+      "end_date": "2024-01-31T00:00:00"
+    },
+    "result_ref": null,
+    "logs_ref": null
+  },
+  "24eed1f3-ebac-472e-8688-00b7b3e7901d": {
+    "id": "24eed1f3-ebac-472e-8688-00b7b3e7901d",
+    "job_type": "ingestion",
+    "status": "failed",
+    "progress_pct": 0.0,
+    "stage_label": "fetching EUR_USD from oanda",
+    "requested_by": "system",
+    "created_at": "2026-03-08 13:54:51.036137",
+    "started_at": "2026-03-08T13:54:51.037470",
+    "completed_at": "2026-03-08T13:54:51.163053",
+    "error_code": "OandaConnectorError",
+    "error_message": "{\"errorMessage\":\"Insufficient authorization to perform request.\"}",
+    "params_json": {
+      "instruments": [
+        "EUR_USD"
+      ],
+      "source": "oanda",
+      "start_date": "2024-01-01T00:00:00",
+      "end_date": "2024-01-31T00:00:00"
+    },
+    "result_ref": null,
+    "logs_ref": null
+  },
+  "35bdfad2-5d75-41c3-8b12-976adfd4aea4": {
+    "id": "35bdfad2-5d75-41c3-8b12-976adfd4aea4",
+    "job_type": "ingestion",
+    "status": "succeeded",
+    "progress_pct": 100.0,
+    "stage_label": "EUR_USD: complete",
+    "requested_by": "system",
+    "created_at": "2026-03-08 14:20:58.935189",
+    "started_at": "2026-03-08T14:20:58.935871",
+    "completed_at": "2026-03-08T14:21:23.577531",
+    "error_code": null,
+    "error_message": null,
+    "params_json": {
+      "instruments": [
+        "EUR_USD"
+      ],
+      "source": "oanda",
+      "start_date": "2024-01-01T00:00:00",
+      "end_date": "2024-01-31T00:00:00"
+    },
+    "result_ref": "bars_written=30113,instruments=EUR_USD",
+    "logs_ref": null
+  },
+  "c0d05896-2ff1-4f01-8ab4-a129d6936e31": {
+    "id": "c0d05896-2ff1-4f01-8ab4-a129d6936e31",
+    "job_type": "hmm_training",
+    "status": "failed",
+    "progress_pct": 10.0,
+    "stage_label": "Computing features",
+    "requested_by": "system",
+    "created_at": "2026-03-08 14:22:20.418736",
+    "started_at": "2026-03-08T14:22:20.419779",
+    "completed_at": "2026-03-08T14:22:20.421072",
+    "error_code": "HMM_TRAINING_FAILED",
+    "error_message": "No bars found for EUR_USD H1 in [2022-01-01 00:00:00, 2023-12-31 00:00:00)",
+    "params_json": {
+      "instrument": "EUR_USD",
+      "timeframe": "H1",
+      "train_start": "2022-01-01T00:00:00",
+      "train_end": "2023-12-31T00:00:00",
+      "num_states": 7,
+      "feature_set_name": "default_v1"
+    },
+    "result_ref": null,
+    "logs_ref": null
+  },
+  "a0f20127-ed2b-432d-80fa-a770a036acdc": {
+    "id": "a0f20127-ed2b-432d-80fa-a770a036acdc",
+    "job_type": "ingestion",
+    "status": "succeeded",
+    "progress_pct": 100.0,
+    "stage_label": "EUR_USD: complete",
+    "requested_by": "system",
+    "created_at": "2026-03-08 14:23:13.381177",
+    "started_at": "2026-03-08T14:23:13.383396",
+    "completed_at": "2026-03-08T14:32:13.655716",
+    "error_code": null,
+    "error_message": null,
+    "params_json": {
+      "instruments": [
+        "EUR_USD"
+      ],
+      "source": "oanda",
+      "start_date": "2022-01-01T00:00:00",
+      "end_date": "2023-12-31T00:00:00"
+    },
+    "result_ref": "bars_written=736874,instruments=EUR_USD",
+    "logs_ref": null
+  },
+  "5275178a-07bb-4290-a9eb-1e98ff171a1f": {
+    "id": "5275178a-07bb-4290-a9eb-1e98ff171a1f",
+    "job_type": "ingestion",
+    "status": "failed",
+    "progress_pct": 0.0,
+    "stage_label": "fetching EUR_USD from oanda",
+    "requested_by": "system",
+    "created_at": "2026-03-08 14:36:06.353931",
+    "started_at": "2026-03-08T14:36:06.354538",
+    "completed_at": "2026-03-14T18:59:00.443198",
+    "error_code": "SERVER_RESTART",
+    "error_message": "Server restarted \u2014 job was interrupted",
+    "params_json": {
+      "instruments": [
+        "EUR_USD"
+      ],
+      "source": "oanda",
+      "start_date": "2022-01-01T00:00:00",
+      "end_date": "2023-12-31T00:00:00"
+    },
+    "result_ref": null,
+    "logs_ref": null
+  },
+  "c29bc11f-87a2-45e8-9f6a-263a823eb4e7": {
+    "id": "c29bc11f-87a2-45e8-9f6a-263a823eb4e7",
+    "job_type": "hmm_training",
+    "status": "succeeded",
+    "progress_pct": 100.0,
+    "stage_label": "Applying semantic labels",
+    "requested_by": "system",
+    "created_at": "2026-03-08 14:36:58.377519",
+    "started_at": "2026-03-08T14:36:58.378688",
+    "completed_at": "2026-03-08T14:39:19.864145",
+    "error_code": null,
+    "error_message": null,
+    "params_json": {
+      "instrument": "EUR_USD",
+      "timeframe": "H1",
+      "train_start": "2022-01-01T00:00:00",
+      "train_end": "2023-12-31T00:00:00",
+      "num_states": 7,
+      "feature_set_name": "default_v1"
+    },
+    "result_ref": "32b8bd00-22a3-4ff6-8dd0-1abc2c63c2bb",
+    "logs_ref": null
+  },
+  "1a456653-a97c-4803-b379-e639df1f8692": {
+    "id": "1a456653-a97c-4803-b379-e639df1f8692",
+    "job_type": "ingestion",
+    "status": "failed",
+    "progress_pct": 0.0,
+    "stage_label": "fetching GBP_USD from oanda",
+    "requested_by": "system",
+    "created_at": "2026-03-14 18:51:27.525625",
+    "started_at": "2026-03-14T18:51:27.528558",
+    "completed_at": "2026-03-14T18:59:00.441411",
+    "error_code": "SERVER_RESTART",
+    "error_message": "Server restarted \u2014 job was interrupted",
+    "params_json": {
+      "instruments": [
+        "GBP_USD"
+      ],
+      "source": "oanda",
+      "start_date": "2024-01-01T00:00:00",
+      "end_date": "2024-12-31T00:00:00"
+    },
+    "result_ref": null,
+    "logs_ref": null
+  },
+  "97d8b9d4-e459-4967-be81-cad8ff051d8c": {
+    "id": "97d8b9d4-e459-4967-be81-cad8ff051d8c",
+    "job_type": "ingestion",
+    "status": "succeeded",
+    "progress_pct": 100.0,
+    "stage_label": "GBP_USD: complete",
+    "requested_by": "system",
+    "created_at": "2026-03-14 18:59:24.598452",
+    "started_at": "2026-03-14T18:59:24.601106",
+    "completed_at": "2026-03-14T19:04:17.753185",
+    "error_code": null,
+    "error_message": null,
+    "params_json": {
+      "instruments": [
+        "GBP_USD"
+      ],
+      "source": "oanda",
+      "start_date": "2024-01-01T00:00:00",
+      "end_date": "2025-01-01T00:00:00"
+    },
+    "result_ref": "bars_written=371322,instruments=GBP_USD",
+    "logs_ref": null
+  }
+}

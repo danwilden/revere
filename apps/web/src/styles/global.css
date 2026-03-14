@@ -1,0 +1,490 @@
+/* ============================================================
+   MEDALLION — Neobrutalist Design System
+   Global CSS: class definitions, overrides, typography, tokens
+   ============================================================ */
+
+/* --- Fonts -------------------------------------------------- */
+:root {
+  --font-mono: 'Share Tech Mono', 'Courier New', monospace;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+
+  /* Color tokens */
+  --clr-bg: #0a0a0a;
+  --clr-surface: #111111;
+  --clr-panel: #1a1a1a;
+  --clr-panel-alt: #1f1f1f;
+  --clr-border: #333333;
+  --clr-border-bright: #555555;
+  --clr-yellow: #FFE600;
+  --clr-green: #00FF41;
+  --clr-orange: #FF6B00;
+  --clr-red: #FF2222;
+  --clr-text: #f0f0f0;
+  --clr-text-muted: #888888;
+  --clr-text-dim: #555555;
+
+  /* Shadow tokens */
+  --shadow-nb: 4px 4px 0px #000000;
+  --shadow-nb-yellow: 4px 4px 0px var(--clr-yellow);
+  --shadow-nb-green: 4px 4px 0px var(--clr-green);
+  --shadow-nb-red: 4px 4px 0px var(--clr-red);
+  --shadow-nb-sm: 2px 2px 0px #000000;
+
+  /* Spacing */
+  --gap-xs: 4px;
+  --gap-sm: 8px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+  --gap-xl: 32px;
+}
+
+/* --- Base reset / document ---------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   NEOBRUTALIST CARD SYSTEM
+   ============================================================ */
+
+/* Main card — bold border + offset shadow */
+.nb-card {
+  background: var(--clr-surface);
+  border: 2px solid var(--clr-border);
+  box-shadow: var(--shadow-nb);
+  padding: var(--gap-md);
+  position: relative;
+}
+
+.nb-card--accent {
+  border-color: var(--clr-yellow);
+  box-shadow: var(--shadow-nb-yellow);
+}
+
+.nb-card--success {
+  border-color: var(--clr-green);
+  box-shadow: var(--shadow-nb-green);
+}
+
+.nb-card--error {
+  border-color: var(--clr-red);
+  box-shadow: var(--shadow-nb-red);
+}
+
+/* Inner panel — lighter bg, subtler border */
+.nb-panel {
+  background: var(--clr-panel);
+  border: 1px solid var(--clr-border);
+  padding: var(--gap-md);
+}
+
+.nb-panel--alt {
+  background: var(--clr-panel-alt);
+}
+
+/* ============================================================
+   BUTTON SYSTEM
+   ============================================================ */
+
+.nb-btn {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 2px solid var(--clr-border);
+  background: var(--clr-surface);
+  color: var(--clr-text);
+  padding: 8px 20px;
+  box-shadow: var(--shadow-nb-sm);
+  cursor: pointer;
+  transition: transform 80ms ease, box-shadow 80ms ease;
+  user-select: none;
+}
+
+.nb-btn:hover:not(:disabled) {
+  border-color: var(--clr-yellow);
+  color: var(--clr-yellow);
+}
+
+.nb-btn:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.nb-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.nb-btn--primary {
+  background: var(--clr-yellow);
+  border-color: var(--clr-yellow);
+  color: #000;
+  box-shadow: var(--shadow-nb-yellow);
+}
+
+.nb-btn--primary:hover:not(:disabled) {
+  background: #fff;
+  border-color: #fff;
+  color: #000;
+}
+
+.nb-btn--danger {
+  border-color: var(--clr-red);
+  color: var(--clr-red);
+  box-shadow: var(--shadow-nb-red);
+}
+
+/* ============================================================
+   STATUS CHIP SYSTEM
+   ============================================================ */
+
+.status-chip {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border: 1px solid;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.4;
+}
+
+.status-chip--queued {
+  border-color: #555;
+  color: #aaa;
+  background: #1a1a1a;
+}
+
+.status-chip--running {
+  border-color: var(--clr-yellow);
+  color: var(--clr-yellow);
+  background: rgba(255, 230, 0, 0.08);
+}
+
+.status-chip--succeeded {
+  border-color: var(--clr-green);
+  color: var(--clr-green);
+  background: rgba(0, 255, 65, 0.08);
+}
+
+.status-chip--failed {
+  border-color: var(--clr-red);
+  color: var(--clr-red);
+  background: rgba(255, 34, 34, 0.08);
+}
+
+.status-chip--cancelled {
+  border-color: #444;
+  color: #777;
+  background: #111;
+}
+
+/* Running pulse animation */
+@keyframes pulse-yellow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.status-chip--running .status-dot {
+  animation: pulse-yellow 1.2s ease-in-out infinite;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+.nb-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--clr-text);
+  line-height: 1.1;
+}
+
+.nb-heading--xl {
+  font-size: 28px;
+}
+
+.nb-heading--lg {
+  font-size: 22px;
+}
+
+.nb-heading--md {
+  font-size: 17px;
+}
+
+.nb-heading--sm {
+  font-size: 14px;
+}
+
+/* Section label — monospace, all caps, dim */
+.nb-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clr-text-muted);
+}
+
+/* Data value — monospace, prominent */
+.nb-value {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: var(--clr-text);
+}
+
+.nb-value--lg {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nb-value--sm {
+  font-size: 12px;
+}
+
+/* Accent value — yellow highlight */
+.nb-value--accent {
+  color: var(--clr-yellow);
+}
+
+.nb-value--positive {
+  color: var(--clr-green);
+}
+
+.nb-value--negative {
+  color: var(--clr-red);
+}
+
+/* ============================================================
+   METRICS GRID
+   ============================================================ */
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: var(--gap-sm);
+}
+
+.metric-tile {
+  background: var(--clr-panel);
+  border: 1px solid var(--clr-border);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metric-tile--highlight {
+  border-color: var(--clr-yellow);
+  box-shadow: 2px 2px 0px var(--clr-yellow);
+}
+
+/* ============================================================
+   DATA TABLE OVERRIDES
+   ============================================================ */
+
+.nb-table .v-data-table__th {
+  font-family: var(--font-mono) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: var(--clr-text-muted) !important;
+  background: var(--clr-panel) !important;
+  border-bottom: 2px solid var(--clr-border) !important;
+}
+
+.nb-table .v-data-table__tr:hover td {
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+.nb-table .v-data-table__tr td {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  border-bottom: 1px solid #1f1f1f !important;
+}
+
+.nb-table .row--positive td {
+  background: rgba(0, 255, 65, 0.04) !important;
+}
+
+.nb-table .row--negative td {
+  background: rgba(255, 34, 34, 0.05) !important;
+}
+
+/* ============================================================
+   NAVIGATION SIDEBAR
+   ============================================================ */
+
+.nav-sidebar {
+  background: var(--clr-surface) !important;
+  border-right: 2px solid var(--clr-border) !important;
+}
+
+.nav-item {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clr-text-muted);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  transition: color 100ms, border-color 100ms, background 100ms;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: var(--clr-text);
+  background: rgba(255, 255, 255, 0.04);
+  border-left-color: var(--clr-border-bright);
+}
+
+.nav-item--active {
+  color: var(--clr-yellow) !important;
+  border-left-color: var(--clr-yellow) !important;
+  background: rgba(255, 230, 0, 0.06) !important;
+}
+
+/* ============================================================
+   SCANLINE OVERLAY (hero sections only)
+   ============================================================ */
+
+.scanlines {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.15) 2px,
+    rgba(0, 0, 0, 0.15) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ============================================================
+   FORM ELEMENTS
+   ============================================================ */
+
+/* Override Vuetify field borders to match neobrutalist spec */
+.v-field--variant-outlined .v-field__outline__start,
+.v-field--variant-outlined .v-field__outline__end,
+.v-field--variant-outlined .v-field__outline__notch::before,
+.v-field--variant-outlined .v-field__outline__notch::after {
+  border-color: var(--clr-border) !important;
+  border-width: 2px !important;
+}
+
+.v-field--focused .v-field__outline__start,
+.v-field--focused .v-field__outline__end,
+.v-field--focused .v-field__outline__notch::before,
+.v-field--focused .v-field__outline__notch::after {
+  border-color: var(--clr-yellow) !important;
+}
+
+/* ============================================================
+   PROGRESS / LOADING
+   ============================================================ */
+
+.nb-progress {
+  width: 100%;
+  height: 4px;
+  background: var(--clr-border);
+  overflow: hidden;
+}
+
+.nb-progress__bar {
+  height: 100%;
+  background: var(--clr-yellow);
+  transition: width 300ms ease;
+}
+
+@keyframes progress-indeterminate {
+  0% { transform: translateX(-100%); width: 40%; }
+  100% { transform: translateX(300%); width: 40%; }
+}
+
+.nb-progress--indeterminate .nb-progress__bar {
+  animation: progress-indeterminate 1.4s ease-in-out infinite;
+}
+
+/* ============================================================
+   BANNERS
+   ============================================================ */
+
+.nb-banner {
+  padding: 10px 16px;
+  border-left: 4px solid;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.nb-banner--error {
+  background: rgba(255, 34, 34, 0.1);
+  border-color: var(--clr-red);
+  color: #ff8888;
+}
+
+.nb-banner--warning {
+  background: rgba(255, 107, 0, 0.1);
+  border-color: var(--clr-orange);
+  color: #ffaa66;
+}
+
+.nb-banner--info {
+  background: rgba(79, 195, 247, 0.08);
+  border-color: #4FC3F7;
+  color: #a0d8ef;
+}
+
+/* ============================================================
+   UTILITY CLASSES
+   ============================================================ */
+
+.font-mono { font-family: var(--font-mono) !important; }
+.font-display { font-family: var(--font-display) !important; }
+.text-yellow { color: var(--clr-yellow) !important; }
+.text-green { color: var(--clr-green) !important; }
+.text-orange { color: var(--clr-orange) !important; }
+.text-red { color: var(--clr-red) !important; }
+.text-muted { color: var(--clr-text-muted) !important; }
+.text-dim { color: var(--clr-text-dim) !important; }
+.border-yellow { border-color: var(--clr-yellow) !important; }
+.border-green { border-color: var(--clr-green) !important; }
+.uppercase { text-transform: uppercase !important; }
+.ls-wide { letter-spacing: 0.1em !important; }

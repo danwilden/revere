@@ -1,0 +1,25 @@
+{
+  "32b8bd00-22a3-4ff6-8dd0-1abc2c63c2bb": {
+    "id": "32b8bd00-22a3-4ff6-8dd0-1abc2c63c2bb",
+    "model_type": "hmm",
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "training_start": "2022-01-01T00:00:00",
+    "training_end": "2023-12-31T00:00:00",
+    "parameters_json": "{\"num_states\": 7, \"feature_set_name\": \"default_v1\", \"feature_run_id\": \"84e2fb26-ef9c-4d21-bd36-d1c9406db493\"}",
+    "artifact_ref": "data/artifacts/models/hmm/32b8bd00-22a3-4ff6-8dd0-1abc2c63c2bb.joblib",
+    "label_map_json": {
+      "0": "TREND_BEAR_LOW_VOL",
+      "1": "TREND_BEAR_HIGH_VOL",
+      "2": "TREND_BEAR_LOW_VOL_2",
+      "3": "TREND_BULL_HIGH_VOL",
+      "4": "TREND_BULL_LOW_VOL",
+      "5": "TREND_BEAR_HIGH_VOL_2",
+      "6": "CHOPPY_SIGNAL"
+    },
+    "created_at": "2026-03-08T14:39:05.534881",
+    "status": "succeeded",
+    "log_likelihood": 254277.2549987881,
+    "state_stats_json": "[{\"state_id\": 0, \"n_bars\": 1684, \"mean_return\": -1.986524442115754e-05, \"directional_persistence\": 0.47474747474747475, \"mean_volatility\": 0.011769909406366671, \"mean_adx\": 27.568314966158095, \"mean_atr_pct\": 0.0011491407037875162}, {\"state_id\": 1, \"n_bars\": 1648, \"mean_return\": -0.00012047313091203938, \"directional_persistence\": 0.45719489981785066, \"mean_volatility\": 0.017728009536969864, \"mean_adx\": 35.61014977697793, \"mean_atr_pct\": 0.0016209457939104302}, {\"state_id\": 2, \"n_bars\": 1513, \"mean_return\": -2.1373889362420108e-05, \"directional_persistence\": 0.45634920634920634, \"mean_volatility\": 0.013183507596518837, \"mean_adx\": 35.43134147004237, \"mean_atr_pct\": 0.0012207483564089792}, {\"state_id\": 3, \"n_bars\": 939, \"mean_return\": 0.00044337525147739135, \"directional_persistence\": 0.48294243070362475, \"mean_volatility\": 0.02524250906247525, \"mean_adx\": 37.29956014694665, \"mean_atr_pct\": 0.0020268414954076174}, {\"state_id\": 4, \"n_bars\": 1865, \"mean_return\": 5.8695029970583984e-05, \"directional_persistence\": 0.47049356223175964, \"mean_volatility\": 0.0283554861385327, \"mean_adx\": 28.617413377545525, \"mean_atr_pct\": 0.0023736220986273647}, {\"state_id\": 5, \"n_bars\": 209, \"mean_return\": -0.0022605281713531586, \"directional_persistence\": 0.8894230769230769, \"mean_volatility\": 0.015911679662206888, \"mean_adx\": 24.595188204006167, \"mean_atr_pct\": 0.001491199947031323}, {\"state_id\": 6, \"n_bars\": 4548, \"mean_return\": 4.153643773724513e-05, \"directional_persistence\": 0.4609632724873543, \"mean_volatility\": 0.01394659821916305, \"mean_adx\": 18.235399918498025, \"mean_atr_pct\": 0.001309958034628849}]"
+  }
+}
