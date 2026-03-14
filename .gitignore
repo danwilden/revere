@@ -25,6 +25,7 @@ data/reports/*.json
 data/reports/*.csv
 data/reports/*.jsonl
 data/reports/*.jsonl.gz
+backend/data/*.duckdb
 
 # Jupyter
 .ipynb_checkpoints/
