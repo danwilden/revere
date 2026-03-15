@@ -1,0 +1,105 @@
+{
+  "e6f97ef8-3da5-40d4-b61d-ed346770c692": {
+    "id": "e6f97ef8-3da5-40d4-b61d-ed346770c692",
+    "name": "hmm bear bull",
+    "description": "",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "ref": "bull_regime"
+          },
+          {
+            "field": "breakout_20",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "adx_14",
+            "op": "gte",
+            "value": 20
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "ref": "bear_regime"
+          },
+          {
+            "field": "breakout_20",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "adx_14",
+            "op": "gte",
+            "value": 20
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "ref": "choppy_regime"
+          },
+          {
+            "field": "rsi_14",
+            "op": "gte",
+            "value": 72
+          },
+          {
+            "field": "rsi_14",
+            "op": "lte",
+            "value": 28
+          }
+        ]
+      },
+      "stop_atr_multiplier": 1.5,
+      "take_profit_atr_multiplier": 2.5,
+      "position_size_units": 1000,
+      "named_conditions": {
+        "bull_regime": {
+          "field": "regime_label",
+          "op": "in",
+          "value": [
+            "TREND_BULL_LOW_VOL",
+            "TREND_BULL_HIGH_VOL"
+          ]
+        },
+        "bear_regime": {
+          "field": "regime_label",
+          "op": "in",
+          "value": [
+            "TREND_BEAR_LOW_VOL",
+            "TREND_BEAR_HIGH_VOL"
+          ]
+        },
+        "choppy_regime": {
+          "field": "regime_label",
+          "op": "in",
+          "value": [
+            "CHOPPY_SIGNAL",
+            "CHOPPY_NOISE",
+            "RANGE_MEAN_REVERT"
+          ]
+        }
+      }
+    },
+    "version": 1,
+    "created_at": "2026-03-14T20:29:31.697135",
+    "active_flag": true,
+    "tags": []
+  }
+}

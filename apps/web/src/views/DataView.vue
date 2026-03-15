@@ -107,6 +107,24 @@
               <span v-if="errors.source" class="field-error">{{ errors.source }}</span>
             </div>
 
+            <!-- ---- Dukascopy mode selector (shown only when DUKASCOPY source is active) ---- -->
+            <div v-if="form.source === 'dukascopy'" class="form-field">
+              <label class="form-label">DUKASCOPY MODE</label>
+              <div class="source-group">
+                <button
+                  v-for="mode in DUKASCOPY_MODES"
+                  :key="mode.value"
+                  type="button"
+                  :class="['nb-btn', 'source-btn', form.dukascopy_mode === mode.value && 'source-btn--active']"
+                  :disabled="store.isSubmitting"
+                  @click="form.dukascopy_mode = mode.value"
+                >
+                  {{ mode.label }}
+                </button>
+              </div>
+              <span class="dukascopy-mode-hint font-mono">{{ dukascopyModeHint }}</span>
+            </div>
+
             <!-- ---- Date range ---- -->
             <div class="form-row">
               <div class="form-field">
@@ -137,7 +155,13 @@
               class="nb-btn nb-btn--primary submit-btn"
               :disabled="store.isSubmitting || instrumentsLoading"
             >
-              {{ store.isSubmitting ? 'SUBMITTING...' : 'START INGESTION' }}
+              {{
+                store.isSubmitting
+                  ? 'SUBMITTING...'
+                  : form.source === 'dukascopy' && form.dukascopy_mode === 'download'
+                    ? 'DOWNLOAD + INGEST'
+                    : 'START INGESTION'
+              }}
             </button>
 
           </form>
@@ -206,7 +230,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useIngestionStore } from '@/stores/ingestion.js'
 import { useInstruments } from '@/composables/useInstruments.js'
 import { useJobPoller } from '@/composables/useJobPoller.js'
@@ -243,9 +267,31 @@ const { instruments, loading: instrumentsLoading, error: instrumentsError } = us
 const form = ref({
   instruments: [],
   source: 'oanda',
+  dukascopy_mode: 'download',
   start_date: '',
   end_date: '',
 })
+
+// Reset dukascopy_mode to default whenever the user switches away from dukascopy
+watch(
+  () => form.value.source,
+  (newSource) => {
+    if (newSource !== 'dukascopy') {
+      form.value.dukascopy_mode = 'download'
+    }
+  },
+)
+
+const DUKASCOPY_MODES = [
+  { value: 'download', label: 'DOWNLOAD + INGEST' },
+  { value: 'local', label: 'LOCAL FILES' },
+]
+
+const dukascopyModeHint = computed(() =>
+  form.value.dukascopy_mode === 'download'
+    ? 'Downloads CSVs via Node then ingests automatically'
+    : 'Ingest from CSVs already on disk in the configured directory',
+)
 
 const errors = ref({})
 
@@ -386,13 +432,25 @@ async function handleSubmit() {
   if (!validate()) return
 
   try {
-    const payload = {
-      instruments: form.value.instruments,
-      source: form.value.source,
-      start_date: form.value.start_date,
-      end_date: form.value.end_date,
+    let jobId
+
+    if (form.value.source === 'dukascopy' && form.value.dukascopy_mode === 'download') {
+      const payload = {
+        instruments: form.value.instruments,
+        start_date: form.value.start_date,
+        end_date: form.value.end_date,
+      }
+      jobId = await store.submitDukascopyDownloadJob(payload)
+    } else {
+      const payload = {
+        instruments: form.value.instruments,
+        source: form.value.source,
+        start_date: form.value.start_date,
+        end_date: form.value.end_date,
+      }
+      jobId = await store.submitJob(payload)
     }
-    const jobId = await store.submitJob(payload)
+
     startPolling(jobId)
   } catch {
     // submitError is set inside the store action; no extra handling needed here
@@ -676,6 +734,15 @@ onUnmounted(() => {
   border-color: var(--clr-yellow);
   color: #000;
   box-shadow: var(--shadow-nb-yellow);
+}
+
+/* ---- Dukascopy mode hint ---- */
+
+.dukascopy-mode-hint {
+  font-size: 11px;
+  color: var(--clr-text-dim);
+  letter-spacing: 0.03em;
+  line-height: 1.4;
 }
 
 /* ---- Date inputs ---- */

@@ -31,7 +31,7 @@ export const useStrategiesStore = defineStore('strategies', () => {
    * Which editor tab is showing in create/edit mode.
    * 'rules' | 'code'
    */
-  const strategyType = ref('rules')
+  const strategyType = ref('rules_engine')
 
   /**
    * Last validation result from POST /api/strategies/{id}/validate.

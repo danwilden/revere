@@ -12,6 +12,12 @@ const routes = [
     meta: { label: 'DATA', icon: 'mdi-database-import' },
   },
   {
+    path: '/coverage',
+    name: 'Coverage',
+    component: () => import('@/views/CoverageView.vue'),
+    meta: { label: 'COVERAGE', icon: 'mdi-chart-gantt' },
+  },
+  {
     path: '/models',
     name: 'Models',
     component: () => import('@/views/ModelsView.vue'),

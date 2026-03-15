@@ -61,6 +61,7 @@ onMounted(() => {
 
 const navItems = [
   { name: 'Data', to: '/data', label: 'DATA', icon: 'mdi-database-import-outline' },
+  { name: 'Coverage', to: '/coverage', label: 'COVERAGE', icon: 'mdi-chart-gantt' },
   { name: 'Models', to: '/models', label: 'MODELS', icon: 'mdi-brain' },
   { name: 'Strategies', to: '/strategies', label: 'STRATEGIES', icon: 'mdi-chess-knight' },
   { name: 'Backtests', to: '/backtests', label: 'BACKTESTS', icon: 'mdi-chart-timeline-variant' },

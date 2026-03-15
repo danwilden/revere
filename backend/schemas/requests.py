@@ -20,6 +20,12 @@ class IngestionJobRequest(BaseModel):
     end_date: datetime
 
 
+class DukascopyDownloadRequest(BaseModel):
+    instruments: list[str]
+    start_date: datetime
+    end_date: datetime
+
+
 class JobCreatedResponse(BaseModel):
     job_id: str
     status: JobStatus

@@ -54,3 +54,5 @@ data/reports/*.json
 data/reports/*.csv
 data/reports/*.jsonl
 data/reports/*.jsonl.gz
+
+lab/

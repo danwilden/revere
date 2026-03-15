@@ -88,3 +88,7 @@ app.include_router(strategies_routes.router, prefix="/api/strategies", tags=["st
 from apps.api.routes import backtests as backtests_routes, jobs as jobs_routes
 app.include_router(backtests_routes.router, prefix="/api/backtests", tags=["backtests"])
 app.include_router(jobs_routes.router, prefix="/api/jobs", tags=["jobs"])
+
+# Dukascopy download + ingest
+from apps.api.routes import dukascopy as dukascopy_routes
+app.include_router(dukascopy_routes.router, prefix="/api/dukascopy", tags=["dukascopy"])

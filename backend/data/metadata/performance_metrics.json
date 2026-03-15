@@ -1,0 +1,122 @@
+{
+  "818113a7-e647-41b2-8fa1-d74b86a52306": {
+    "id": "818113a7-e647-41b2-8fa1-d74b86a52306",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "364eed14-a367-436b-a9f3-9398e81eef9e": {
+    "id": "364eed14-a367-436b-a9f3-9398e81eef9e",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "24d3f710-4d90-4bfb-abb4-4ac5d61bd58e": {
+    "id": "24d3f710-4d90-4bfb-abb4-4ac5d61bd58e",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "84ee2ad5-c5ad-411c-921f-846367ab2488": {
+    "id": "84ee2ad5-c5ad-411c-921f-846367ab2488",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1abbc038-5d25-4b3a-b485-a2a74140ce23": {
+    "id": "1abbc038-5d25-4b3a-b485-a2a74140ce23",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e7ccfd6e-66b9-444c-b264-0d10408c7e9e": {
+    "id": "e7ccfd6e-66b9-444c-b264-0d10408c7e9e",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "02cf87dd-3be2-44c0-8dd6-98f183f15a47": {
+    "id": "02cf87dd-3be2-44c0-8dd6-98f183f15a47",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8ea6e48a-81b2-4826-8d05-3fee22966a0b": {
+    "id": "8ea6e48a-81b2-4826-8d05-3fee22966a0b",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "11ed1026-26c0-4637-8eed-0b03bfd9177f": {
+    "id": "11ed1026-26c0-4637-8eed-0b03bfd9177f",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f23cb463-2553-4640-90c9-e66c87534f85": {
+    "id": "f23cb463-2553-4640-90c9-e66c87534f85",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a2c81c52-1016-4bbb-9748-3fc3d163de0a": {
+    "id": "a2c81c52-1016-4bbb-9748-3fc3d163de0a",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a400adcb-5f64-497d-b33f-75192c60f1ee": {
+    "id": "a400adcb-5f64-497d-b33f-75192c60f1ee",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "53785d1e-09ad-4a51-bb63-99dd6030cda3": {
+    "id": "53785d1e-09ad-4a51-bb63-99dd6030cda3",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "62de5464-d355-45eb-b5cb-450ecca98925": {
+    "id": "62de5464-d355-45eb-b5cb-450ecca98925",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "340e1883-23ef-4c81-b3e5-53cab3028c02": {
+    "id": "340e1883-23ef-4c81-b3e5-53cab3028c02",
+    "backtest_run_id": "f5afa164-c859-4662-9749-d4f91996c002",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  }
+}

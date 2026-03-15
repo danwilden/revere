@@ -1,0 +1,165 @@
+{
+  "d0a92010-8a29-47bf-ab92-1467e60e86d3": {
+    "id": "d0a92010-8a29-47bf-ab92-1467e60e86d3",
+    "job_id": "42cc7a92-be82-4c6e-8574-f05bf1c52eff",
+    "strategy_id": "6aa7f72c-0485-4561-a79f-25116a553331",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-02 00:00:00",
+    "test_end": "2025-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "ref": "bull_regime"
+          },
+          {
+            "field": "breakout_20",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "adx_14",
+            "op": "gte",
+            "value": 20
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "ref": "bear_regime"
+          },
+          {
+            "field": "breakout_20",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "adx_14",
+            "op": "gte",
+            "value": 20
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "ref": "choppy_regime"
+          },
+          {
+            "field": "rsi_14",
+            "op": "gte",
+            "value": 72
+          },
+          {
+            "field": "rsi_14",
+            "op": "lte",
+            "value": 28
+          }
+        ]
+      },
+      "stop_atr_multiplier": 1.5,
+      "take_profit_atr_multiplier": 2.5,
+      "position_size_units": 1000,
+      "named_conditions": {
+        "bull_regime": {
+          "field": "regime_label",
+          "op": "in",
+          "value": [
+            "TREND_BULL_LOW_VOL",
+            "TREND_BULL_HIGH_VOL"
+          ]
+        },
+        "bear_regime": {
+          "field": "regime_label",
+          "op": "in",
+          "value": [
+            "TREND_BEAR_LOW_VOL",
+            "TREND_BEAR_HIGH_VOL"
+          ]
+        },
+        "choppy_regime": {
+          "field": "regime_label",
+          "op": "in",
+          "value": [
+            "CHOPPY_SIGNAL",
+            "CHOPPY_NOISE",
+            "RANGE_MEAN_REVERT"
+          ]
+        }
+      }
+    },
+    "cost_model_json": {
+      "spread_pips": 1.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-15 00:43:40.174158",
+    "result_ref": "backtests/d0a92010-8a29-47bf-ab92-1467e60e86d3/equity.json",
+    "oracle_regime_labels": true
+  },
+  "2c39a8e3-1a16-497c-9183-39cc8034f258": {
+    "id": "2c39a8e3-1a16-497c-9183-39cc8034f258",
+    "job_id": "13e1491d-9fe7-4e9f-a4e4-2c45502e051f",
+    "strategy_id": "c6a3cb65-4fa9-4961-b7a9-e2ae1cf54fb7",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2024-01-01 00:00:00",
+    "test_end": "2025-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "field": "ema_slope_20",
+        "op": "gt",
+        "value": 0
+      },
+      "entry_short": {
+        "field": "ema_slope_20",
+        "op": "lt",
+        "value": 0
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gte",
+            "value": 70
+          },
+          {
+            "field": "rsi_14",
+            "op": "lte",
+            "value": 30
+          }
+        ]
+      },
+      "stop_atr_multiplier": 1.5,
+      "take_profit_atr_multiplier": 2,
+      "position_size_units": 1000,
+      "named_conditions": {}
+    },
+    "cost_model_json": {
+      "spread_pips": 1.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-15 13:47:42.686688",
+    "result_ref": "backtests/2c39a8e3-1a16-497c-9183-39cc8034f258/equity.json",
+    "oracle_regime_labels": true
+  }
+}

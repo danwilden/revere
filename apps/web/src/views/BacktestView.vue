@@ -133,6 +133,39 @@
               <span v-if="errors.timeframe" class="field-error">{{ errors.timeframe }}</span>
             </div>
 
+            <!-- HMM Model selector -->
+            <div class="form-field">
+              <label class="nb-label form-label">
+                HMM MODEL
+                <span class="optional-tag">optional</span>
+              </label>
+              <div v-if="store.modelsLoading" class="field-loading">
+                <span class="nb-label">LOADING...</span>
+              </div>
+              <select
+                v-else
+                v-model="form.model_id"
+                class="nb-select"
+                @change="onModelChange"
+              >
+                <option value="">None — strategy doesn't use regime_label</option>
+                <option
+                  v-for="m in store.models"
+                  :key="m.id"
+                  :value="m.id"
+                >
+                  {{ m.instrument }} {{ m.timeframe }} — {{ m.num_states }} states ({{ formatDate(m.training_start) }} → {{ formatDate(m.training_end) }}){{ !modelMatchesCurrent(m) ? ' (different pair/tf)' : '' }}
+                </option>
+              </select>
+              <!-- Regime label guard warning -->
+              <div
+                v-if="!form.model_id && form.instrument_id"
+                class="regime-warn"
+              >
+                No model selected — strategies using <code>regime_label</code> will fail. Select an HMM model if your strategy references regime state.
+              </div>
+            </div>
+
             <!-- Date range -->
             <div class="form-row">
               <div class="form-field">
@@ -141,6 +174,8 @@
                   v-model="form.start_date"
                   type="date"
                   class="nb-input"
+                  :min="effectiveMinDate"
+                  :max="effectiveMaxDate"
                   required
                 />
                 <span v-if="errors.start_date" class="field-error">{{ errors.start_date }}</span>
@@ -151,10 +186,20 @@
                   v-model="form.end_date"
                   type="date"
                   class="nb-input"
+                  :min="effectiveMinDate"
+                  :max="effectiveMaxDate"
                   required
                 />
                 <span v-if="errors.end_date" class="field-error">{{ errors.end_date }}</span>
               </div>
+            </div>
+            <!-- Data availability caption -->
+            <div class="date-range-caption">
+              <span v-if="rangesLoading" class="nb-label range-loading">CHECKING DATA...</span>
+              <span v-else-if="form.instrument_id && !hasData" class="range-no-data">
+                NO DATA — ingest {{ form.instrument_id }} {{ form.timeframe }} before running
+              </span>
+              <span v-else-if="rangeLabel" class="range-available">{{ rangeLabel }}</span>
             </div>
 
             <!-- Initial equity -->
@@ -268,6 +313,8 @@ import { useRouter } from 'vue-router'
 
 import { useBacktestStore } from '@/stores/backtest.js'
 import { useJobPoller } from '@/composables/useJobPoller.js'
+import { useDataRanges } from '@/composables/useDataRanges.js'
+import { getHmmModel } from '@/api/models.js'
 
 import NbCard from '@/components/ui/NbCard.vue'
 import ErrorBanner from '@/components/ui/ErrorBanner.vue'
@@ -306,6 +353,7 @@ const form = ref({
   timeframe: 'H1',
   start_date: '',
   end_date: '',
+  model_id: '',
   initial_equity: 10000,
   spread_pips: 1.0,
   slippage_pips: 0.5,
@@ -343,6 +391,80 @@ const sortedRuns = computed(() =>
     return tb - ta
   })
 )
+
+// ---------------------------------------------------------------------------
+// Data availability range (from useDataRanges composable)
+// ---------------------------------------------------------------------------
+
+const instrumentIdRef = computed(() => form.value.instrument_id)
+const timeframeRef = computed(() => form.value.timeframe)
+const { minDate, maxDate, rangeLabel, hasData, isLoading: rangesLoading } = useDataRanges(instrumentIdRef, timeframeRef)
+
+// ---------------------------------------------------------------------------
+// HMM model date range (fetched on model selection)
+// ---------------------------------------------------------------------------
+
+const selectedModelDateRange = ref({ min: '', max: '' })
+
+async function onModelChange() {
+  const modelId = form.value.model_id
+  if (!modelId) {
+    selectedModelDateRange.value = { min: '', max: '' }
+    return
+  }
+  try {
+    const model = await getHmmModel(modelId)
+    selectedModelDateRange.value = {
+      min: model.training_start?.slice(0, 10) ?? '',
+      max: model.training_end?.slice(0, 10) ?? '',
+    }
+  } catch (e) {
+    console.warn('Could not fetch model details', e)
+    selectedModelDateRange.value = { min: '', max: '' }
+  }
+}
+
+// Effective date bounds: intersection of data range and model training range
+const effectiveMinDate = computed(() => {
+  const a = minDate.value
+  const b = selectedModelDateRange.value.min
+  if (!a && !b) return ''
+  if (!a) return b
+  if (!b) return a
+  return a > b ? a : b
+})
+
+const effectiveMaxDate = computed(() => {
+  const a = maxDate.value
+  const b = selectedModelDateRange.value.max
+  if (!a && !b) return ''
+  if (!a) return b
+  if (!b) return a
+  return a < b ? a : b
+})
+
+// Clamp selected dates when the effective bounds tighten
+watch(effectiveMinDate, (min) => {
+  if (min && form.value.start_date < min) form.value.start_date = min
+})
+watch(effectiveMaxDate, (max) => {
+  if (max && form.value.end_date > max) form.value.end_date = max
+})
+
+// ---------------------------------------------------------------------------
+// Model option display helpers
+// ---------------------------------------------------------------------------
+
+function formatDate(isoStr) {
+  if (!isoStr) return '?'
+  return isoStr.slice(0, 10)
+}
+
+function modelMatchesCurrent(model) {
+  const instrMatch = !form.value.instrument_id || model.instrument === form.value.instrument_id
+  const tfMatch = !form.value.timeframe || model.timeframe === form.value.timeframe
+  return instrMatch && tfMatch
+}
 
 // ---------------------------------------------------------------------------
 // Instrument change handler — recompute pip_size immediately
@@ -424,6 +546,7 @@ async function handleSubmit() {
     timeframe: form.value.timeframe,
     start_date: form.value.start_date,
     end_date: form.value.end_date,
+    model_id: form.value.model_id || null,
     pip_size: form.value.pip_size,
     initial_equity: form.value.initial_equity,
     spread_pips: form.value.spread_pips,
@@ -460,6 +583,7 @@ function handleViewResults(runId) {
 onMounted(() => {
   store.fetchInstruments()
   store.fetchStrategies()
+  store.fetchModels()
   store.fetchRecentRuns()
 })
 
@@ -720,5 +844,69 @@ onUnmounted(() => {
   top: 20px;
   max-height: calc(100vh - 120px);
   overflow-y: auto;
+}
+
+/* ============================================================
+   HMM model selector / regime label guard
+   ============================================================ */
+
+.optional-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--clr-text-dim);
+  text-transform: lowercase;
+  margin-left: 6px;
+  border: 1px solid var(--clr-border);
+  padding: 1px 5px;
+}
+
+.regime-warn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--clr-yellow);
+  border: 2px solid var(--clr-yellow);
+  background: rgba(255, 230, 0, 0.06);
+  padding: 8px 10px;
+  box-shadow: 3px 3px 0 #000;
+  margin-top: 4px;
+}
+
+.regime-warn code {
+  font-family: var(--font-mono);
+  background: rgba(255, 230, 0, 0.15);
+  padding: 1px 4px;
+  font-size: 11px;
+}
+
+/* ============================================================
+   Date range availability caption
+   ============================================================ */
+
+.date-range-caption {
+  margin-top: -6px;
+  min-height: 18px;
+}
+
+.range-loading {
+  font-size: 9px;
+  color: var(--clr-text-dim);
+  letter-spacing: 0.1em;
+}
+
+.range-available {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--clr-green, #00ff41);
+  letter-spacing: 0.06em;
+}
+
+.range-no-data {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--clr-red);
+  letter-spacing: 0.06em;
 }
 </style>

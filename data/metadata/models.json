@@ -1,0 +1,48 @@
+{
+  "beb6bd92-e3b2-4b00-bdc1-178e2ab1fd80": {
+    "id": "beb6bd92-e3b2-4b00-bdc1-178e2ab1fd80",
+    "model_type": "hmm",
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "training_start": "2022-01-01T00:00:00",
+    "training_end": "2024-12-31T00:00:00",
+    "parameters_json": "{\"num_states\": 7, \"feature_set_name\": \"default_v1\", \"feature_run_id\": \"cfb39ffb-080f-40ba-96d3-7376887a9599\"}",
+    "artifact_ref": "/Users/danwilden/Developer/Medallion/data/artifacts/models/hmm/beb6bd92-e3b2-4b00-bdc1-178e2ab1fd80.joblib",
+    "label_map_json": {
+      "0": "RANGE_MEAN_REVERT",
+      "1": "TREND_BEAR_HIGH_VOL",
+      "2": "TREND_BULL_HIGH_VOL",
+      "3": "TREND_BEAR_LOW_VOL",
+      "4": "TREND_BULL_LOW_VOL",
+      "5": "CHOPPY_SIGNAL",
+      "6": "RANGE_MEAN_REVERT_2"
+    },
+    "created_at": "2026-03-14T23:58:14.861236",
+    "status": "succeeded",
+    "log_likelihood": 9645.546137393136,
+    "state_stats_json": "[{\"state_id\": 0, \"n_bars\": 103, \"mean_return\": 7.899065247667786e-05, \"directional_persistence\": 0.5588235294117647, \"mean_volatility\": 0.009713011716866927, \"mean_adx\": 20.77791046009208, \"mean_atr_pct\": 0.0010049256748936794}, {\"state_id\": 1, \"n_bars\": 4, \"mean_return\": -0.0007498576897141957, \"directional_persistence\": 0.6666666666666666, \"mean_volatility\": 0.013911934727904668, \"mean_adx\": 48.757157503435245, \"mean_atr_pct\": 0.0012211418643629875}, {\"state_id\": 2, \"n_bars\": 58, \"mean_return\": 5.814582575078007e-05, \"directional_persistence\": 0.43859649122807015, \"mean_volatility\": 0.012865072332520645, \"mean_adx\": 48.3561249465619, \"mean_atr_pct\": 0.0011587746975122485}, {\"state_id\": 3, \"n_bars\": 51, \"mean_return\": -0.00015102735333028542, \"directional_persistence\": 0.7, \"mean_volatility\": 0.012333429325639694, \"mean_adx\": 48.249143204420655, \"mean_atr_pct\": 0.001153392760771486}, {\"state_id\": 4, \"n_bars\": 31, \"mean_return\": 9.383333727717359e-05, \"directional_persistence\": 0.4, \"mean_volatility\": 0.013981934339966234, \"mean_adx\": 32.20537193080391, \"mean_atr_pct\": 0.0011574319297562284}, {\"state_id\": 5, \"n_bars\": 105, \"mean_return\": 8.203654447282364e-05, \"directional_persistence\": 0.4423076923076923, \"mean_volatility\": 0.009906099298822886, \"mean_adx\": 20.991956339730947, \"mean_atr_pct\": 0.0010161346798582029}, {\"state_id\": 6, \"n_bars\": 110, \"mean_return\": -0.00021889690398246424, \"directional_persistence\": 0.5871559633027523, \"mean_volatility\": 0.0098794689514974, \"mean_adx\": 21.118567277784418, \"mean_atr_pct\": 0.0010035829919824383}]"
+  },
+  "5224568b-3ceb-4f8c-812a-08dc5641a0fc": {
+    "id": "5224568b-3ceb-4f8c-812a-08dc5641a0fc",
+    "model_type": "hmm",
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "training_start": "2022-01-01T00:00:00",
+    "training_end": "2025-01-01T00:00:00",
+    "parameters_json": "{\"num_states\": 7, \"feature_set_name\": \"default_v1\", \"feature_run_id\": \"2104c8b1-0165-4b28-8387-e292c192ad16\"}",
+    "artifact_ref": "/Users/danwilden/Developer/Medallion/data/artifacts/models/hmm/5224568b-3ceb-4f8c-812a-08dc5641a0fc.joblib",
+    "label_map_json": {
+      "0": "CHOPPY_SIGNAL",
+      "1": "TREND_BEAR_HIGH_VOL",
+      "2": "TREND_BEAR_LOW_VOL",
+      "3": "TREND_BULL_HIGH_VOL",
+      "4": "TREND_BULL_LOW_VOL",
+      "5": "TREND_BULL_LOW_VOL_2",
+      "6": "CHOPPY_NOISE"
+    },
+    "created_at": "2026-03-15T00:39:52.597537",
+    "status": "succeeded",
+    "log_likelihood": 395343.2362714119,
+    "state_stats_json": "[{\"state_id\": 0, \"n_bars\": 3874, \"mean_return\": -1.0881253403573557e-05, \"directional_persistence\": 0.47818228763232634, \"mean_volatility\": 0.00822933491148917, \"mean_adx\": 20.81294975511554, \"mean_atr_pct\": 0.0008037998796083899}, {\"state_id\": 1, \"n_bars\": 1354, \"mean_return\": -0.00011204077274993859, \"directional_persistence\": 0.44567627494456763, \"mean_volatility\": 0.016355108259051947, \"mean_adx\": 38.88866915301429, \"mean_atr_pct\": 0.001367044784752526}, {\"state_id\": 2, \"n_bars\": 2294, \"mean_return\": -0.00027167514015209254, \"directional_persistence\": 0.4653292629742695, \"mean_volatility\": 0.02148810510473696, \"mean_adx\": 33.08096062511025, \"mean_atr_pct\": 0.0018472874597293375}, {\"state_id\": 3, \"n_bars\": 1750, \"mean_return\": 0.00017608461952077086, \"directional_persistence\": 0.49342481417953116, \"mean_volatility\": 0.030003631091777276, \"mean_adx\": 27.534530054628533, \"mean_atr_pct\": 0.0023678776780616593}, {\"state_id\": 4, \"n_bars\": 2246, \"mean_return\": 0.00014693928714440126, \"directional_persistence\": 0.4592427616926503, \"mean_volatility\": 0.010880484222215686, \"mean_adx\": 29.138340056170136, \"mean_atr_pct\": 0.0010239238725488012}, {\"state_id\": 5, \"n_bars\": 1895, \"mean_return\": 3.2432654640960396e-06, \"directional_persistence\": 0.4672650475184794, \"mean_volatility\": 0.012546876228699452, \"mean_adx\": 36.20422963142523, \"mean_atr_pct\": 0.0011823568654007607}, {\"state_id\": 6, \"n_bars\": 5258, \"mean_return\": 1.6477506994992767e-05, \"directional_persistence\": 0.457104812630778, \"mean_volatility\": 0.015204980447576536, \"mean_adx\": 19.58591032411948, \"mean_atr_pct\": 0.001413251348202997}]"
+  }
+}

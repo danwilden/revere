@@ -9,6 +9,13 @@ from pathlib import Path
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+# Resolve the project root at import time so that relative storage paths
+# always anchor to the repo root regardless of the process working directory.
+# config.py lives at <project-root>/backend/config.py, so:
+#   Path(__file__).resolve().parent  → <project-root>/backend/
+#   .parent                          → <project-root>/
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
@@ -48,6 +55,18 @@ class Settings(BaseSettings):
     default_pairs: list[str] = ["EUR_USD", "GBP_USD", "USD_JPY", "AUD_USD"]
     default_hmm_states: int = 7
 
+    # --- Dukascopy Node downloader ---
+    dukascopy_node_cmd: str = "npx dukascopy-node"
+    """Shell command (or path) to the dukascopy-node CLI downloader.
+    Override via DUKASCOPY_NODE_CMD env var if using a local install."""
+
+    dukascopy_download_dir: str = "data/dukascopy_downloads"
+    """Base directory where Node-downloaded CSVs are written.
+    Per-job subdirectories are created here: {base}/{job_id}/{instrument}/"""
+
+    dukascopy_node_timeout_secs: int = 600
+    """Seconds before the Node subprocess is killed (per instrument)."""
+
     @property
     def is_local(self) -> bool:
         return self.environment == "local"
@@ -55,18 +74,32 @@ class Settings(BaseSettings):
     @property
     def duckdb_path_resolved(self) -> Path:
         p = Path(self.duckdb_path)
+        if not p.is_absolute():
+            p = _PROJECT_ROOT / p
         p.parent.mkdir(parents=True, exist_ok=True)
         return p
 
     @property
     def metadata_path_resolved(self) -> Path:
         p = Path(self.metadata_path)
+        if not p.is_absolute():
+            p = _PROJECT_ROOT / p
         p.mkdir(parents=True, exist_ok=True)
         return p
 
     @property
     def artifact_path_resolved(self) -> Path:
         p = Path(self.artifact_path)
+        if not p.is_absolute():
+            p = _PROJECT_ROOT / p
+        p.mkdir(parents=True, exist_ok=True)
+        return p
+
+    @property
+    def dukascopy_download_dir_resolved(self) -> Path:
+        p = Path(self.dukascopy_download_dir)
+        if not p.is_absolute():
+            p = _PROJECT_ROOT / p
         p.mkdir(parents=True, exist_ok=True)
         return p
 

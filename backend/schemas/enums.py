@@ -15,6 +15,7 @@ class JobType(str, Enum):
     BACKTEST = "backtest"
     FEATURE_GENERATION = "feature_generation"
     SIGNAL_MATERIALIZE = "signal_materialize"
+    DUKASCOPY_DOWNLOAD = "dukascopy_download"
 
 
 class Timeframe(str, Enum):

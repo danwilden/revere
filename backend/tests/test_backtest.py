@@ -968,3 +968,105 @@ class TestDataLoader:
         assert len(result) == 1
         assert result[0].get("regime_label") == "TREND_BULL_LOW_VOL"
         assert result[0].get("state_id") == 0
+
+    def test_regime_label_defaults_for_unlabelled_bars(self, tmp_path):
+        """Bars without matching regime labels get UNKNOWN/state_id=-1 when model_id is set."""
+        from backend.data.duckdb_store import DuckDBStore
+        store = DuckDBStore(str(tmp_path / "test.duckdb"))
+        ts1 = datetime(2024, 1, 1, 0, 0)
+        ts2 = datetime(2024, 1, 1, 1, 0)
+        # Two bars, but only one has a regime label
+        store.upsert_bars_agg([
+            {
+                "instrument_id": "EUR_USD", "timeframe": "H1",
+                "timestamp_utc": ts1, "open": 1.1, "high": 1.11, "low": 1.09, "close": 1.1,
+                "volume": 100, "source": "oanda",
+            },
+            {
+                "instrument_id": "EUR_USD", "timeframe": "H1",
+                "timestamp_utc": ts2, "open": 1.1, "high": 1.11, "low": 1.09, "close": 1.1,
+                "volume": 100, "source": "oanda",
+            },
+        ])
+        store.upsert_regime_labels([{
+            "model_id": "model1", "state_id": 0,
+            "instrument_id": "EUR_USD", "timeframe": "H1",
+            "timestamp_utc": ts1, "regime_label": "TREND_BULL_LOW_VOL",
+        }])
+        result = load_backtest_frame(
+            "EUR_USD", Timeframe.H1,
+            datetime(2024, 1, 1), datetime(2024, 1, 2),
+            store,
+            model_id="model1",
+        )
+        assert len(result) == 2
+        # First bar has the actual label
+        assert result[0]["regime_label"] == "TREND_BULL_LOW_VOL"
+        assert result[0]["state_id"] == 0
+        # Second bar gets safe defaults
+        assert result[1]["regime_label"] == "UNKNOWN"
+        assert result[1]["state_id"] == -1
+
+    def test_regime_label_defaults_when_no_labels_exist(self, tmp_path):
+        """All bars get UNKNOWN when model_id is set but regime_labels table has no rows."""
+        from backend.data.duckdb_store import DuckDBStore
+        store = DuckDBStore(str(tmp_path / "test.duckdb"))
+        ts = datetime(2024, 1, 1, 0, 0)
+        store.upsert_bars_agg([{
+            "instrument_id": "EUR_USD", "timeframe": "H1",
+            "timestamp_utc": ts, "open": 1.1, "high": 1.11, "low": 1.09, "close": 1.1,
+            "volume": 100, "source": "oanda",
+        }])
+        # No regime labels inserted — simulates the user's bug scenario
+        result = load_backtest_frame(
+            "EUR_USD", Timeframe.H1,
+            datetime(2024, 1, 1), datetime(2024, 1, 2),
+            store,
+            model_id="nonexistent_model",
+        )
+        assert len(result) == 1
+        assert result[0]["regime_label"] == "UNKNOWN"
+        assert result[0]["state_id"] == -1
+
+    def test_feature_run_id_resolved_from_model_record(self, tmp_path):
+        """When feature_run_id is null but model_id is set, resolve from model's parameters_json."""
+        from backend.data.duckdb_store import DuckDBStore
+        from backend.data.local_metadata import LocalMetadataRepository
+        store = DuckDBStore(str(tmp_path / "test.duckdb"))
+        meta = LocalMetadataRepository(str(tmp_path / "metadata"))
+        ts = datetime(2024, 1, 1, 0, 0)
+        store.upsert_bars_agg([{
+            "instrument_id": "EUR_USD", "timeframe": "H1",
+            "timestamp_utc": ts, "open": 1.1, "high": 1.11, "low": 1.09, "close": 1.1,
+            "volume": 100, "source": "oanda",
+        }])
+        # Insert a feature linked to "run1"
+        store.upsert_features([{
+            "instrument_id": "EUR_USD", "timeframe": "H1",
+            "timestamp_utc": ts, "feature_run_id": "run1",
+            "feature_name": "rsi_14", "feature_value": 62.5,
+        }])
+        # Save a model record whose parameters_json contains the feature_run_id
+        meta.save_model({
+            "id": "model_abc",
+            "model_type": "hmm",
+            "instrument_id": "EUR_USD",
+            "timeframe": "H1",
+            "training_start": "2024-01-01T00:00:00",
+            "training_end": "2024-01-02T00:00:00",
+            "parameters_json": {"feature_run_id": "run1", "num_states": 7},
+        })
+        # Call with feature_run_id=None but model_id set — should auto-resolve
+        result = load_backtest_frame(
+            "EUR_USD", Timeframe.H1,
+            datetime(2024, 1, 1), datetime(2024, 1, 2),
+            store,
+            feature_run_id=None,
+            model_id="model_abc",
+            metadata_repo=meta,
+        )
+        assert len(result) == 1
+        assert result[0].get("rsi_14") == 62.5
+        # Also check regime defaults since no labels were inserted
+        assert result[0]["regime_label"] == "UNKNOWN"
+        assert result[0]["state_id"] == -1

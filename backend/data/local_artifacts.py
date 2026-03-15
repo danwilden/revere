@@ -19,8 +19,12 @@ class LocalArtifactRepository(ArtifactRepository):
         dest.write_bytes(data)
         return str(dest)
 
+    def _resolve(self, ref: str) -> Path:
+        p = Path(ref)
+        return p if p.is_absolute() else self._base / ref
+
     def load(self, ref: str) -> bytes:
-        return Path(ref).read_bytes()
+        return self._resolve(ref).read_bytes()
 
     def exists(self, ref: str) -> bool:
-        return Path(ref).exists()
+        return self._resolve(ref).exists()

@@ -1,0 +1,162 @@
+{
+  "0d6c1d61-8873-4d45-8f7f-c6246deee049": {
+    "id": "0d6c1d61-8873-4d45-8f7f-c6246deee049",
+    "job_type": "dukascopy_download",
+    "status": "failed",
+    "progress_pct": 0.0,
+    "stage_label": "downloading EUR_USD from Dukascopy",
+    "requested_by": "system",
+    "created_at": "2026-03-14 23:29:14.348606",
+    "started_at": "2026-03-14T23:29:14.349751",
+    "completed_at": "2026-03-14T23:37:56.183380",
+    "error_code": "RuntimeError",
+    "error_message": "dukascopy-node exited with code 1 for instrument EUR_USD. stderr: ",
+    "params_json": {
+      "instruments": [
+        "EUR_USD"
+      ],
+      "start_date": "2022-01-01T00:00:00",
+      "end_date": "2024-12-31T00:00:00"
+    },
+    "result_ref": null,
+    "logs_ref": null
+  },
+  "9f41da45-207d-4f60-95ea-fb79cd37b351": {
+    "id": "9f41da45-207d-4f60-95ea-fb79cd37b351",
+    "job_type": "dukascopy_download",
+    "status": "succeeded",
+    "progress_pct": 100.0,
+    "stage_label": "EUR_USD: 28748 bars stored",
+    "requested_by": "system",
+    "created_at": "2026-03-14 23:54:56.058636",
+    "started_at": "2026-03-14T23:54:56.061793",
+    "completed_at": "2026-03-14T23:56:07.162267",
+    "error_code": null,
+    "error_message": null,
+    "params_json": {
+      "instruments": [
+        "EUR_USD"
+      ],
+      "start_date": "2022-01-01T00:00:00",
+      "end_date": "2025-12-31T00:00:00"
+    },
+    "result_ref": "bars_written=28748,instruments=EUR_USD",
+    "logs_ref": null
+  },
+  "55c146cb-ae95-4f63-a3e0-4e54e1bf4d9f": {
+    "id": "55c146cb-ae95-4f63-a3e0-4e54e1bf4d9f",
+    "job_type": "hmm_training",
+    "status": "succeeded",
+    "progress_pct": 100.0,
+    "stage_label": "Applying semantic labels",
+    "requested_by": "system",
+    "created_at": "2026-03-14 23:58:10.156597",
+    "started_at": "2026-03-14T23:58:10.159338",
+    "completed_at": "2026-03-14T23:58:15.395488",
+    "error_code": null,
+    "error_message": null,
+    "params_json": {
+      "instrument": "EUR_USD",
+      "timeframe": "H1",
+      "train_start": "2022-01-01T00:00:00",
+      "train_end": "2024-12-31T00:00:00",
+      "num_states": 7,
+      "feature_set_name": "default_v1"
+    },
+    "result_ref": "beb6bd92-e3b2-4b00-bdc1-178e2ab1fd80",
+    "logs_ref": null
+  },
+  "5675b909-a50b-4649-bf3c-5059b8a44d80": {
+    "id": "5675b909-a50b-4649-bf3c-5059b8a44d80",
+    "job_type": "dukascopy_download",
+    "status": "succeeded",
+    "progress_pct": 100.0,
+    "stage_label": "EUR_USD: 1457308 bars stored",
+    "requested_by": "system",
+    "created_at": "2026-03-15 00:21:26.009502",
+    "started_at": "2026-03-15T00:21:26.012847",
+    "completed_at": "2026-03-15T00:30:44.246404",
+    "error_code": null,
+    "error_message": null,
+    "params_json": {
+      "instruments": [
+        "EUR_USD"
+      ],
+      "start_date": "2022-02-01T00:00:00",
+      "end_date": "2025-12-31T00:00:00"
+    },
+    "result_ref": "bars_written=1457308,instruments=EUR_USD",
+    "logs_ref": null
+  },
+  "eea492b4-f507-42a1-96c1-665fe067c200": {
+    "id": "eea492b4-f507-42a1-96c1-665fe067c200",
+    "job_type": "hmm_training",
+    "status": "succeeded",
+    "progress_pct": 100.0,
+    "stage_label": "Applying semantic labels",
+    "requested_by": "system",
+    "created_at": "2026-03-15 00:36:45.766966",
+    "started_at": "2026-03-15T00:36:45.769731",
+    "completed_at": "2026-03-15T00:40:12.361975",
+    "error_code": null,
+    "error_message": null,
+    "params_json": {
+      "instrument": "EUR_USD",
+      "timeframe": "H1",
+      "train_start": "2022-01-01T00:00:00",
+      "train_end": "2025-01-01T00:00:00",
+      "num_states": 7,
+      "feature_set_name": "default_v1"
+    },
+    "result_ref": "5224568b-3ceb-4f8c-812a-08dc5641a0fc",
+    "logs_ref": null
+  },
+  "42cc7a92-be82-4c6e-8574-f05bf1c52eff": {
+    "id": "42cc7a92-be82-4c6e-8574-f05bf1c52eff",
+    "job_type": "backtest",
+    "status": "succeeded",
+    "progress_pct": 100.0,
+    "stage_label": "persisting_results",
+    "requested_by": "system",
+    "created_at": "2026-03-15 00:43:39.784890",
+    "started_at": "2026-03-15T00:43:39.787188",
+    "completed_at": "2026-03-15T00:43:40.296691",
+    "error_code": null,
+    "error_message": null,
+    "params_json": {
+      "strategy_id": "6aa7f72c-0485-4561-a79f-25116a553331",
+      "instrument": "EUR_USD",
+      "timeframe": "H1",
+      "test_start": "2022-01-02T00:00:00",
+      "test_end": "2025-01-01T00:00:00",
+      "feature_run_id": null,
+      "model_id": "5224568b-3ceb-4f8c-812a-08dc5641a0fc"
+    },
+    "result_ref": "d0a92010-8a29-47bf-ab92-1467e60e86d3",
+    "logs_ref": null
+  },
+  "13e1491d-9fe7-4e9f-a4e4-2c45502e051f": {
+    "id": "13e1491d-9fe7-4e9f-a4e4-2c45502e051f",
+    "job_type": "backtest",
+    "status": "succeeded",
+    "progress_pct": 100.0,
+    "stage_label": "persisting_results",
+    "requested_by": "system",
+    "created_at": "2026-03-15 13:47:42.497761",
+    "started_at": "2026-03-15T13:47:42.500764",
+    "completed_at": "2026-03-15T13:47:42.815529",
+    "error_code": null,
+    "error_message": null,
+    "params_json": {
+      "strategy_id": "c6a3cb65-4fa9-4961-b7a9-e2ae1cf54fb7",
+      "instrument": "EUR_USD",
+      "timeframe": "H1",
+      "test_start": "2024-01-01T00:00:00",
+      "test_end": "2025-01-01T00:00:00",
+      "feature_run_id": null,
+      "model_id": "5224568b-3ceb-4f8c-812a-08dc5641a0fc"
+    },
+    "result_ref": "2c39a8e3-1a16-497c-9183-39cc8034f258",
+    "logs_ref": null
+  }
+}

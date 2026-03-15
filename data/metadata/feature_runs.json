@@ -1,0 +1,20 @@
+{
+  "cfb39ffb-080f-40ba-96d3-7376887a9599": {
+    "id": "cfb39ffb-080f-40ba-96d3-7376887a9599",
+    "feature_set_name": "default_v1",
+    "code_version": "v1.0",
+    "parameters_json": "{\"instrument_id\": \"EUR_USD\", \"timeframe\": \"H1\", \"feature_set_name\": \"default_v1\", \"code_version\": \"v1.0\"}",
+    "start_date": "2022-01-01T00:00:00",
+    "end_date": "2024-12-31T00:00:00",
+    "created_at": "2026-03-14T23:58:10.219119"
+  },
+  "2104c8b1-0165-4b28-8387-e292c192ad16": {
+    "id": "2104c8b1-0165-4b28-8387-e292c192ad16",
+    "feature_set_name": "default_v1",
+    "code_version": "v1.0",
+    "parameters_json": "{\"instrument_id\": \"EUR_USD\", \"timeframe\": \"H1\", \"feature_set_name\": \"default_v1\", \"code_version\": \"v1.0\"}",
+    "start_date": "2022-01-01T00:00:00",
+    "end_date": "2025-01-01T00:00:00",
+    "created_at": "2026-03-15T00:36:45.879962"
+  }
+}

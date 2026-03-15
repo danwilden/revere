@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { getDefaultInstruments } from '@/api/instruments.js'
 import { listStrategies } from '@/api/strategies.js'
 import { startBacktestJob, listBacktestRuns } from '@/api/backtests.js'
+import { listHmmModels } from '@/api/models.js'
 
 /**
  * backtestStore — owns all state for the backtest submission workflow.
@@ -16,6 +17,8 @@ import { startBacktestJob, listBacktestRuns } from '@/api/backtests.js'
  *   recentRuns       — list of BacktestRun objects from /api/backtests/runs
  *   submitError      — string error from failed submission (not polling — polling errors go in activeJob)
  *   isSubmitting     — bool: true while POST /api/backtests/jobs is in-flight
+ *   models               — list of HMM model records from /api/models/hmm
+ *   modelsLoading        — bool
  *   isLoadingInstruments  — bool
  *   isLoadingStrategies   — bool
  *   isLoadingRuns         — bool
@@ -24,6 +27,7 @@ export const useBacktestStore = defineStore('backtest', () => {
   // --- Data ---
   const instruments = ref([])
   const strategies = ref([])
+  const models = ref([])
   const recentRuns = ref([])
 
   // --- Job state ---
@@ -37,6 +41,7 @@ export const useBacktestStore = defineStore('backtest', () => {
   const isLoadingInstruments = ref(false)
   const isLoadingStrategies = ref(false)
   const isLoadingRuns = ref(false)
+  const modelsLoading = ref(false)
 
   // --- Actions ---
 
@@ -71,6 +76,18 @@ export const useBacktestStore = defineStore('backtest', () => {
       console.error('[backtest] fetchStrategies failed:', err)
     } finally {
       isLoadingStrategies.value = false
+    }
+  }
+
+  async function fetchModels() {
+    modelsLoading.value = true
+    try {
+      const data = await listHmmModels()
+      models.value = Array.isArray(data) ? data : (data.models ?? [])
+    } catch (err) {
+      console.error('[backtest] fetchModels failed:', err)
+    } finally {
+      modelsLoading.value = false
     }
   }
 
@@ -114,7 +131,19 @@ export const useBacktestStore = defineStore('backtest', () => {
     isSubmitting.value = true
 
     try {
-      const response = await startBacktestJob(payload)
+      // Remap frontend field names to backend BacktestJobRequest schema:
+      //   instrument_id → instrument
+      //   start_date    → test_start
+      //   end_date      → test_end
+      const { instrument_id, start_date, end_date, model_id, ...rest } = payload
+      const mapped = {
+        ...rest,
+        instrument: instrument_id ?? rest.instrument,
+        test_start: start_date ?? rest.test_start,
+        test_end: end_date ?? rest.test_end,
+        model_id: model_id || null,
+      }
+      const response = await startBacktestJob(mapped)
       // Backend 202 returns { job_id: '...' }
       const jobId = response.job_id ?? response.id
       activeJobId.value = jobId
@@ -171,6 +200,7 @@ export const useBacktestStore = defineStore('backtest', () => {
     // state
     instruments,
     strategies,
+    models,
     recentRuns,
     activeJob,
     activeJobId,
@@ -180,9 +210,11 @@ export const useBacktestStore = defineStore('backtest', () => {
     isLoadingInstruments,
     isLoadingStrategies,
     isLoadingRuns,
+    modelsLoading,
     // actions
     fetchInstruments,
     fetchStrategies,
+    fetchModels,
     fetchRecentRuns,
     submitJob,
     updateJobState,

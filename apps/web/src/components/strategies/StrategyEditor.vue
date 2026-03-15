@@ -58,15 +58,15 @@
         <div class="type-toggle">
           <button
             class="nb-btn type-toggle__btn"
-            :class="{ 'type-toggle__btn--active type-toggle__btn--rules': currentType === 'rules' }"
-            @click="switchType('rules')"
+            :class="{ 'type-toggle__btn--active type-toggle__btn--rules': currentType === 'rules_engine' }"
+            @click="switchType('rules_engine')"
           >
             RULES
           </button>
           <button
             class="nb-btn type-toggle__btn"
-            :class="{ 'type-toggle__btn--active type-toggle__btn--code': currentType === 'code' }"
-            @click="switchType('code')"
+            :class="{ 'type-toggle__btn--active type-toggle__btn--code': currentType === 'python' }"
+            @click="switchType('python')"
           >
             CODE
           </button>
@@ -110,7 +110,7 @@
     <!-- Editor body -->
     <div class="editor-body">
       <RulesEditor
-        v-if="currentType === 'rules'"
+        v-if="currentType === 'rules_engine'"
         v-model="rulesJson"
         :validation-state="editorValidationState"
       />
@@ -176,7 +176,7 @@ const store = useStrategiesStore()
 
 const nameInput = ref('')
 const nameError = ref(null)
-const currentType = ref('rules')
+const currentType = ref('rules_engine')
 const rulesJson = ref(DEFAULT_RULES_JSON)
 const codeText = ref(DEFAULT_CODE)
 const isSaving = ref(false)
@@ -192,9 +192,9 @@ const isNew = computed(() => !props.strategy)
 onMounted(() => {
   if (props.strategy) {
     nameInput.value = props.strategy.name ?? ''
-    currentType.value = props.strategy.strategy_type ?? 'rules'
+    currentType.value = props.strategy.strategy_type ?? 'rules_engine'
     const def = props.strategy.definition_json ?? {}
-    if (currentType.value === 'rules') {
+    if (currentType.value === 'rules_engine') {
       rulesJson.value = JSON.stringify(def, null, 2)
     } else {
       codeText.value = def.code ?? DEFAULT_CODE
@@ -212,7 +212,7 @@ function switchType(type) {
   store.clearValidation()
   store.clearError()
   // Reset to defaults when switching — prevents stale DSL leaking into wrong editor
-  if (type === 'rules') {
+  if (type === 'rules_engine') {
     rulesJson.value = DEFAULT_RULES_JSON
   } else {
     codeText.value = DEFAULT_CODE
@@ -227,7 +227,7 @@ const canSave = computed(() => nameInput.value.trim().length > 0)
 
 function buildPayload() {
   let definition_json
-  if (currentType.value === 'rules') {
+  if (currentType.value === 'rules_engine') {
     try {
       definition_json = JSON.parse(rulesJson.value)
     } catch {

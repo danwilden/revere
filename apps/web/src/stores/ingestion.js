@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import { startIngestionJob } from '@/api/ingestion.js'
+import { startDukascopyDownloadJob } from '@/api/dukascopy.js'
 
 /**
  * useIngestionStore
@@ -79,6 +80,45 @@ export const useIngestionStore = defineStore('ingestion', () => {
   }
 
   /**
+   * Submit a new Dukascopy download + ingest job.
+   *
+   * Expected payload shape:
+   *   { instruments: string[], start_date: 'YYYY-MM-DD', end_date: 'YYYY-MM-DD' }
+   *
+   * Returns the job_id string on success, throws on API error.
+   */
+  async function submitDukascopyDownloadJob(payload) {
+    submitError.value = null
+    activeJob.value = null
+    activeJobId.value = null
+    isSubmitting.value = true
+
+    try {
+      const response = await startDukascopyDownloadJob(payload)
+      const jobId = response.job_id ?? response.id
+      activeJobId.value = jobId
+      activeJob.value = {
+        id: jobId,
+        status: response.status ?? 'queued',
+        progress_pct: 0,
+        stage_label: null,
+        error_message: null,
+        result_ref: null,
+      }
+      return jobId
+    } catch (err) {
+      const msg =
+        err?.response?.data?.detail ??
+        err?.message ??
+        'Submission failed — check API connection.'
+      submitError.value = msg
+      throw err
+    } finally {
+      isSubmitting.value = false
+    }
+  }
+
+  /**
    * Called by the job poller on every tick with the latest job object.
    * Transient poll errors (_pollError key present) are silently ignored to
    * preserve last-known state.
@@ -120,6 +160,7 @@ export const useIngestionStore = defineStore('ingestion', () => {
     submitError,
     // actions
     submitJob,
+    submitDukascopyDownloadJob,
     updateJobState,
     onJobComplete,
     onJobError,

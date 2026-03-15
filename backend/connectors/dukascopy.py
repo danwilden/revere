@@ -189,10 +189,14 @@ def _parse_dukascopy_ts(ts_str: str) -> datetime:
     """Parse Dukascopy timestamp to UTC datetime.
 
     Handles formats:
-    - "01.01.2024 00:01:00.000"
-    - "2024-01-01 00:01:00"  (alternative export format)
+    - "1641160980000"          Unix milliseconds (dukascopy-node CLI default)
+    - "01.01.2024 00:01:00.000"  Dukascopy JForex / tick-converter export
+    - "2024-01-01 00:01:00"      ISO-like alternative export format
     """
     ts_str = ts_str.strip()
+    # Unix milliseconds: dukascopy-node CLI emits plain integer strings.
+    if ts_str.isdigit():
+        return datetime.fromtimestamp(int(ts_str) / 1000.0, tz=timezone.utc)
     # Dukascopy JForex format: DD.MM.YYYY HH:MM:SS.mmm
     if "." in ts_str[:3]:
         # Strip sub-second part

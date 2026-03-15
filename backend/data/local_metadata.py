@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import threading
 from pathlib import Path
 from typing import Any
 
@@ -19,36 +20,51 @@ class LocalMetadataRepository(MetadataRepository):
         self._base = Path(base_path)
         self._base.mkdir(parents=True, exist_ok=True)
         self._stores: dict[str, dict] = {}
+        self._lock = threading.RLock()
 
     def _store(self, name: str) -> dict:
-        if name not in self._stores:
-            path = self._base / f"{name}.json"
-            if path.exists():
-                self._stores[name] = json.loads(path.read_text())
-            else:
-                self._stores[name] = {}
-        return self._stores[name]
+        with self._lock:
+            if name not in self._stores:
+                path = self._base / f"{name}.json"
+                if path.exists():
+                    try:
+                        self._stores[name] = json.loads(path.read_text(encoding="utf-8"))
+                    except (json.JSONDecodeError, OSError):
+                        import warnings
+                        warnings.warn(f"Metadata store '{name}' could not be loaded; starting empty.")
+                        self._stores[name] = {}
+                else:
+                    self._stores[name] = {}
+            return self._stores[name]
 
     def _save(self, name: str) -> None:
-        path = self._base / f"{name}.json"
-        path.write_text(json.dumps(self._stores[name], indent=2, default=str))
+        with self._lock:
+            path = self._base / f"{name}.json"
+            content = json.dumps(self._stores[name], indent=2, default=str)
+            tmp = path.with_suffix(".tmp")
+            tmp.write_text(content, encoding="utf-8")
+            tmp.replace(path)  # atomic on POSIX
 
     def _upsert(self, store_name: str, record: dict) -> None:
-        store = self._store(store_name)
-        store[record["id"]] = record
-        self._save(store_name)
-
-    def _get(self, store_name: str, key: str) -> dict | None:
-        return self._store(store_name).get(key)
-
-    def _update(self, store_name: str, key: str, updates: dict) -> None:
-        store = self._store(store_name)
-        if key in store:
-            store[key].update(updates)
+        with self._lock:
+            store = self._store(store_name)
+            store[record["id"]] = record
             self._save(store_name)
 
+    def _get(self, store_name: str, key: str) -> dict | None:
+        with self._lock:
+            return self._store(store_name).get(key)
+
+    def _update(self, store_name: str, key: str, updates: dict) -> None:
+        with self._lock:
+            store = self._store(store_name)
+            if key in store:
+                store[key].update(updates)
+                self._save(store_name)
+
     def _list(self, store_name: str) -> list[dict]:
-        return list(self._store(store_name).values())
+        with self._lock:
+            return list(self._store(store_name).values())
 
     # Instruments
     def upsert_instrument(self, record: dict) -> None:

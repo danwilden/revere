@@ -46,6 +46,7 @@ def run_backtest_job(
     Returns the backtest_run_id of the completed run.
     Raises on failure (job_manager.fail() is called before re-raising).
     """
+    backtest_run = None
     try:
         # ----------------------------------------------------------------
         # Stage 1: Load and instantiate strategy
@@ -69,6 +70,7 @@ def run_backtest_job(
             market_repo=market_repo,
             feature_run_id=feature_run_id,
             model_id=model_id,
+            metadata_repo=metadata_repo,
         )
 
         if not bars:
@@ -139,6 +141,12 @@ def run_backtest_job(
             error_message=str(exc),
             error_code="BACKTEST_ERROR",
         )
+        # Update the backtest run record if it was already persisted.
+        if backtest_run is not None:
+            try:
+                metadata_repo.update_backtest_run(backtest_run.id, {"status": JobStatus.FAILED.value})
+            except Exception:
+                pass
         raise
 
 
