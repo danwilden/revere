@@ -18,6 +18,7 @@ env/
 .env
 
 # Data (large files — use DVC or manual backup)
+*.csv
 data/raw/*.parquet
 data/processed/*.parquet
 data/artifacts/*.pkl
@@ -45,14 +46,5 @@ notebooks/
 .claude/
 .env*
 
-
-# Data (large files — use DVC or manual backup)
-data/raw/*.parquet
-data/processed/*.parquet
-data/artifacts/*.pkl
-data/reports/*.json
-data/reports/*.csv
-data/reports/*.jsonl
-data/reports/*.jsonl.gz
 
 lab/
