@@ -17,6 +17,11 @@ from backend.strategies.rules_engine import VALID_OPS
 # Required top-level keys for a rules strategy
 _RULES_REQUIRED = {"entry_long", "exit"}
 
+# Keys that were renamed — provide helpful error messages
+_DEPRECATED_KEYS: dict[str, str] = {
+    "take_profit_multiplier": "take_profit_atr_multiplier",
+}
+
 
 def _validate_rule_node(node: Any, named_conditions: dict, path: str) -> list[str]:
     """Recursively validate a rule node, collecting all errors."""
@@ -89,7 +94,8 @@ def validate_rules_strategy(definition_json: dict) -> list[str]:
     Required keys: entry_long (rule node), exit (rule node).
     Optional keys: entry_short (rule node or null), stop_atr_multiplier,
                    take_profit_atr_multiplier, cooldown_hours,
-                   position_size_units, named_conditions.
+                   position_size_units, max_holding_bars, exit_before_weekend,
+                   named_conditions.
 
     Returns a list of error strings. Empty list means valid.
     """
@@ -140,6 +146,66 @@ def validate_rules_strategy(definition_json: dict) -> list[str]:
             if not isinstance(val, (int, float)):
                 errors.append(f"'{numeric_key}' must be a number, got {type(val).__name__}")
 
+    # Native exit primitives
+    max_bars = definition_json.get("max_holding_bars")
+    if max_bars is not None:
+        if not isinstance(max_bars, int) or max_bars < 1:
+            errors.append("max_holding_bars must be a positive integer (>= 1)")
+
+    exit_weekend = definition_json.get("exit_before_weekend")
+    if exit_weekend is not None:
+        if not isinstance(exit_weekend, bool):
+            errors.append("exit_before_weekend must be a boolean")
+
+    # Deprecated key check — catch renamed fields before they silently do nothing
+    for old_key, new_key in _DEPRECATED_KEYS.items():
+        if old_key in definition_json:
+            errors.append(
+                f"Unknown exit field '{old_key}'. Did you mean '{new_key}'?"
+            )
+
+    return errors
+
+
+def validate_field_availability(
+    definition_json: dict,
+    feature_run_id: str | None = None,
+) -> list[str]:
+    """Return error strings for feature-dependent fields used without feature_run_id.
+
+    Parameters
+    ----------
+    definition_json:
+        A rules-engine strategy definition dict.
+    feature_run_id:
+        When provided, feature fields are considered available and no errors are returned.
+        When None, any known feature-required field referenced in the rules DSL is an error.
+
+    Returns
+    -------
+    list[str]:
+        Error messages for feature fields used without a feature run.
+        Empty list means no field availability violations.
+    """
+    from backend.strategies.rules_engine import validate_signal_fields
+    from backend.strategies.field_registry import ALWAYS_AVAILABLE_FIELDS, FEATURE_REQUIRED_FIELDS
+
+    available = set(ALWAYS_AVAILABLE_FIELDS)
+    if feature_run_id:
+        # Feature run is present — all feature fields are available
+        available |= FEATURE_REQUIRED_FIELDS
+
+    unresolved_set = set(validate_signal_fields(definition_json, available))
+    # Only report errors for fields that are known feature-required fields
+    feature_fields_used = unresolved_set & FEATURE_REQUIRED_FIELDS
+
+    native_list = sorted(ALWAYS_AVAILABLE_FIELDS)
+    errors = []
+    for field in sorted(feature_fields_used):
+        errors.append(
+            f"Field '{field}' requires a feature_run_id. "
+            f"Available native fields: {native_list}"
+        )
     return errors
 
 

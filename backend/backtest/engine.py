@@ -64,14 +64,13 @@ def run_backtest(
     """
     params = params or {}
 
-    # Fresh state — reset() clears open_position, last_exit_time, bar_count.
+    # Fresh state — reset() clears open_position, last_exit_time, bar_count, entry_bar_idx.
     # cooldown_hours is a configuration parameter (not reset).
     state = StrategyState(cooldown_hours=params.get("cooldown_hours", 0.0))
     state.reset()
 
     trades: list[Trade] = []
     open_trade_record: Trade | None = None  # pending Trade; exit fields filled at close
-    entry_bar_idx: int = 0                  # bar index at entry, used for holding_period
 
     for bar_idx, bar in enumerate(bars):
         ts: datetime = bar["timestamp_utc"]
@@ -94,6 +93,8 @@ def run_backtest(
                 target=pos.get("target"),
             )
             if fill.hit:
+                # Capture entry_bar_idx BEFORE close_trade() resets it to -1.
+                holding_period = bar_idx - state.entry_bar_idx
                 state.close_trade(exit_time=ts)
                 trade = _finalize_trade(
                     record=open_trade_record,
@@ -101,13 +102,26 @@ def run_backtest(
                     exit_price=fill.exit_price,
                     exit_reason=fill.exit_reason,
                     regime_at_exit=state.current_regime,
-                    holding_period=bar_idx - entry_bar_idx,
+                    holding_period=holding_period,
                     cost_model=cost_model,
                 )
                 trades.append(trade)
                 open_trade_record = None
                 # Do not call on_bar on the same bar a stop/target was hit.
                 continue
+
+        # -------------------------------------------------------------------
+        # Inject trade lifecycle context into bar dict for strategy/DSL consumption.
+        # bars_in_trade and minutes_in_trade are available as DSL field references.
+        # -------------------------------------------------------------------
+        if state.open_position is not None:
+            bar["bars_in_trade"] = bar_idx - state.entry_bar_idx
+            bar["minutes_in_trade"] = (ts - state.open_position["entry_time"]).total_seconds() / 60.0
+            bar["days_in_trade"] = bar["minutes_in_trade"] / 1440.0
+        else:
+            bar["bars_in_trade"] = 0
+            bar["minutes_in_trade"] = 0.0
+            bar["days_in_trade"] = 0.0
 
         # -------------------------------------------------------------------
         # 2. Strategy decision
@@ -128,6 +142,8 @@ def run_backtest(
         if act == "exit" and state.open_position is not None:
             pos = state.open_position
             exit_price = compute_exit_fill(bar, pos["side"], cost_model)
+            # Capture entry_bar_idx BEFORE close_trade() resets it to -1.
+            holding_period = bar_idx - state.entry_bar_idx
             state.close_trade(exit_time=ts)
             trade = _finalize_trade(
                 record=open_trade_record,
@@ -135,7 +151,7 @@ def run_backtest(
                 exit_price=exit_price,
                 exit_reason=action.get("reason", "strategy_signal"),
                 regime_at_exit=state.current_regime,
-                holding_period=bar_idx - entry_bar_idx,
+                holding_period=holding_period,
                 cost_model=cost_model,
             )
             trades.append(trade)
@@ -156,8 +172,8 @@ def run_backtest(
                 stop=stop,
                 target=target,
                 reason=action.get("reason", ""),
+                bar_idx=bar_idx,
             )
-            entry_bar_idx = bar_idx
             open_trade_record = Trade(
                 backtest_run_id=backtest_run.id,
                 instrument_id=backtest_run.instrument_id,
@@ -179,6 +195,8 @@ def run_backtest(
         ts = last_bar["timestamp_utc"]
         pos = state.open_position
         exit_price = compute_exit_fill(last_bar, pos["side"], cost_model)
+        # Capture entry_bar_idx BEFORE close_trade() resets it to -1.
+        holding_period = len(bars) - 1 - state.entry_bar_idx
         state.close_trade(exit_time=ts)
         trade = _finalize_trade(
             record=open_trade_record,
@@ -186,7 +204,7 @@ def run_backtest(
             exit_price=exit_price,
             exit_reason="end_of_backtest",
             regime_at_exit=state.current_regime,
-            holding_period=len(bars) - 1 - entry_bar_idx,
+            holding_period=holding_period,
             cost_model=cost_model,
         )
         trades.append(trade)
@@ -217,6 +235,8 @@ def _extract_features(bar: dict) -> dict:
         "open", "high", "low", "close", "volume",
         "source", "quality_flag", "timeframe", "derivation_version",
         "regime_label", "state_id",
+        # Lifecycle markers injected by the engine — not computed features.
+        "bars_in_trade", "minutes_in_trade", "days_in_trade",
     })
     return {k: v for k, v in bar.items() if k not in _bar_keys}
 

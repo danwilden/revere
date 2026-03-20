@@ -88,11 +88,11 @@ def run_hmm_training_job(
             "timeframe": timeframe.value,
             "training_start": train_start.isoformat(),
             "training_end": train_end.isoformat(),
-            "parameters_json": json.dumps({
+            "parameters_json": {
                 "num_states": num_states,
                 "feature_set_name": feature_set_name,
                 "feature_run_id": feature_run_id,
-            }),
+            },
             "artifact_ref": None,
             "label_map_json": {},
             "created_at": datetime.utcnow().isoformat(),

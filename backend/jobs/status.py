@@ -5,11 +5,14 @@ logic so all callers use a consistent API.
 """
 from __future__ import annotations
 
+import logging
 from datetime import datetime
 from typing import Any
 
 from backend.schemas.enums import JobStatus, JobType
 from backend.schemas.models import JobRun
+
+logger = logging.getLogger(__name__)
 
 
 class JobManager:
@@ -62,6 +65,7 @@ class JobManager:
         if logs_ref:
             updates["logs_ref"] = logs_ref
         self._repo.update_job_run(job_id, updates)
+        logger.info("Job succeeded: job_id=%s", job_id)
 
     def fail(
         self,
@@ -79,6 +83,8 @@ class JobManager:
         if logs_ref:
             updates["logs_ref"] = logs_ref
         self._repo.update_job_run(job_id, updates)
+        snippet = (error_message or "")[:200]
+        logger.error("Job failed: job_id=%s error_code=%s error_message=%s", job_id, error_code, snippet)
 
     def cancel(self, job_id: str) -> None:
         self._repo.update_job_run(job_id, {

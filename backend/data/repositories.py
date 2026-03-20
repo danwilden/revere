@@ -177,6 +177,16 @@ class MetadataRepository(ABC):
     @abstractmethod
     def list_job_runs(self, job_type: str | None = None, limit: int = 50) -> list[dict]: ...
 
+    # --- Pending backtests (run when ingestion job completes) ---
+    @abstractmethod
+    def save_pending_backtest(self, ingestion_job_id: str, payload: dict) -> None: ...
+
+    @abstractmethod
+    def get_pending_backtest(self, ingestion_job_id: str) -> dict | None: ...
+
+    @abstractmethod
+    def delete_pending_backtest(self, ingestion_job_id: str) -> None: ...
+
     # --- Agent sessions ---
     @abstractmethod
     def save_agent_session(self, record: dict) -> None: ...

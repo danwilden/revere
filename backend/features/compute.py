@@ -16,6 +16,14 @@ Feature set 'default_v1':
   - adx_14          — ADX (14)
   - breakout_20     — close vs rolling 20-bar high/low range (0=low, 1=high)
   - session         — 0=Asia, 1=London, 2=NY, 3=London/NY overlap (int)
+  - day_of_week     — 0=Monday … 6=Sunday (timestamp-derived, zero leakage)
+  - hour_of_day     — UTC hour 0–23 (timestamp-derived, zero leakage)
+  - is_friday       — 1 if day_of_week==4, else 0
+  - minute_of_hour  — 0–59 UTC minute
+  - week_of_year    — ISO week number 1–53
+  - month_of_year   — 1–12
+  - *_sin / *_cos   — cyclical encodings for minute_of_hour, hour_of_day,
+                       day_of_week, week_of_year, month_of_year
 """
 from __future__ import annotations
 
@@ -32,7 +40,7 @@ from backend.data.repositories import MarketDataRepository, MetadataRepository
 from backend.schemas.enums import Timeframe
 
 # Bump this when the computation logic changes to invalidate old feature runs.
-FEATURE_CODE_VERSION = "v1.0"
+FEATURE_CODE_VERSION = "v1.2"
 
 
 # ---------------------------------------------------------------------------
@@ -164,6 +172,28 @@ def compute_features(
     feats["adx_14"] = _adx(high, low, close, 14)
     feats["breakout_20"] = _breakout(close, high, low, 20)
     feats["session"] = _session(idx)
+
+    # --- Calendar / time-of-day features (zero leakage: derived from timestamp only) ---
+    ts_series = idx.to_series() if isinstance(idx, pd.DatetimeIndex) else pd.to_datetime(df["timestamp_utc"])
+    feats["day_of_week"] = ts_series.dt.weekday.values   # 0=Mon, 6=Sun
+    feats["hour_of_day"] = ts_series.dt.hour.values       # 0-23 UTC
+    feats["is_friday"] = (ts_series.dt.weekday == 4).astype(int).values  # 1 on Friday, 0 otherwise
+    feats["minute_of_hour"] = ts_series.dt.minute.values   # 0-59
+    feats["week_of_year"] = idx.isocalendar().week.astype(int).values  # ISO week 1-53
+    feats["month_of_year"] = ts_series.dt.month.values     # 1-12
+
+    # --- Cyclical (sin/cos) encodings for periodic calendar fields ---
+    tau = 2 * np.pi
+    feats["minute_of_hour_sin"] = np.sin(tau * feats["minute_of_hour"] / 60)
+    feats["minute_of_hour_cos"] = np.cos(tau * feats["minute_of_hour"] / 60)
+    feats["hour_of_day_sin"] = np.sin(tau * feats["hour_of_day"] / 24)
+    feats["hour_of_day_cos"] = np.cos(tau * feats["hour_of_day"] / 24)
+    feats["day_of_week_sin"] = np.sin(tau * feats["day_of_week"] / 7)
+    feats["day_of_week_cos"] = np.cos(tau * feats["day_of_week"] / 7)
+    feats["week_of_year_sin"] = np.sin(tau * (feats["week_of_year"] - 1) / 52)
+    feats["week_of_year_cos"] = np.cos(tau * (feats["week_of_year"] - 1) / 52)
+    feats["month_of_year_sin"] = np.sin(tau * (feats["month_of_year"] - 1) / 12)
+    feats["month_of_year_cos"] = np.cos(tau * (feats["month_of_year"] - 1) / 12)
 
     return feats
 

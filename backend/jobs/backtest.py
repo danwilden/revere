@@ -11,6 +11,7 @@ Orchestrates the full backtest pipeline:
 from __future__ import annotations
 
 import json
+import threading
 from datetime import datetime
 from typing import Any
 
@@ -19,8 +20,9 @@ from backend.backtest.data_loader import load_backtest_frame
 from backend.backtest.engine import run_backtest
 from backend.data.repositories import ArtifactRepository, MarketDataRepository, MetadataRepository
 from backend.jobs.status import JobManager
-from backend.schemas.enums import JobStatus, Timeframe
+from backend.schemas.enums import JobStatus, JobType, Timeframe
 from backend.schemas.models import BacktestRun
+from backend.schemas.requests import BacktestJobRequest
 
 
 def run_backtest_job(
@@ -40,6 +42,7 @@ def run_backtest_job(
     feature_run_id: str | None = None,
     model_id: str | None = None,
     strategy_params: dict[str, Any] | None = None,
+    session_id: str | None = None,
 ) -> str:
     """Execute a backtest job end-to-end and persist all results.
 
@@ -133,6 +136,7 @@ def run_backtest_job(
         })
 
         job_manager.succeed(job_id, result_ref=backtest_run.id)
+        _notify_chat_session(session_id, backtest_run.id, metrics)
         return backtest_run.id
 
     except Exception as exc:
@@ -141,6 +145,7 @@ def run_backtest_job(
             error_message=str(exc),
             error_code="BACKTEST_ERROR",
         )
+        _notify_chat_session(session_id, None, [], error=str(exc))
         # Update the backtest run record if it was already persisted.
         if backtest_run is not None:
             try:
@@ -198,6 +203,68 @@ def _build_strategy(strategy_def: dict):
     )
 
 
+def _extract_notify_metrics(metrics: list) -> dict:
+    """Extract net_return_pct, sharpe_ratio, total_trades from the overall segment."""
+    result = {"net_return_pct": None, "sharpe_ratio": None, "total_trades": None}
+    for m in metrics:
+        if getattr(m, "segment_type", None) == "overall":
+            name = getattr(m, "metric_name", None)
+            val = getattr(m, "metric_value", None)
+            if name == "net_return_pct":
+                result["net_return_pct"] = val
+            elif name == "sharpe_ratio":
+                result["sharpe_ratio"] = val
+            elif name == "total_trades":
+                result["total_trades"] = int(val) if val is not None else None
+    return result
+
+
+def _notify_chat_session(
+    session_id: str | None,
+    run_id: str | None,
+    metrics: list,
+    error: str | None = None,
+) -> None:
+    """Append a completion or failure message to the chat session.
+
+    Guard: exits immediately if session_id is None (non-chat backtests).
+    All errors are swallowed — this must never mask the real backtest error.
+    """
+    if not session_id:
+        return
+    try:
+        from backend.config import settings
+        from backend.data.chat_repository import ChatRepository
+
+        repo = ChatRepository(settings.metadata_path_resolved)
+        if error:
+            content = f"Backtest failed: {error}"
+            actions_json: list[dict] = []
+        else:
+            m = _extract_notify_metrics(metrics)
+            ret = f"{m['net_return_pct']:.2f}" if m["net_return_pct"] is not None else "N/A"
+            sharpe = f"{m['sharpe_ratio']:.2f}" if m["sharpe_ratio"] is not None else "N/A"
+            trades = str(m["total_trades"]) if m["total_trades"] is not None else "N/A"
+            content = (
+                f"Backtest complete. "
+                f"Net return: {ret}%, Sharpe: {sharpe}, Trades: {trades}."
+            )
+            actions_json = [
+                {
+                    "action_type": "backtest_complete",
+                    "payload": {
+                        "run_id": run_id,
+                        "net_return_pct": m["net_return_pct"],
+                        "sharpe_ratio": m["sharpe_ratio"],
+                        "total_trades": m["total_trades"],
+                    },
+                }
+            ]
+        repo.add_message(session_id, role="assistant", content=content, actions_json=actions_json)
+    except Exception:
+        pass  # notification is best-effort; never mask the real backtest error
+
+
 def _build_equity_payload(
     timestamps: list[datetime],
     equity: list[float],
@@ -212,3 +279,73 @@ def _build_equity_payload(
         }
         for t, e, d in zip(timestamps, equity, drawdown)
     ]
+
+
+# ---------------------------------------------------------------------------
+# Submit backtest job (create + start thread) — used by API route and pending-backtest
+# ---------------------------------------------------------------------------
+
+def _run_backtest_job_bg(
+    job_id: str,
+    body: BacktestJobRequest,
+    metadata_repo: MetadataRepository,
+    market_repo: MarketDataRepository,
+    artifact_repo: ArtifactRepository,
+    job_manager: JobManager,
+) -> None:
+    """Target for the backtest background thread."""
+    try:
+        run_backtest_job(
+            job_id=job_id,
+            strategy_id=body.strategy_id,
+            inline_strategy=body.inline_strategy,
+            instrument=body.instrument,
+            timeframe=body.timeframe,
+            test_start=body.test_start,
+            test_end=body.test_end,
+            cost_model_params={
+                "spread_pips": body.spread_pips,
+                "slippage_pips": body.slippage_pips,
+                "commission_per_unit": body.commission_per_unit,
+                "pip_size": body.pip_size,
+            },
+            metadata_repo=metadata_repo,
+            market_repo=market_repo,
+            artifact_repo=artifact_repo,
+            job_manager=job_manager,
+            feature_run_id=body.feature_run_id,
+            model_id=body.model_id,
+            session_id=body.session_id,
+        )
+    except Exception:
+        pass  # run_backtest_job already called job_manager.fail()
+
+
+def submit_backtest_job(
+    body: BacktestJobRequest,
+    job_manager: JobManager,
+    metadata_repo: MetadataRepository,
+    market_repo: MarketDataRepository,
+    artifact_repo: ArtifactRepository,
+) -> str:
+    """Create a backtest job and start the runner thread. Returns job_id."""
+    job = job_manager.create(
+        job_type=JobType.BACKTEST,
+        params={
+            "strategy_id": body.strategy_id,
+            "instrument": body.instrument,
+            "timeframe": body.timeframe.value,
+            "test_start": body.test_start.isoformat(),
+            "test_end": body.test_end.isoformat(),
+            "feature_run_id": body.feature_run_id,
+            "model_id": body.model_id,
+        },
+    )
+    thread = threading.Thread(
+        target=_run_backtest_job_bg,
+        args=(job.id, body, metadata_repo, market_repo, artifact_repo, job_manager),
+        daemon=True,
+        name=f"backtest-{job.id[:8]}",
+    )
+    thread.start()
+    return job.id

@@ -141,5 +141,4756 @@
     "created_at": "2026-03-15T13:46:44.220805",
     "active_flag": true,
     "tags": []
+  },
+  "6b26d48e-404c-41e7-b554-a49d04e800dd": {
+    "id": "6b26d48e-404c-41e7-b554-a49d04e800dd",
+    "name": "EUR_USD_H4_Momentum_Breakout_Seed",
+    "description": "Momentum breakout strategy for EUR/USD H4 targeting positive 5-period returns with high relative volume and controlled RSI levels",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "adx_14",
+            "op": "gt",
+            "value": 25
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 80
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-15T22:38:55.731520",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "breakout",
+      "EUR_USD",
+      "H4",
+      "seed"
+    ]
+  },
+  "a5a17c07-f23a-4023-9003-6706084fbf71": {
+    "id": "a5a17c07-f23a-4023-9003-6706084fbf71",
+    "name": "EUR_USD_H4_Momentum_Seed",
+    "description": "Momentum-based long-only strategy for EUR_USD H4 using multiple timeframe returns, RSI, volatility and EMA slope",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_1",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 80
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-15T22:57:33.881384",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "long_only",
+      "EUR_USD",
+      "H4"
+    ]
+  },
+  "5b0ef455-6c97-4832-8664-2962632096b2": {
+    "id": "5b0ef455-6c97-4832-8664-2962632096b2",
+    "name": "EUR_USD_H4_Momentum_Breakout_Seed",
+    "description": "Momentum breakout strategy targeting positive 5-period returns with high relative volume and controlled RSI levels",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 80
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-15T23:08:56.283703",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "breakout",
+      "EUR_USD",
+      "H4"
+    ]
+  },
+  "370129fa-160a-4f4b-912b-716dad72d28a": {
+    "id": "370129fa-160a-4f4b-912b-716dad72d28a",
+    "name": "EUR_USD_H4_Momentum_Breakout",
+    "description": "Momentum breakout strategy for EUR_USD H4 targeting upward moves with favorable RSI and volatility conditions",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_1",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 80
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-15T23:17:26.138370",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "breakout",
+      "EUR_USD",
+      "H4"
+    ]
+  },
+  "a435f46a-0bd0-4830-9357-53990cd861e4": {
+    "id": "a435f46a-0bd0-4830-9357-53990cd861e4",
+    "name": "EUR_USD_Momentum_Breakout_H1",
+    "description": "Momentum breakout strategy using 5-period returns, EMA slope, ADX trend strength, and relative volatility for EUR_USD H1",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "adx_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "adx_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "adx_14",
+            "op": "lt",
+            "value": 20
+          },
+          {
+            "field": "rvol_20",
+            "op": "lt",
+            "value": 0.8
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "version": 1,
+    "created_at": "2026-03-19T14:58:58.774459",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "breakout",
+      "EUR_USD",
+      "H1",
+      "seed"
+    ]
+  },
+  "7e40276c-4430-4ed6-8711-e8f358d06b06": {
+    "id": "7e40276c-4430-4ed6-8711-e8f358d06b06",
+    "name": "EUR_USD_OHLC_Breakout_H1",
+    "description": "Simple breakout strategy using OHLC price action for EUR_USD H1 with 24-hour exit",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 24
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T14:59:33.643265",
+    "active_flag": true,
+    "tags": [
+      "breakout",
+      "OHLC",
+      "EUR_USD",
+      "H1",
+      "seed"
+    ]
+  },
+  "33a17560-a77b-47d2-aa80-850887620931": {
+    "id": "33a17560-a77b-47d2-aa80-850887620931",
+    "name": "EUR_USD_Momentum_Breakout_H1",
+    "description": "Momentum-based strategy capturing short-term breakouts with volatility confirmation",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_1",
+            "op": "gt",
+            "value": 0.0005
+          },
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 80
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "breakout_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 85
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "version": 1,
+    "created_at": "2026-03-19T15:00:23.986563",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "breakout",
+      "volatility",
+      "EUR_USD",
+      "H1"
+    ]
+  },
+  "5f5a34c6-cfe5-4f37-9d53-2c5a3d51591b": {
+    "id": "5f5a34c6-cfe5-4f37-9d53-2c5a3d51591b",
+    "name": "EUR_USD_OHLC_Momentum_H1",
+    "description": "Simple OHLC-based momentum strategy for EUR_USD H1",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "close",
+        "field2": "open",
+        "op": "lt"
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "version": 1,
+    "created_at": "2026-03-19T15:00:44.828824",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "OHLC",
+      "EUR_USD",
+      "H1"
+    ]
+  },
+  "23d617e0-a62b-41e0-a136-a9441787df1f": {
+    "id": "23d617e0-a62b-41e0-a136-a9441787df1f",
+    "name": "EUR_USD_H4_Momentum_Seed",
+    "description": "Momentum-based strategy for EUR_USD H4 using 5-period returns, EMA slope, RSI, and volatility filters",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rvol_20",
+            "op": "lt",
+            "value": 2
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 80
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:54:24.936943",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "EUR_USD",
+      "H4",
+      "seed"
+    ]
+  },
+  "fbd8659c-70d1-48ab-922a-d66bd02e9ace": {
+    "id": "fbd8659c-70d1-48ab-922a-d66bd02e9ace",
+    "name": "EUR_USD_H4_Simple_Momentum",
+    "description": "Simple momentum strategy using 1-bar log returns for EUR_USD H4",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "field": "log_ret_1",
+        "op": "gt",
+        "value": 0.0005
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "log_ret_1",
+        "op": "lt",
+        "value": -0.0005
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:54:49.285854",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "EUR_USD",
+      "H4",
+      "simple"
+    ]
+  },
+  "477156b7-45b2-428b-87e6-4c74d2fc54ff": {
+    "id": "477156b7-45b2-428b-87e6-4c74d2fc54ff",
+    "name": "EUR_USD_H4_Session_Momentum",
+    "description": "Session-based momentum strategy using OHLC data for EUR_USD H4",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 12
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:55:06.790807",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "EUR_USD",
+      "H4",
+      "session"
+    ]
+  },
+  "442276b9-1aa2-42e2-a0c8-9de5caf3dc7e": {
+    "id": "442276b9-1aa2-42e2-a0c8-9de5caf3dc7e",
+    "name": "EUR_USD_H4_Basic_Momentum",
+    "description": "Basic momentum strategy using close > open for EUR_USD H4",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "field": "close",
+        "field2": "open",
+        "op": "gt"
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 6
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:55:17.983681",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "EUR_USD",
+      "H4",
+      "basic"
+    ]
+  },
+  "147c47f9-9db2-4931-b25f-0bcde49885a9": {
+    "id": "147c47f9-9db2-4931-b25f-0bcde49885a9",
+    "name": "EUR_USD_Momentum_RSI_H4",
+    "description": "Momentum strategy with RSI filtering for EUR_USD H4 timeframe",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.1
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.1
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:56:05.301179",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "rsi",
+      "volatility",
+      "eur_usd"
+    ]
+  },
+  "129bdc11-65b4-44ee-aa32-bdc1d1aa446a": {
+    "id": "129bdc11-65b4-44ee-aa32-bdc1d1aa446a",
+    "name": "EUR_USD_OHLC_Breakout_H4",
+    "description": "Simple OHLC breakout strategy for EUR_USD H4 timeframe",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:56:28.024003",
+    "active_flag": true,
+    "tags": [
+      "breakout",
+      "ohlc",
+      "simple",
+      "eur_usd"
+    ]
+  },
+  "2c132518-67b5-4d39-9e10-76ff0d75e5bd": {
+    "id": "2c132518-67b5-4d39-9e10-76ff0d75e5bd",
+    "name": "EUR_USD_Momentum_H4_Seed",
+    "description": "Momentum-based strategy for EUR_USD H4 capturing medium-term trends with volatility confirmation",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:57:13.897692",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "volatility",
+      "trend",
+      "EUR_USD",
+      "H4"
+    ]
+  },
+  "0a97ca5d-6287-4d26-8f2f-f6d51f50bd3a": {
+    "id": "0a97ca5d-6287-4d26-8f2f-f6d51f50bd3a",
+    "name": "EUR_USD_Trend_RSI_H4_Seed",
+    "description": "Trend-following strategy using RSI, EMA slope, and breakout signals for EUR_USD H4",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0.0001
+          },
+          {
+            "field": "breakout_20",
+            "op": "gt",
+            "value": 0.7
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": -0.0001
+          },
+          {
+            "field": "breakout_20",
+            "op": "lt",
+            "value": 0.3
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:57:40.513127",
+    "active_flag": true,
+    "tags": [
+      "trend",
+      "RSI",
+      "breakout",
+      "EUR_USD",
+      "H4"
+    ]
+  },
+  "ddd860b1-9e49-44c0-a306-d85eb7e5955d": {
+    "id": "ddd860b1-9e49-44c0-a306-d85eb7e5955d",
+    "name": "EUR_USD_OHLC_Simple_H4_Seed",
+    "description": "Simple OHLC-based strategy for EUR_USD H4 using basic price action signals",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:57:54.335282",
+    "active_flag": true,
+    "tags": [
+      "OHLC",
+      "price_action",
+      "EUR_USD",
+      "H4"
+    ]
+  },
+  "eb5857ca-ada9-4c99-903d-f56fabb95aa7": {
+    "id": "eb5857ca-ada9-4c99-903d-f56fabb95aa7",
+    "name": "EUR_USD_Momentum_H4_Seed",
+    "description": "Momentum-based strategy for EUR_USD H4 capturing medium-term moves with volatility confirmation",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:58:44.306973",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "volatility",
+      "ema",
+      "rsi",
+      "seed"
+    ]
+  },
+  "065bf172-c8cb-458f-a305-f827fc21d6e7": {
+    "id": "065bf172-c8cb-458f-a305-f827fc21d6e7",
+    "name": "EUR_USD_Simple_Breakout_H4",
+    "description": "Simple breakout strategy using OHLC data for EUR_USD H4",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 10
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:58:56.921632",
+    "active_flag": true,
+    "tags": [
+      "breakout",
+      "ohlc",
+      "simple",
+      "seed"
+    ]
+  },
+  "0974ac5f-1c03-47aa-bee1-484a3568a310": {
+    "id": "0974ac5f-1c03-47aa-bee1-484a3568a310",
+    "name": "EUR_USD_Momentum_H4_Seed",
+    "description": "Momentum-based strategy for EUR_USD H4 using 5-period returns, elevated volatility, RSI confirmation, and EMA slope direction",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 55
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 75
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 45
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T19:59:44.805480",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "volatility",
+      "rsi",
+      "ema_slope"
+    ]
+  },
+  "ad2c4477-e071-4a51-bf2e-2377b505d779": {
+    "id": "ad2c4477-e071-4a51-bf2e-2377b505d779",
+    "name": "EUR_USD_OHLC_H4_Seed",
+    "description": "Simple OHLC-based strategy for EUR_USD H4 using candle patterns and price action",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T20:00:05.098488",
+    "active_flag": true,
+    "tags": [
+      "ohlc",
+      "price_action",
+      "candle_patterns"
+    ]
+  },
+  "a6fda919-e175-4d85-9bca-b2a113efec2e": {
+    "id": "a6fda919-e175-4d85-9bca-b2a113efec2e",
+    "name": "EUR_USD_Momentum_H4_Seed",
+    "description": "Momentum-based strategy for EUR_USD H4 capturing medium-term trends with volatility confirmation",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "version": 1,
+    "created_at": "2026-03-19T20:00:54.967861",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "volatility",
+      "trend",
+      "EUR_USD",
+      "H4"
+    ]
+  },
+  "7938d8e1-f663-4df5-bb06-44b23cfcabda": {
+    "id": "7938d8e1-f663-4df5-bb06-44b23cfcabda",
+    "name": "EUR_USD_Simple_OHLC_H4",
+    "description": "Simple price-based momentum strategy using OHLC patterns",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "volume",
+            "op": "lt",
+            "value": 100
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T20:01:17.461646",
+    "active_flag": true,
+    "tags": [
+      "simple",
+      "OHLC",
+      "momentum",
+      "EUR_USD",
+      "H4"
+    ]
+  },
+  "fe7707b4-ba72-41bb-9662-5a8278cab177": {
+    "id": "fe7707b4-ba72-41bb-9662-5a8278cab177",
+    "name": "EUR_USD_Momentum_H4_Seed",
+    "description": "Momentum-based strategy for EUR_USD H4 capturing medium-term moves with volatility confirmation",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "version": 1,
+    "created_at": "2026-03-19T20:02:07.181379",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "volatility",
+      "EUR_USD",
+      "H4"
+    ]
+  },
+  "1764fbcd-e5e5-48d8-943e-458726ebc202": {
+    "id": "1764fbcd-e5e5-48d8-943e-458726ebc202",
+    "name": "EUR_USD_OHLC_H4_Seed",
+    "description": "Simple OHLC-based strategy for EUR_USD H4 using basic price action signals",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T20:02:25.868042",
+    "active_flag": true,
+    "tags": [
+      "price_action",
+      "OHLC",
+      "EUR_USD",
+      "H4"
+    ]
+  },
+  "65e51cc1-cefc-4ddf-9420-75988dab9989": {
+    "id": "65e51cc1-cefc-4ddf-9420-75988dab9989",
+    "name": "EUR_USD_H4_Momentum_Seed",
+    "description": "Momentum-based strategy for EUR_USD H4 using 5-period returns, EMA slope, RSI, and volatility filters",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0.0001
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 75
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 45
+          },
+          {
+            "field": "rvol_20",
+            "op": "lt",
+            "value": 2
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 80
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "version": 1,
+    "created_at": "2026-03-19T20:03:17.115287",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "EUR_USD",
+      "H4",
+      "seed"
+    ]
+  },
+  "fa184bba-b3d8-467f-bfce-596d82f6e3f7": {
+    "id": "fa184bba-b3d8-467f-bfce-596d82f6e3f7",
+    "name": "EUR_USD_H4_Simple_Momentum",
+    "description": "Simple momentum strategy using RSI and EMA slope for EUR_USD H4",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 80
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T20:03:44.559228",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "EUR_USD",
+      "H4",
+      "simple"
+    ]
+  },
+  "34f426e9-c5ba-4985-bf8f-d96a47005134": {
+    "id": "34f426e9-c5ba-4985-bf8f-d96a47005134",
+    "name": "EUR_USD_H4_Price_Breakout",
+    "description": "Basic price breakout strategy using OHLCV data for EUR_USD H4",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "low",
+        "field2": "close",
+        "op": "lt"
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T20:03:59.173036",
+    "active_flag": true,
+    "tags": [
+      "breakout",
+      "EUR_USD",
+      "H4",
+      "basic"
+    ]
+  },
+  "4249f509-1c9b-44d7-9aef-57304c2ca197": {
+    "id": "4249f509-1c9b-44d7-9aef-57304c2ca197",
+    "name": "EUR_USD_H4_Green_Candle",
+    "description": "Simple bullish candle strategy for EUR_USD H4 - enters on green candles, exits on red candles",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "close",
+        "field2": "open",
+        "op": "lt"
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T20:04:23.115276",
+    "active_flag": true,
+    "tags": [
+      "candle",
+      "EUR_USD",
+      "H4",
+      "simple"
+    ]
+  },
+  "14c36e0f-f608-431c-ab0a-f8939bfc30d3": {
+    "id": "14c36e0f-f608-431c-ab0a-f8939bfc30d3",
+    "name": "EUR_USD_Momentum_H4_Seed",
+    "description": "Momentum-based strategy for EUR_USD H4 using multi-timeframe returns, RSI, volatility and EMA slope",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_1",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_1",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 75
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 25
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T20:05:47.188810",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "multi-timeframe",
+      "rsi",
+      "volatility"
+    ]
+  },
+  "c2ab92f4-be03-4ce5-81fb-df5712b07e6f": {
+    "id": "c2ab92f4-be03-4ce5-81fb-df5712b07e6f",
+    "name": "EUR_USD_H1_Session_Breakout",
+    "description": "Session-filtered breakout strategy for EUR_USD H1 using native bar fields only",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 2
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T23:26:05.673101",
+    "active_flag": true,
+    "tags": [
+      "breakout",
+      "session_filter",
+      "native_fields"
+    ]
+  },
+  "61a13eac-c3b9-447a-9162-c83bf8df27d3": {
+    "id": "61a13eac-c3b9-447a-9162-c83bf8df27d3",
+    "name": "EUR_USD Session Breakout H1",
+    "description": "Session-filtered breakout strategy using native bar fields only. Enters on price breakouts during active trading hours (8-18 UTC) on weekdays, exits before weekend or late hours.",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 22
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T23:26:58.613408",
+    "active_flag": true,
+    "tags": [
+      "breakout",
+      "session_filter",
+      "native_fields"
+    ]
+  },
+  "786d9385-5ceb-4f34-b6cc-1af2a5964760": {
+    "id": "786d9385-5ceb-4f34-b6cc-1af2a5964760",
+    "name": "EUR_USD_H1_Breakout_Session",
+    "description": "Simple breakout strategy during active trading hours (8-16 UTC) on weekdays, with end-of-day exit at 21 UTC",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 5
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 5
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 21
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T23:27:47.945922",
+    "active_flag": true,
+    "tags": [
+      "breakout",
+      "session_based",
+      "intraday"
+    ]
+  },
+  "4e172408-6b4a-4fa6-86bf-46aad4b55f47": {
+    "id": "4e172408-6b4a-4fa6-86bf-46aad4b55f47",
+    "name": "EUR_USD_H1_Session_Breakout",
+    "description": "Session-filtered breakout strategy for EUR_USD H1 using native bar fields only",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 2
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T23:28:33.736587",
+    "active_flag": true,
+    "tags": [
+      "breakout",
+      "session_filter",
+      "native_fields"
+    ]
+  },
+  "d3fd0b1b-baef-4524-bc01-b15cdfe0b32e": {
+    "id": "d3fd0b1b-baef-4524-bc01-b15cdfe0b32e",
+    "name": "EUR_USD_H1_Breakout_Session",
+    "description": "Intraday breakout strategy for EUR_USD targeting momentum during active European/US trading hours",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "lag2": 1,
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 21
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T23:29:12.955278",
+    "active_flag": true,
+    "tags": [
+      "breakout",
+      "session_filter",
+      "intraday",
+      "EUR_USD"
+    ]
+  },
+  "a9b7be54-0983-4fed-b8f1-21af46903f78": {
+    "id": "a9b7be54-0983-4fed-b8f1-21af46903f78",
+    "name": "EUR_USD_H1_Breakout_Session",
+    "description": "Simple breakout strategy during active trading hours using native bar fields only",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 5
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 5
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 21
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T23:30:01.763653",
+    "active_flag": true,
+    "tags": [
+      "breakout",
+      "session_based",
+      "native_fields"
+    ]
+  },
+  "3855eaf3-0699-4045-b907-bb9cee75ca04": {
+    "id": "3855eaf3-0699-4045-b907-bb9cee75ca04",
+    "name": "EUR_USD_H1_Breakout_Session",
+    "description": "Intraday breakout strategy for EUR_USD using native bar fields only. Enters on price breakouts during active trading hours (8-17 UTC) on weekdays, exits at 21 UTC.",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "in",
+            "value": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "in",
+            "value": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 21
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T23:30:50.255880",
+    "active_flag": true,
+    "tags": [
+      "breakout",
+      "intraday",
+      "session_based",
+      "native_fields"
+    ]
+  },
+  "65dc1c66-f9c7-4901-99c6-8bf20f6d0ad4": {
+    "id": "65dc1c66-f9c7-4901-99c6-8bf20f6d0ad4",
+    "name": "EUR_USD_Intraday_Breakout_H1",
+    "description": "Intraday breakout strategy for EUR_USD using native price action during active trading hours",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 21
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T23:31:34.716514",
+    "active_flag": true,
+    "tags": [
+      "intraday",
+      "breakout",
+      "EUR_USD",
+      "H1"
+    ]
+  },
+  "54d490bf-27a9-48df-9fb6-00ccd6e285d8": {
+    "id": "54d490bf-27a9-48df-9fb6-00ccd6e285d8",
+    "name": "EUR_USD_H1_Intraday_Breakout",
+    "description": "Intraday breakout strategy for EUR_USD H1 - enters on price breaks during active trading hours (6-16 UTC) on weekdays, exits at 17 UTC",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "offset2": 1,
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 6
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "offset2": 1,
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 6
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 17
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-19T23:32:22.910530",
+    "active_flag": true,
+    "tags": [
+      "intraday",
+      "breakout",
+      "EUR_USD",
+      "H1"
+    ]
+  },
+  "3c7b2072-6587-4def-8ffc-3aa863998cb9": {
+    "id": "3c7b2072-6587-4def-8ffc-3aa863998cb9",
+    "name": "EUR_USD H1 Intraday Momentum",
+    "description": "Intraday momentum strategy for EUR_USD H1 that enters long/short when current bar's high/low exceeds previous bar during active trading hours (6-16 UTC), with 8-bar maximum hold period",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 6
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "high",
+            "op": "gt",
+            "value": {
+              "field": "high",
+              "offset": -1
+            }
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 6
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "low",
+            "op": "lt",
+            "value": {
+              "field": "low",
+              "offset": -1
+            }
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 8
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:00:51.186181",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "momentum",
+      "intraday",
+      "time_filter"
+    ]
+  },
+  "7be68fa2-a764-4bf3-bd08-302004290f37": {
+    "id": "7be68fa2-a764-4bf3-bd08-302004290f37",
+    "name": "EUR_USD H1 Session Momentum",
+    "description": "Intraday momentum strategy for EUR_USD H1 that enters long/short when current bar's high/low exceeds previous bar during active trading sessions (London, NY, overlap), with 8-bar maximum hold period",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "high",
+            "op": "gt",
+            "value": {
+              "field": "high",
+              "offset": -1
+            }
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "low",
+            "op": "lt",
+            "value": {
+              "field": "low",
+              "offset": -1
+            }
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 8
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:01:10.680777",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "momentum",
+      "session_filter"
+    ]
+  },
+  "604854a8-d1de-4709-99ff-14e3b8d42d9b": {
+    "id": "604854a8-d1de-4709-99ff-14e3b8d42d9b",
+    "name": "EUR_USD H1 Simple Momentum",
+    "description": "Simple momentum strategy for EUR_USD H1 that enters long when current high exceeds previous high, short when current low breaks previous low, with 6-bar maximum hold period",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "field": "high",
+        "op": "gt",
+        "value": {
+          "field": "high",
+          "offset": -1
+        }
+      },
+      "entry_short": {
+        "field": "low",
+        "op": "lt",
+        "value": {
+          "field": "low",
+          "offset": -1
+        }
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 6
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:01:23.344893",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "momentum",
+      "simple"
+    ]
+  },
+  "7d24d78c-7dd8-481f-854d-72a41b53fb3d": {
+    "id": "7d24d78c-7dd8-481f-854d-72a41b53fb3d",
+    "name": "EUR_USD H1 Intrabar Momentum",
+    "description": "Simple intrabar momentum strategy for EUR_USD H1 that enters long when close > open (bullish bar), short when close < open (bearish bar), with 4-bar maximum hold period",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "field": "close",
+        "field2": "open",
+        "op": "gt"
+      },
+      "entry_short": {
+        "field": "close",
+        "field2": "open",
+        "op": "lt"
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:01:35.823374",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "momentum",
+      "intrabar"
+    ]
+  },
+  "b66d6316-aab8-4d95-a0ba-e8d3dd769ce3": {
+    "id": "b66d6316-aab8-4d95-a0ba-e8d3dd769ce3",
+    "name": "EUR_USD Intraday Mean Reversion",
+    "description": "Mean reversion strategy targeting EUR_USD during European trading hours using simple price action signals",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "hour_of_day",
+            "op": "eq",
+            "value": 17
+          },
+          {
+            "field": "days_in_trade",
+            "op": "gte",
+            "value": 1
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:02:19.854445",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "mean_reversion",
+      "intraday",
+      "european_session"
+    ]
+  },
+  "49e887fe-3dfb-447c-8eb8-ed8d00e27fee": {
+    "id": "49e887fe-3dfb-447c-8eb8-ed8d00e27fee",
+    "name": "EUR_USD Session Mean Reversion",
+    "description": "Simple mean reversion strategy using session filters and price action during active trading periods",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 1
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:02:37.256894",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "mean_reversion",
+      "session_filter",
+      "simple"
+    ]
+  },
+  "e844048a-7622-4c9b-8cfd-aa64bf8df973": {
+    "id": "e844048a-7622-4c9b-8cfd-aa64bf8df973",
+    "name": "EUR_USD OHLC Mean Reversion",
+    "description": "Basic mean reversion strategy using OHLC price action patterns",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 2
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:02:52.818238",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "ohlc",
+      "mean_reversion",
+      "basic"
+    ]
+  },
+  "dcc782c3-7fd4-4369-87cc-7fdfa24ddfcd": {
+    "id": "dcc782c3-7fd4-4369-87cc-7fdfa24ddfcd",
+    "name": "EUR_USD H1 Intraday Mean Reversion",
+    "description": "Mean reversion strategy targeting EUR_USD during European trading hours, entering when price touches bar extremes",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 17
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:03:34.026386",
+    "active_flag": true,
+    "tags": [
+      "mean_reversion",
+      "intraday",
+      "eur_usd",
+      "time_based"
+    ]
+  },
+  "ea48017e-5904-43a4-bea4-d8de71dd464e": {
+    "id": "ea48017e-5904-43a4-bea4-d8de71dd464e",
+    "name": "EUR_USD H1 Bar Extreme Mean Reversion",
+    "description": "Simple mean reversion strategy entering when close touches bar extremes, with 4-bar holding period",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          },
+          {
+            "field": "days_in_trade",
+            "op": "eq",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          },
+          {
+            "field": "days_in_trade",
+            "op": "eq",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:03:49.951269",
+    "active_flag": true,
+    "tags": [
+      "mean_reversion",
+      "bar_extremes",
+      "eur_usd",
+      "short_hold"
+    ]
+  },
+  "9f53e668-186d-45a0-b507-b7621c3fc8fb": {
+    "id": "9f53e668-186d-45a0-b507-b7621c3fc8fb",
+    "name": "EUR_USD Intraday Mean Reversion",
+    "description": "Mean reversion strategy targeting oversold/overbought conditions during European trading hours using simple price action signals",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "hour_of_day",
+            "op": "eq",
+            "value": 17
+          },
+          {
+            "field": "days_in_trade",
+            "op": "gte",
+            "value": 1
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:04:26.510986",
+    "active_flag": true,
+    "tags": [
+      "mean_reversion",
+      "intraday",
+      "eur_usd",
+      "time_filter"
+    ]
+  },
+  "41dbe941-410d-4474-bec9-71f91e3e08b7": {
+    "id": "41dbe941-410d-4474-bec9-71f91e3e08b7",
+    "name": "EUR_USD Price Action Extremes",
+    "description": "Simple price action strategy entering on bar extremes with daily exit",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 1
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:04:44.945490",
+    "active_flag": true,
+    "tags": [
+      "price_action",
+      "extremes",
+      "eur_usd",
+      "daily_exit"
+    ]
+  },
+  "372fad7c-9044-4ebb-928c-bda23ddf35b5": {
+    "id": "372fad7c-9044-4ebb-928c-bda23ddf35b5",
+    "name": "EUR_USD_H1_Intraday_Reversal_Seed",
+    "description": "Intraday mean reversion strategy for EUR_USD H1 during European session using native OHLC patterns",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 17
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:05:27.030327",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "intraday",
+      "mean_reversion",
+      "native_fields"
+    ]
+  },
+  "a5805fb9-860a-4db1-add8-ecfa9e9c961d": {
+    "id": "a5805fb9-860a-4db1-add8-ecfa9e9c961d",
+    "name": "EUR_USD_H1_OHLC_Momentum_Seed",
+    "description": "Simple momentum strategy using OHLC patterns - enters on directional bars with continuation potential",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:05:43.536035",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "momentum",
+      "ohlc_only",
+      "native_fields"
+    ]
+  },
+  "c5beb805-6ab2-4bed-ab9a-b9d4ba9432d8": {
+    "id": "c5beb805-6ab2-4bed-ab9a-b9d4ba9432d8",
+    "name": "EUR_USD H1 Intraday Mean Reversion",
+    "description": "Intraday mean reversion strategy for EUR_USD during European trading hours, using native OHLC patterns to identify reversal opportunities",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:06:25.861076",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "mean_reversion",
+      "intraday",
+      "native_fields"
+    ]
+  },
+  "c77cefa9-e599-4e01-961b-5486d157b269": {
+    "id": "c77cefa9-e599-4e01-961b-5486d157b269",
+    "name": "EUR_USD H1 Session-Based Mean Reversion",
+    "description": "Intraday mean reversion strategy for EUR_USD during active trading sessions, using native OHLC patterns to identify reversal opportunities",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:06:47.539544",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "mean_reversion",
+      "session_based",
+      "native_fields"
+    ]
+  },
+  "e799dcdd-feb7-45cc-9eab-40850ec8f447": {
+    "id": "e799dcdd-feb7-45cc-9eab-40850ec8f447",
+    "name": "EUR_USD H1 Basic Mean Reversion",
+    "description": "Simple mean reversion strategy for EUR_USD using basic OHLC patterns to identify reversal opportunities",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "high",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 6
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:07:04.156104",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "mean_reversion",
+      "basic",
+      "ohlc_only"
+    ]
+  },
+  "512a19e6-5960-4e7f-9e69-0e56d7076458": {
+    "id": "512a19e6-5960-4e7f-9e69-0e56d7076458",
+    "name": "EUR_USD H1 Intraday Mean Reversion",
+    "description": "Intraday mean reversion strategy for EUR_USD during European trading hours, using native OHLC patterns to identify reversal opportunities",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:07:48.049147",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "mean_reversion",
+      "intraday",
+      "native_fields"
+    ]
+  },
+  "bf651288-049e-4ab4-952f-b1af0495eae3": {
+    "id": "bf651288-049e-4ab4-952f-b1af0495eae3",
+    "name": "EUR_USD H1 Session-Based Mean Reversion",
+    "description": "Intraday mean reversion strategy for EUR_USD during active trading sessions (London, NY, overlap), using native OHLC patterns to identify reversal opportunities",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:08:05.660485",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "mean_reversion",
+      "session_based",
+      "native_fields"
+    ]
+  },
+  "54040193-18ff-4d4e-917f-c3ac5d91fc31": {
+    "id": "54040193-18ff-4d4e-917f-c3ac5d91fc31",
+    "name": "EUR_USD H1 Basic OHLC Mean Reversion",
+    "description": "Simple mean reversion strategy for EUR_USD using basic OHLC patterns - enters when price closes away from open and extends in same direction",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 6
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:08:22.693633",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "mean_reversion",
+      "basic_ohlc",
+      "native_only"
+    ]
+  },
+  "278c925d-bbc9-4341-bd48-440d8b5fb94a": {
+    "id": "278c925d-bbc9-4341-bd48-440d8b5fb94a",
+    "name": "EUR_USD H1 Intraday Mean Reversion",
+    "description": "Mean reversion strategy targeting EUR_USD during European trading hours using price action relative to bar extremes",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 17
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:09:04.228456",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "mean_reversion",
+      "intraday",
+      "time_filter"
+    ]
+  },
+  "bc1168cb-1ecd-47df-8733-522b7c14a0d4": {
+    "id": "bc1168cb-1ecd-47df-8733-522b7c14a0d4",
+    "name": "EUR_USD H1 Weekday Mean Reversion",
+    "description": "Simple mean reversion strategy using price action during weekdays",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 4
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 4
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 1
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:09:20.616239",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "mean_reversion",
+      "weekday_filter"
+    ]
+  },
+  "626ba3e5-f878-4796-bc05-4377932edf6c": {
+    "id": "626ba3e5-f878-4796-bc05-4377932edf6c",
+    "name": "EUR_USD H1 Basic Mean Reversion",
+    "description": "Basic mean reversion strategy using OHLC price action with 24-hour holding period",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "field": "close",
+        "field2": "low",
+        "op": "lte"
+      },
+      "entry_short": {
+        "field": "close",
+        "field2": "high",
+        "op": "gte"
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 24
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:09:32.443448",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "mean_reversion",
+      "basic"
+    ]
+  },
+  "a24ec066-9e79-4176-bc3a-6937f670bede": {
+    "id": "a24ec066-9e79-4176-bc3a-6937f670bede",
+    "name": "EUR_USD H1 Range Mean Reversion",
+    "description": "Mean reversion strategy based on intrabar range and close-to-open relationship, using only native fields",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "open",
+            "op": "gt",
+            "value": 0.5
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "open",
+            "op": "gt",
+            "value": 0.5
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "minutes_in_trade",
+            "op": "gte",
+            "value": 480
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:41:11.539401",
+    "active_flag": true,
+    "tags": [
+      "mean_reversion",
+      "range_based",
+      "eur_usd",
+      "h1",
+      "native_fields"
+    ]
+  },
+  "70474fc8-3969-4060-a5b3-6426524a91f9": {
+    "id": "70474fc8-3969-4060-a5b3-6426524a91f9",
+    "name": "EUR_USD H1 Mean Reversion Native",
+    "description": "Mean reversion strategy using only native fields - enters long on significant intrabar declines expecting reversal",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "op": "lt",
+            "field2": "open"
+          },
+          {
+            "field": "open",
+            "op": "gt",
+            "field2": "low"
+          },
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "low"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "open"
+          },
+          {
+            "field": "open",
+            "op": "lt",
+            "field2": "high"
+          },
+          {
+            "field": "close",
+            "op": "lt",
+            "field2": "high"
+          }
+        ]
+      },
+      "stop_atr_multiplier": 2.0,
+      "take_profit_atr_multiplier": 3.0,
+      "position_size_units": 1000
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:41:51.233389",
+    "active_flag": true,
+    "tags": [
+      "mean_reversion",
+      "native_fields",
+      "eur_usd",
+      "h1"
+    ]
+  },
+  "649a92e8-8eb7-4d82-a037-07399bbc8f03": {
+    "id": "649a92e8-8eb7-4d82-a037-07399bbc8f03",
+    "name": "EUR_USD H1 Mean Reversion Native v2",
+    "description": "Mean reversion strategy using only native fields - enters on intrabar moves expecting reversal, exits after 24 bars or on reversal signal",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "open",
+            "field2": "low",
+            "op": "gt"
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "open",
+            "field2": "high",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 24
+          },
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4.0
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:42:05.270851",
+    "active_flag": true,
+    "tags": [
+      "mean_reversion",
+      "native_fields",
+      "eur_usd",
+      "h1"
+    ]
+  },
+  "e748ef67-8381-42db-b1da-8d9577ea002e": {
+    "id": "e748ef67-8381-42db-b1da-8d9577ea002e",
+    "name": "EUR_USD Native Mean Reversion H1",
+    "description": "Mean-reverting strategy using only native OHLC fields for EUR_USD H1. Enters contrarian positions when close deviates from bar extremes, with time-based exits.",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "minutes_in_trade",
+            "op": "gte",
+            "value": 480
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:42:51.655618",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "mean_reversion",
+      "native_fields",
+      "h1",
+      "contrarian"
+    ]
+  },
+  "7ffaf480-6e40-4346-a561-65888ae4a6da": {
+    "id": "7ffaf480-6e40-4346-a561-65888ae4a6da",
+    "name": "EUR_USD Open-Close Contrarian H1",
+    "description": "Mean-reverting strategy using native OHLC fields. Enters contrarian positions when close moves against the opening direction, expecting reversal within 6 hours.",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 6
+          },
+          {
+            "field": "minutes_in_trade",
+            "op": "gte",
+            "value": 360
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:43:13.683911",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "mean_reversion",
+      "native_fields",
+      "h1",
+      "open_close"
+    ]
+  },
+  "a6963f63-6f42-4b89-bdd8-b3f6c544e183": {
+    "id": "a6963f63-6f42-4b89-bdd8-b3f6c544e183",
+    "name": "EUR_USD H1 Mean Reversion Native",
+    "description": "Mean reversion strategy using only native fields - enters when price closes away from open but not at extremes, exits after 24 bars or when price moves favorably",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 24
+          },
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:44:05.370986",
+    "active_flag": true,
+    "tags": [
+      "mean_reversion",
+      "native_fields",
+      "eur_usd",
+      "h1"
+    ]
+  },
+  "3452a097-048d-4355-be4a-72ac306d78af": {
+    "id": "3452a097-048d-4355-be4a-72ac306d78af",
+    "name": "EUR_USD H1 Mean Reversion Native",
+    "description": "Mean reversion strategy using only native fields - enters long on significant intrabar declines expecting reversal",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "op": "lt",
+            "field2": "open"
+          },
+          {
+            "field": "open",
+            "op": "gt",
+            "field2": "low"
+          },
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "low"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "open"
+          },
+          {
+            "field": "open",
+            "op": "lt",
+            "field2": "high"
+          },
+          {
+            "field": "close",
+            "op": "lt",
+            "field2": "high"
+          }
+        ]
+      },
+      "stop_atr_multiplier": 2.0,
+      "take_profit_atr_multiplier": 3.0,
+      "position_size_units": 1000
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:44:41.357643",
+    "active_flag": true,
+    "tags": [
+      "mean_reversion",
+      "native_fields",
+      "eur_usd",
+      "h1"
+    ]
+  },
+  "5b94fe03-ae4f-4750-905a-b67e3c6f98a1": {
+    "id": "5b94fe03-ae4f-4750-905a-b67e3c6f98a1",
+    "name": "EUR_USD H1 Mean Reversion Native",
+    "description": "Mean reversion strategy using only native OHLC fields for EUR_USD H1",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "lt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:45:39.770467",
+    "active_flag": true,
+    "tags": [
+      "mean_reversion",
+      "native_fields",
+      "eur_usd",
+      "h1"
+    ]
+  },
+  "574425d5-6151-4cbf-9992-78ea8d34b2d1": {
+    "id": "574425d5-6151-4cbf-9992-78ea8d34b2d1",
+    "name": "EUR_USD_H1_Price_Momentum_Seed",
+    "description": "Simple momentum strategy using native price fields - enters long when close is near recent high, exits after reasonable holding period or on stop/target",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "open"
+          },
+          {
+            "field": "close",
+            "op": "gte",
+            "value": 0.995
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 3
+      },
+      "stop_atr_multiplier": 2.0,
+      "take_profit_atr_multiplier": 3.0,
+      "position_size_units": 1000
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:46:12.660305",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "momentum",
+      "native_fields",
+      "seed"
+    ]
+  },
+  "46dae673-8583-4ea5-9e6c-1b14ca5e15bc": {
+    "id": "46dae673-8583-4ea5-9e6c-1b14ca5e15bc",
+    "name": "EUR_USD_H1_Bullish_Bar_Momentum",
+    "description": "Revised momentum strategy - enters long on bullish bars with range, exits after 2 days or on stop/target",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 2
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:46:17.064321",
+    "active_flag": true,
+    "tags": [
+      "eur_usd",
+      "h1",
+      "momentum",
+      "native_fields",
+      "seed",
+      "revised"
+    ]
+  },
+  "a8356085-5fcf-4527-b120-31b3515e3b7f": {
+    "id": "a8356085-5fcf-4527-b120-31b3515e3b7f",
+    "name": "EUR_USD H1 Mean Reversion Native",
+    "description": "Mean reversion strategy using only native fields - enters long on significant intrabar declines expecting reversal",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "op": "lt",
+            "field2": "open"
+          },
+          {
+            "field": "open",
+            "op": "gt",
+            "field2": "low"
+          },
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "low"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "open"
+          },
+          {
+            "field": "open",
+            "op": "lt",
+            "field2": "high"
+          },
+          {
+            "field": "close",
+            "op": "lt",
+            "field2": "high"
+          }
+        ]
+      },
+      "stop_atr_multiplier": 2.0,
+      "take_profit_atr_multiplier": 3.0,
+      "position_size_units": 1000
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:46:57.385829",
+    "active_flag": true,
+    "tags": [
+      "mean_reversion",
+      "native_fields",
+      "eur_usd",
+      "h1"
+    ]
+  },
+  "789fac17-e549-4605-9e3f-3a3c472a0546": {
+    "id": "789fac17-e549-4605-9e3f-3a3c472a0546",
+    "name": "EUR_USD H1 Simple Mean Reversion",
+    "description": "Simple mean reversion strategy - enter opposite to intrabar direction",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "field": "close",
+        "field2": "open",
+        "op": "lt"
+      },
+      "entry_short": {
+        "field": "close",
+        "field2": "open",
+        "op": "gt"
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 12
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:47:28.523533",
+    "active_flag": true,
+    "tags": [
+      "mean_reversion",
+      "native_fields",
+      "eur_usd",
+      "h1",
+      "simple"
+    ]
+  },
+  "632fcebf-4777-461d-b357-c4bf5f0bef2b": {
+    "id": "632fcebf-4777-461d-b357-c4bf5f0bef2b",
+    "name": "EUR_USD_H1_Momentum_Seed",
+    "description": "Simple momentum strategy using native OHLC fields for EUR_USD H1",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "open"
+          },
+          {
+            "field": "close",
+            "op": "gte",
+            "value": 1.0001
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "op": "lt",
+            "field2": "open"
+          },
+          {
+            "field": "close",
+            "op": "lte",
+            "value": 1.9999
+          }
+        ]
+      },
+      "exit": null,
+      "stop_atr_multiplier": 2.0,
+      "take_profit_atr_multiplier": 3.0,
+      "position_size_units": 1000
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:48:01.196078",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "native_fields",
+      "eur_usd",
+      "h1"
+    ]
+  },
+  "e226e49d-168f-4c6f-a09a-bba6cc98b5cb": {
+    "id": "e226e49d-168f-4c6f-a09a-bba6cc98b5cb",
+    "name": "EUR_USD_H1_Momentum_Native",
+    "description": "Simple momentum strategy using native OHLC fields with time-based exits",
+    "strategy_type": "rules_engine",
+    "definition_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "close",
+            "op": "gte",
+            "value": 1.0001
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "op": "lte",
+            "value": 1.9999
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 24
+          },
+          {
+            "all": [
+              {
+                "field": "close",
+                "field2": "open",
+                "op": "lt"
+              },
+              {
+                "field": "bars_in_trade",
+                "op": "gte",
+                "value": 4
+              }
+            ]
+          }
+        ]
+      },
+      "position_size_units": 1000
+    },
+    "version": 1,
+    "created_at": "2026-03-20T00:48:13.099317",
+    "active_flag": true,
+    "tags": [
+      "momentum",
+      "native_fields",
+      "eur_usd",
+      "h1",
+      "time_exit"
+    ]
   }
 }

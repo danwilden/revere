@@ -121,7 +121,7 @@ def trained_model(repos):
         "timeframe": "H1",
         "training_start": start.isoformat(),
         "training_end": end.isoformat(),
-        "parameters_json": json.dumps({"num_states": N_STATES}),
+        "parameters_json": {"num_states": N_STATES},
         "artifact_ref": result["artifact_ref"],
         "label_map_json": {},
         "created_at": datetime.utcnow().isoformat(),

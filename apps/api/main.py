@@ -92,3 +92,28 @@ app.include_router(jobs_routes.router, prefix="/api/jobs", tags=["jobs"])
 # Dukascopy download + ingest
 from apps.api.routes import dukascopy as dukascopy_routes
 app.include_router(dukascopy_routes.router, prefix="/api/dukascopy", tags=["dukascopy"])
+
+# Phase 5 — agentic research layer
+from apps.api.routes import experiments as experiments_routes, research as research_routes
+app.include_router(experiments_routes.router, prefix="/api/experiments", tags=["experiments"])
+app.include_router(research_routes.router, tags=["research"])
+
+# Phase 5C — feature discovery
+from apps.api.routes import features as features_routes
+app.include_router(features_routes.router, prefix="/api/features", tags=["features"])
+
+# Phase 5D — AutoML signal mining
+from apps.api.routes import automl as automl_routes
+app.include_router(automl_routes.router, prefix="/api/automl", tags=["automl"])
+
+# Phase 6 — Chat (SSE streaming)
+from apps.api.routes import chat as chat_routes
+app.include_router(chat_routes.router, prefix="/api/chat", tags=["chat"])
+
+# Capability taxonomy and inspection
+from apps.api.routes.capabilities import router as capabilities_router
+app.include_router(capabilities_router)
+
+# Research memory knowledge graph
+from apps.api.routes import memory as memory_routes
+app.include_router(memory_routes.router, prefix="/api/memories", tags=["memory"])

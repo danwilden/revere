@@ -12,7 +12,15 @@ from __future__ import annotations
 
 from typing import Any
 
+from backend.strategies.field_registry import ALWAYS_AVAILABLE_FIELDS
+
 VALID_OPS = {"gt", "gte", "lt", "lte", "eq", "neq", "in"}
+
+# All fields always available in the bar context (native bar cols + engine-injected state).
+# validate_signal_fields() never flags these as unresolved.
+# NOTE: day_of_week, hour_of_day, is_friday are NOT in this set — they are
+# MARKET_FEATURE fields that require a feature_run_id.
+STRATEGY_STATE_FIELDS: frozenset[str] = ALWAYS_AVAILABLE_FIELDS
 
 
 def _resolve_value(context: dict, key: str) -> Any:
@@ -124,3 +132,88 @@ def evaluate(
         f"Unrecognised rule node structure: {node!r}. "
         "Expected keys: 'all', 'any', 'not', 'ref', or 'field'+'op'."
     )
+
+
+# ---------------------------------------------------------------------------
+# Static field validation (used at strategy validation time, not in hot path)
+# ---------------------------------------------------------------------------
+
+def _collect_fields(node: dict, unresolved: set[str], available: set[str]) -> None:
+    """Recursively collect field references not in *available*."""
+    if not isinstance(node, dict):
+        return
+
+    # Named refs — cannot statically validate, skip
+    if "ref" in node:
+        return
+
+    # Composite: all / any
+    if "all" in node:
+        for child in node.get("all", []):
+            _collect_fields(child, unresolved, available)
+        return
+
+    if "any" in node:
+        for child in node.get("any", []):
+            _collect_fields(child, unresolved, available)
+        return
+
+    if "not" in node:
+        _collect_fields(node["not"], unresolved, available)
+        return
+
+    # Leaf node
+    if "field" in node:
+        field = node["field"]
+        if field not in available:
+            unresolved.add(field)
+    if "field2" in node:
+        field2 = node["field2"]
+        if field2 not in available:
+            unresolved.add(field2)
+
+
+def validate_signal_fields(
+    definition_json: dict,
+    available_fields: set[str],
+) -> list[str]:
+    """Walk the rules DSL tree and return any field references not in *available_fields*.
+
+    Fields in STRATEGY_STATE_FIELDS (bars_in_trade, minutes_in_trade, etc.) are
+    always treated as available — they are injected by the backtest engine and
+    are never flagged as unresolved.
+
+    Used at strategy validation time (not in the hot backtest path).
+
+    Parameters
+    ----------
+    definition_json:
+        A rules-engine strategy definition dict (same shape as RulesStrategy input).
+    available_fields:
+        Set of field names that will be present in the bar context at runtime.
+
+    Returns
+    -------
+    list[str]:
+        Deduplicated list of field names referenced in the DSL but not found
+        in *available_fields*.  Empty list means all references resolve.
+    """
+    unresolved: set[str] = set()
+
+    # Walk all rule-bearing keys in the definition
+    for key in ("entry_long", "entry_short", "exit"):
+        node = definition_json.get(key)
+        if node is not None:
+            _collect_fields(node, unresolved, available_fields)
+
+    # Walk named_conditions too
+    named = definition_json.get("named_conditions", {})
+    if isinstance(named, dict):
+        for _name, node in named.items():
+            if isinstance(node, dict):
+                _collect_fields(node, unresolved, available_fields)
+
+    # State fields are always available — never report them as unresolved
+    unresolved -= STRATEGY_STATE_FIELDS
+
+    return sorted(unresolved)

@@ -1,0 +1,62 @@
+{
+  "c64b6e0b-a6f0-409c-810c-c9a87fb3fb75": {
+    "id": "c64b6e0b-a6f0-409c-810c-c9a87fb3fb75",
+    "experiment_ids": [
+      "dcc8ff60-54f0-4c2f-8c9b-883df8d6fd72"
+    ],
+    "instrument": "EUR_USD",
+    "timeframe": "H1",
+    "theory": "EUR_USD exhibits intraday momentum during active trading sessions (6-16 UTC), particularly during European and US overlap periods, making breakout strategies viable during these hours.",
+    "results_reasoning": "The strategy generated zero trades because the entry conditions were too restrictive, requiring the current close to break above/below the previous bar's high/low, which is an extremely rare occurrence in normal market conditions.",
+    "learnings": [
+      "Breakout conditions using close > previous high are too stringent for H1 timeframes and rarely trigger",
+      "Entry logic should use high/low of current bar rather than close for breakout detection",
+      "Time-based filters alone are insufficient if the core entry logic is fundamentally flawed",
+      "Always validate entry conditions on historical data before implementing complex position management"
+    ],
+    "tags": [
+      "breakout",
+      "zero_trades",
+      "eur_usd",
+      "intraday",
+      "entry_logic",
+      "time_filters"
+    ],
+    "outcome": "NEUTRAL",
+    "sharpe": null,
+    "total_trades": 0,
+    "source": "auto",
+    "created_at": "2026-03-19T23:32:50.841351+00:00",
+    "updated_at": "2026-03-19T23:32:50.841351+00:00"
+  },
+  "058eb5ff-96a9-4a4b-af72-f41d22068e5f": {
+    "id": "058eb5ff-96a9-4a4b-af72-f41d22068e5f",
+    "experiment_ids": [
+      "57a5eaf0-4417-4329-a673-c26fbee0bee5"
+    ],
+    "instrument": "EUR_USD",
+    "timeframe": "H1",
+    "theory": "EUR_USD exhibits short-term momentum patterns where strong directional moves (close significantly above/below open) tend to continue in the same direction for several hours.",
+    "results_reasoning": "The strategy failed with negative Sharpe ratio and low win rate because momentum signals based solely on single-bar close-open relationships are too noisy and don't reliably predict continuation patterns in EUR_USD hourly timeframe.",
+    "learnings": [
+      "Single-bar momentum signals (close vs open) are insufficient for reliable trend continuation prediction",
+      "EUR_USD hourly momentum requires multi-bar confirmation or additional filters to reduce false signals",
+      "24-hour maximum hold time may be too long for capturing short-term momentum bursts",
+      "Win rate below 40% suggests the momentum hypothesis needs stronger entry criteria or different market conditions"
+    ],
+    "tags": [
+      "momentum",
+      "eur_usd",
+      "no_edge",
+      "single_bar_signals",
+      "hourly_timeframe",
+      "high_trades"
+    ],
+    "outcome": "NEGATIVE",
+    "sharpe": -0.06048500163614447,
+    "total_trades": 430,
+    "source": "auto",
+    "created_at": "2026-03-20T00:48:43.952744+00:00",
+    "updated_at": "2026-03-20T00:48:43.952744+00:00"
+  }
+}

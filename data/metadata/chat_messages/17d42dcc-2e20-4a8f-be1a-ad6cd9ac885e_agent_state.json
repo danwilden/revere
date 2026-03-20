@@ -1,0 +1,118 @@
+{
+  "session_id": "17d42dcc-2e20-4a8f-be1a-ad6cd9ac885e",
+  "trace_id": "f4b90ba9-c84a-4a7a-9495-09f8fa86f08b",
+  "conversation_stage": "active",
+  "last_detected_mode": "ideation",
+  "pending_action": null,
+  "draft_strategy_definition": {
+    "entry_long": {
+      "all": [
+        {
+          "field": "adx_14",
+          "op": "gt",
+          "value": 25
+        },
+        {
+          "field": "ema_slope_20",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "field": "ema_slope_50",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "field": "ema_slope_20",
+          "op": "gt",
+          "field2": "ema_slope_50"
+        },
+        {
+          "ref": "price_below_ema20_threshold"
+        },
+        {
+          "ref": "not_friday"
+        }
+      ]
+    },
+    "entry_short": {
+      "all": [
+        {
+          "field": "adx_14",
+          "op": "gt",
+          "value": 25
+        },
+        {
+          "field": "ema_slope_20",
+          "op": "lt",
+          "value": 0
+        },
+        {
+          "field": "ema_slope_50",
+          "op": "lt",
+          "value": 0
+        },
+        {
+          "field": "ema_slope_20",
+          "op": "lt",
+          "field2": "ema_slope_50"
+        },
+        {
+          "ref": "price_above_ema20_threshold"
+        },
+        {
+          "ref": "not_friday"
+        }
+      ]
+    },
+    "exit": {
+      "any": [
+        {
+          "ref": "max_hold_period"
+        },
+        {
+          "ref": "friday_close"
+        }
+      ]
+    },
+    "stop_atr_multiplier": 2.5,
+    "take_profit_atr_multiplier": 4.0,
+    "position_size_units": 1000,
+    "named_conditions": {
+      "price_below_ema20_threshold": {
+        "field": "log_ret_1",
+        "op": "lt",
+        "value": -0.015
+      },
+      "price_above_ema20_threshold": {
+        "field": "log_ret_1",
+        "op": "gt",
+        "value": 0.015
+      },
+      "max_hold_period": {
+        "field": "minutes_in_trade",
+        "op": "gte",
+        "value": 7200
+      },
+      "friday_close": {
+        "field": "day_of_week",
+        "op": "eq",
+        "value": 4
+      },
+      "not_friday": {
+        "field": "day_of_week",
+        "op": "neq",
+        "value": 4
+      }
+    }
+  },
+  "scope": {},
+  "context_cache": {},
+  "last_executed_action_result": {
+    "job_id": "",
+    "backtest_run_id": null,
+    "status": "data_ingestion_started",
+    "message": "Data was missing for EUR_USD H4 from 2024-01-01 to 2024-06-01. I've started a Dukascopy download job (ID: bef01ef8-1476-429a-a923-729e22ef7d91). Once the data is ready (usually a few minutes), ask me to re-run the backtest."
+  },
+  "errors": []
+}

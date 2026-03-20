@@ -12,6 +12,16 @@ from backend.data.repositories import MarketDataRepository, MetadataRepository
 from backend.schemas.enums import Timeframe
 
 
+def _resolve_signal_column_name(signal_record: dict, signal_id: str) -> str:
+    """Determine the column name for a signal's primary value.
+
+    Uses metadata["field_name"] when available, otherwise falls back to
+    ``signal_{id}_value``.
+    """
+    metadata = signal_record.get("metadata", {}) or {}
+    return metadata.get("field_name", f"signal_{signal_id}_value")
+
+
 def load_backtest_frame(
     instrument_id: str,
     timeframe: Timeframe,
@@ -21,8 +31,9 @@ def load_backtest_frame(
     feature_run_id: str | None = None,
     model_id: str | None = None,
     metadata_repo: MetadataRepository | None = None,
+    signal_ids: list[str] | None = None,
 ) -> list[dict]:
-    """Load bars and optionally join features and regime labels.
+    """Load bars and optionally join features, regime labels, and signals.
 
     Parameters
     ----------
@@ -47,6 +58,12 @@ def load_backtest_frame(
     metadata_repo:
         Required when model_id is set and feature_run_id is None, so the
         loader can look up the model record to resolve the feature_run_id.
+        Also required when signal_ids is provided, to look up Signal records
+        for column name resolution.
+    signal_ids:
+        When provided, signal feature rows are joined for each signal_id.
+        Each signal_id is used as a feature_run_id to query the features
+        table.  Column names are resolved from the Signal's metadata.
 
     Returns
     -------
@@ -107,5 +124,40 @@ def load_backtest_frame(
         for bar in frame.values():
             bar.setdefault("regime_label", "UNKNOWN")
             bar.setdefault("state_id", -1)
+
+    # --- 4. Merge signal columns -----------------------------------------------
+    if signal_ids and metadata_repo is not None:
+        for signal_id in signal_ids:
+            # Look up the Signal record for column name resolution
+            signal_record = metadata_repo.get_signal(signal_id)
+            if signal_record is None:
+                # Unknown signal — skip silently
+                continue
+
+            col_name = _resolve_signal_column_name(signal_record, signal_id)
+
+            # Query features table using signal_id as the feature_run_id
+            signal_rows = market_repo.get_features(
+                instrument_id, timeframe, signal_id, start, end
+            )
+
+            # Build a timestamp -> value lookup from signal rows
+            sig_by_ts: dict[datetime, float | None] = {}
+            for row in signal_rows:
+                ts = row["timestamp_utc"]
+                val = row["feature_value"]
+                # Convert NaN to None for JSON safety
+                if val is not None:
+                    try:
+                        import math
+                        if math.isnan(val):
+                            val = None
+                    except (TypeError, ValueError):
+                        pass
+                sig_by_ts[ts] = val
+
+            # Left-join: every bar gets the signal column; None if missing
+            for ts, bar in frame.items():
+                bar[col_name] = sig_by_ts.get(ts, None)
 
     return sorted(frame.values(), key=lambda x: x["timestamp_utc"])

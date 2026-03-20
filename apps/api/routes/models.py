@@ -8,7 +8,9 @@ POST /api/models/hmm/{modelId}/label — apply/update semantic label map
 """
 from __future__ import annotations
 
+import json
 import threading
+from copy import copy
 from datetime import datetime
 
 from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException
@@ -18,9 +20,33 @@ from backend.jobs.hmm import run_hmm_training_job
 from backend.jobs.status import JobManager
 from backend.models.labeling import apply_label_map
 from backend.schemas.enums import JobType, Timeframe
-from backend.schemas.requests import HMMTrainingRequest, JobCreatedResponse, LabelMapUpdateRequest
+from backend.schemas.requests import (
+    HMMTrainingRequest,
+    JobCreatedResponse,
+    JobResponse,
+    LabelMapUpdateRequest,
+    ModelListResponse,
+    ModelRecordResponse,
+)
 
 router = APIRouter()
+
+
+def _normalize_model_record(record: dict) -> dict:
+    """Ensure parameters_json is a dict for ModelRecordResponse validation.
+
+    Metadata may store it as a JSON string (legacy) or as a dict.
+    """
+    out = copy(record)
+    raw = out.get("parameters_json")
+    if isinstance(raw, str):
+        try:
+            out["parameters_json"] = json.loads(raw)
+        except (json.JSONDecodeError, TypeError):
+            out["parameters_json"] = {}
+    elif not isinstance(raw, dict):
+        out["parameters_json"] = {}
+    return out
 
 
 @router.post("/hmm/jobs", response_model=JobCreatedResponse, status_code=202)
@@ -63,7 +89,7 @@ def create_hmm_training_job(
     return JobCreatedResponse(job_id=job.id, status=job.status)
 
 
-@router.get("/hmm/jobs/{job_id}")
+@router.get("/hmm/jobs/{job_id}", response_model=JobResponse)
 def get_hmm_job(
     job_id: str,
     job_manager: JobManager = Depends(get_job_manager),
@@ -74,14 +100,16 @@ def get_hmm_job(
     return job
 
 
-@router.get("/hmm")
+@router.get("/hmm", response_model=ModelListResponse)
 def list_hmm_models(
     metadata_repo=Depends(get_metadata_repo),
 ):
-    return metadata_repo.list_models(model_type="hmm")
+    models = metadata_repo.list_models(model_type="hmm")
+    normalized = [_normalize_model_record(m) for m in models]
+    return {"models": normalized, "count": len(normalized)}
 
 
-@router.get("/hmm/{model_id}")
+@router.get("/hmm/{model_id}", response_model=ModelRecordResponse)
 def get_hmm_model(
     model_id: str,
     metadata_repo=Depends(get_metadata_repo),
@@ -89,7 +117,7 @@ def get_hmm_model(
     record = metadata_repo.get_model(model_id)
     if not record:
         raise HTTPException(status_code=404, detail="Model not found")
-    return record
+    return _normalize_model_record(record)
 
 
 @router.post("/hmm/{model_id}/label")

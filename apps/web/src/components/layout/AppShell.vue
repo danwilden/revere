@@ -65,7 +65,12 @@ const navItems = [
   { name: 'Models', to: '/models', label: 'MODELS', icon: 'mdi-brain' },
   { name: 'Strategies', to: '/strategies', label: 'STRATEGIES', icon: 'mdi-chess-knight' },
   { name: 'Backtests', to: '/backtests', label: 'BACKTESTS', icon: 'mdi-chart-timeline-variant' },
-  { name: 'Results', to: '/results', label: 'RESULTS', icon: 'mdi-chart-line' },
+  { name: 'Results',    to: '/results',    label: 'RESULTS',    icon: 'mdi-chart-line' },
+  { name: 'Research',    to: '/research',    label: 'RESEARCH',    icon: 'mdi-flask' },
+  { name: 'Experiments', to: '/experiments', label: 'EXPERIMENTS', icon: 'mdi-atom' },
+  { name: 'Chat',        to: '/chat',        label: 'CHAT',        icon: 'mdi-chat-processing' },
+  { name: 'AutoML',      to: '/automl',      label: 'AUTOML',      icon: 'mdi-robot' },
+  { name: 'Knowledge',   to: '/knowledge',   label: 'KNOWLEDGE',   icon: 'mdi-graph' },
 ]
 </script>
 

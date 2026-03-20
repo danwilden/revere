@@ -62,6 +62,13 @@ class LocalMetadataRepository(MetadataRepository):
                 store[key].update(updates)
                 self._save(store_name)
 
+    def _delete(self, store_name: str, key: str) -> None:
+        with self._lock:
+            store = self._store(store_name)
+            if key in store:
+                del store[key]
+                self._save(store_name)
+
     def _list(self, store_name: str) -> list[dict]:
         with self._lock:
             return list(self._store(store_name).values())
@@ -178,6 +185,17 @@ class LocalMetadataRepository(MetadataRepository):
         records.sort(key=lambda r: str(r.get("created_at", "")), reverse=True)
         return records[:limit]
 
+    # Pending backtests (keyed by ingestion_job_id)
+    def save_pending_backtest(self, ingestion_job_id: str, payload: dict) -> None:
+        record = {"id": ingestion_job_id, **payload}
+        self.put("pending_backtests", ingestion_job_id, record)
+
+    def get_pending_backtest(self, ingestion_job_id: str) -> dict | None:
+        return self.get("pending_backtests", ingestion_job_id)
+
+    def delete_pending_backtest(self, ingestion_job_id: str) -> None:
+        self._delete("pending_backtests", ingestion_job_id)
+
     # Agent sessions
     def save_agent_session(self, record: dict) -> None:
         self._upsert("agent_sessions", record)
@@ -192,3 +210,31 @@ class LocalMetadataRepository(MetadataRepository):
         records = self._list("agent_sessions")
         records.sort(key=lambda r: str(r.get("created_at", "")), reverse=True)
         return records[:limit]
+
+    # Research memories
+    def save_research_memory(self, record: dict) -> None:
+        self._upsert("research_memories", record)
+
+    def get_research_memory(self, memory_id: str) -> dict | None:
+        return self._get("research_memories", memory_id)
+
+    def list_research_memories(self) -> list[dict]:
+        return self._list("research_memories")
+
+    # --- Generic key-value store (used by automl tools) ---
+
+    def put(self, store_name: str, key: str, record: dict) -> None:
+        """Persist an arbitrary record under (store_name, key)."""
+        with self._lock:
+            store = self._store(store_name)
+            store[key] = record
+            self._save(store_name)
+
+    def get(self, store_name: str, key: str) -> dict | None:  # type: ignore[override]
+        """Retrieve a record by (store_name, key). Returns None if not found."""
+        with self._lock:
+            return self._store(store_name).get(key)
+
+    def list_store(self, store_name: str) -> list[dict]:
+        """List all records in a named store."""
+        return self._list(store_name)

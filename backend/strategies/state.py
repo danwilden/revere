@@ -25,6 +25,7 @@ class StrategyState:
     cooldown_hours: float = 0.0
     current_regime: str = ""
     bar_count: int = 0
+    entry_bar_idx: int = -1  # bar index at trade entry; -1 when flat
 
     # ------------------------------------------------------------------
     # Position convenience properties
@@ -74,6 +75,7 @@ class StrategyState:
         self.last_exit_time = None
         self.current_regime = ""
         self.bar_count = 0
+        self.entry_bar_idx = -1
 
     def open_trade(
         self,
@@ -84,6 +86,7 @@ class StrategyState:
         stop: float | None = None,
         target: float | None = None,
         reason: str = "",
+        bar_idx: int = -1,
     ) -> None:
         """Record that a new position has been opened.
 
@@ -92,6 +95,10 @@ class StrategyState:
         reason:
             Human-readable label for why this trade was entered. Written to
             Trade.entry_reason in the backtest trade log.
+        bar_idx:
+            The bar loop index at entry time. Used to compute bars_in_trade
+            during the backtest. Defaults to -1 (no tracking) for callers
+            outside the engine.
         """
         self.open_position = {
             "side": side,
@@ -102,6 +109,7 @@ class StrategyState:
             "target": target,
             "reason": reason,
         }
+        self.entry_bar_idx = bar_idx
 
     def close_trade(self, exit_time: datetime) -> Position:
         """Record that the open position has been closed and start the cooldown timer.
@@ -114,4 +122,5 @@ class StrategyState:
         closed = dict(self.open_position)
         self.open_position = None
         self.last_exit_time = exit_time
+        self.entry_bar_idx = -1
         return closed

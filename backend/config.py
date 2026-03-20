@@ -41,14 +41,16 @@ class Settings(BaseSettings):
     aws_region: str = "us-east-1"
     aws_stage: str = "dev"
     s3_bucket: str = ""
+    sagemaker_role_arn: str = ""
 
     # --- Bedrock (agents) ---
-    bedrock_model_id: str = "anthropic.claude-3-5-sonnet-20241022-v2:0"
-    bedrock_region: str = "us-east-1"
+    bedrock_model_id: str = "us.anthropic.claude-sonnet-4-20250514-v1:0"
+    bedrock_region: str = "us-west-2"
 
     # --- API ---
     api_host: str = "0.0.0.0"
     api_port: int = 8000
+    api_base_url: str = "http://localhost:8000"
     cors_origins: list[str] = ["http://localhost:5173", "http://localhost:3000"]
 
     # --- Research defaults ---

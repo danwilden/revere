@@ -149,6 +149,10 @@ def run_dukascopy_download_job(
             ),
         )
 
+        # Run any backtest that was registered to run when this job succeeds
+        from backend.jobs.pending_backtest import process_pending_backtests_for_job
+        process_pending_backtests_for_job(job_id, job_manager, market_repo)
+
     except Exception as exc:
         job_manager.fail(
             job_id,

@@ -4,15 +4,22 @@ GET  /api/dukascopy/jobs          — list recent Dukascopy jobs
 """
 from __future__ import annotations
 
+import logging
 import threading
 
 from fastapi import APIRouter, Depends, HTTPException
 
-from backend.deps import get_job_manager, get_market_repo
+from backend.deps import get_job_manager, get_market_repo, get_metadata_repo
 from backend.jobs.dukascopy_download import run_dukascopy_download_job
 from backend.schemas.enums import JobType
-from backend.schemas.requests import DukascopyDownloadRequest, JobCreatedResponse
+from backend.schemas.requests import (
+    BacktestJobRequest,
+    DukascopyDownloadRequest,
+    JobCreatedResponse,
+    JobResponse,
+)
 
+logger = logging.getLogger(__name__)
 router = APIRouter()
 
 
@@ -36,6 +43,7 @@ async def submit_dukascopy_download_job(
             "end_date": body.end_date.isoformat(),
         },
     )
+    logger.info("Dukascopy job created: job_id=%s", job.id)
 
     thread = threading.Thread(
         target=_run_job_bg,
@@ -55,7 +63,7 @@ async def submit_dukascopy_download_job(
     return JobCreatedResponse(job_id=job.id, status=job.status)
 
 
-@router.get("/jobs/{job_id}")
+@router.get("/jobs/{job_id}", response_model=JobResponse)
 async def get_dukascopy_job(
     job_id: str,
     job_manager=Depends(get_job_manager),
@@ -75,6 +83,32 @@ async def list_dukascopy_jobs(
     """List recent Dukascopy download + ingest jobs (newest first)."""
     jobs = job_manager.list(job_type=JobType.DUKASCOPY_DOWNLOAD.value, limit=limit)
     return {"jobs": jobs, "count": len(jobs)}
+
+
+@router.post("/jobs/{job_id}/pending-backtest", status_code=204)
+async def register_pending_backtest(
+    job_id: str,
+    body: BacktestJobRequest,
+    job_manager=Depends(get_job_manager),
+    metadata_repo=Depends(get_metadata_repo),
+):
+    """Register a backtest to run automatically when this Dukascopy job succeeds.
+
+    The job_id must refer to an existing Dukascopy download job (typically
+    just created). When that job completes successfully, the backtest will be
+    submitted automatically.
+    """
+    job = job_manager.get(job_id)
+    if job is None:
+        raise HTTPException(status_code=404, detail=f"Job '{job_id}' not found")
+    if job.get("job_type") != JobType.DUKASCOPY_DOWNLOAD.value:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Job '{job_id}' is not a Dukascopy download job; cannot register pending backtest",
+        )
+    payload = body.model_dump(mode="json")
+    metadata_repo.save_pending_backtest(job_id, payload)
+    return None
 
 
 # ---------------------------------------------------------------------------

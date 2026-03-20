@@ -1,0 +1,2327 @@
+{
+  "12ef800c-441b-4013-86a6-57152aaf0c82": {
+    "id": "12ef800c-441b-4013-86a6-57152aaf0c82",
+    "session_id": "3d62a88e-3c68-469b-b93a-555e739bd5e2",
+    "parent_id": null,
+    "generation": 0,
+    "status": "archived",
+    "instrument": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2023-01-01",
+    "test_end": "2024-01-01",
+    "model_id": null,
+    "feature_run_id": null,
+    "task": "generate_seed",
+    "requested_by": "test_user",
+    "hypothesis": "<MagicMock name='build_graph().invoke().get()' id='4707219648'>",
+    "strategy_id": "<MagicMock name='build_graph().invoke().get()' id='4707219648'>",
+    "backtest_run_id": "<MagicMock name='build_graph().invoke().get()' id='4707219648'>",
+    "score": null,
+    "sharpe": 1.0,
+    "max_drawdown_pct": 1.0,
+    "win_rate": 1.0,
+    "total_trades": 1,
+    "failure_taxonomy": "<MagicMock name='build_graph().invoke().get().get()' id='4707220992'>",
+    "comparison_recommendation": "<MagicMock name='build_graph().invoke().get()' id='4707219648'>",
+    "error_message": null,
+    "created_at": "2026-03-15T17:28:46.860680+00:00",
+    "updated_at": "2026-03-15T17:28:46.862840+00:00",
+    "final_state_snapshot": {}
+  },
+  "30b07adc-3eed-4045-bded-a5ec4a93617c": {
+    "id": "30b07adc-3eed-4045-bded-a5ec4a93617c",
+    "session_id": "b8e6dd2d-eaa6-4a51-9e1a-54212466de1e",
+    "parent_id": null,
+    "generation": 0,
+    "status": "archived",
+    "instrument": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2023-01-01",
+    "test_end": "2024-01-01",
+    "model_id": null,
+    "feature_run_id": null,
+    "task": "generate_seed",
+    "requested_by": "integration_test",
+    "hypothesis": "<MagicMock name='build_graph().invoke().get()' id='4707455664'>",
+    "strategy_id": "<MagicMock name='build_graph().invoke().get()' id='4707455664'>",
+    "backtest_run_id": "<MagicMock name='build_graph().invoke().get()' id='4707455664'>",
+    "score": null,
+    "sharpe": 1.0,
+    "max_drawdown_pct": 1.0,
+    "win_rate": 1.0,
+    "total_trades": 1,
+    "failure_taxonomy": "<MagicMock name='build_graph().invoke().get().get()' id='4707453312'>",
+    "comparison_recommendation": "<MagicMock name='build_graph().invoke().get()' id='4707455664'>",
+    "error_message": null,
+    "created_at": "2026-03-15T17:28:47.407974+00:00",
+    "updated_at": "2026-03-15T17:28:47.410082+00:00",
+    "final_state_snapshot": {}
+  },
+  "75b003dd-891e-460c-886a-99a2b43a3b98": {
+    "id": "75b003dd-891e-460c-886a-99a2b43a3b98",
+    "session_id": "dfc0baec-735d-476f-9670-89e71815ba54",
+    "parent_id": null,
+    "generation": 0,
+    "status": "pending",
+    "instrument": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2023-01-01",
+    "test_end": "2024-01-01",
+    "model_id": null,
+    "feature_run_id": null,
+    "task": "generate_seed",
+    "requested_by": "test_user",
+    "hypothesis": null,
+    "strategy_id": null,
+    "backtest_run_id": null,
+    "score": null,
+    "sharpe": null,
+    "max_drawdown_pct": null,
+    "win_rate": null,
+    "total_trades": null,
+    "failure_taxonomy": null,
+    "comparison_recommendation": null,
+    "error_message": null,
+    "created_at": "2026-03-15T17:29:26.114704+00:00",
+    "updated_at": "2026-03-15T17:29:26.114704+00:00",
+    "final_state_snapshot": null
+  },
+  "b20548aa-a79a-41c8-a328-f996f6d2d499": {
+    "id": "b20548aa-a79a-41c8-a328-f996f6d2d499",
+    "session_id": "08d0fab7-5c62-436c-b87f-4071596fbcab",
+    "parent_id": null,
+    "generation": 0,
+    "status": "pending",
+    "instrument": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2023-01-01",
+    "test_end": "2024-01-01",
+    "model_id": null,
+    "feature_run_id": null,
+    "task": "generate_seed",
+    "requested_by": "integration_test",
+    "hypothesis": null,
+    "strategy_id": null,
+    "backtest_run_id": null,
+    "score": null,
+    "sharpe": null,
+    "max_drawdown_pct": null,
+    "win_rate": null,
+    "total_trades": null,
+    "failure_taxonomy": null,
+    "comparison_recommendation": null,
+    "error_message": null,
+    "created_at": "2026-03-15T17:29:26.183636+00:00",
+    "updated_at": "2026-03-15T17:29:26.183636+00:00",
+    "final_state_snapshot": null
+  },
+  "25ce552b-179f-4bc6-9f6a-bcc747be0075": {
+    "id": "25ce552b-179f-4bc6-9f6a-bcc747be0075",
+    "session_id": "c62d0f79-e070-4d59-b355-730aa93d122d",
+    "parent_id": null,
+    "generation": 0,
+    "status": "archived",
+    "instrument": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01",
+    "test_end": "2026-01-01",
+    "model_id": null,
+    "feature_run_id": null,
+    "task": "generate_seed",
+    "requested_by": "api",
+    "hypothesis": "This strategy captures price action breakouts by entering long positions when the close is above the open and the high exceeds the close (indicating upward momentum), and short positions when the close is below the open and the low is below the close (indicating downward momentum). The strategy exits after 24 hours to limit exposure and uses ATR-based stops and targets for risk management.",
+    "strategy_id": "7e40276c-4430-4ed6-8711-e8f358d06b06",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "score": null,
+    "sharpe": -0.023326169528811124,
+    "max_drawdown_pct": 0.06571991856450268,
+    "win_rate": 0.41904761904761906,
+    "total_trades": 105,
+    "failure_taxonomy": null,
+    "comparison_recommendation": null,
+    "error_message": "strategy_researcher: Bedrock error during tool loop: An error occurred (ValidationException) when calling the Converse operation: The model returned the following errors: Input is too long for requested model.",
+    "discard_reason": null,
+    "created_at": "2026-03-19T14:58:43.150820+00:00",
+    "updated_at": "2026-03-19T15:01:05.325339+00:00",
+    "final_state_snapshot": {
+      "session_id": "c62d0f79-e070-4d59-b355-730aa93d122d",
+      "trace_id": "9be74756-8665-4d80-82ca-be505ebaecc7",
+      "requested_by": "api",
+      "created_at": "2026-03-19T14:58:43.149584+00:00",
+      "instrument": "EUR_USD",
+      "timeframe": "H1",
+      "test_start": "2022-01-01",
+      "test_end": "2026-01-01",
+      "model_id": null,
+      "feature_run_id": null,
+      "experiment_id": "25ce552b-179f-4bc6-9f6a-bcc747be0075",
+      "parent_experiment_id": null,
+      "generation": 0,
+      "hypothesis": "This strategy captures price action breakouts by entering long positions when the close is above the open and the high exceeds the close (indicating upward momentum), and short positions when the close is below the open and the low is below the close (indicating downward momentum). The strategy exits after 24 hours to limit exposure and uses ATR-based stops and targets for risk management.",
+      "mutation_plan": null,
+      "strategy_id": "7e40276c-4430-4ed6-8711-e8f358d06b06",
+      "strategy_definition": {
+        "entry_long": {
+          "all": [
+            {
+              "field": "close",
+              "field2": "open",
+              "op": "gt"
+            },
+            {
+              "field": "high",
+              "field2": "close",
+              "op": "gt"
+            }
+          ]
+        },
+        "entry_short": {
+          "all": [
+            {
+              "field": "close",
+              "field2": "open",
+              "op": "lt"
+            },
+            {
+              "field": "low",
+              "field2": "close",
+              "op": "lt"
+            }
+          ]
+        },
+        "exit": {
+          "field": "bars_in_trade",
+          "op": "gte",
+          "value": 24
+        },
+        "position_size_units": 1000,
+        "stop_atr_multiplier": 2,
+        "take_profit_atr_multiplier": 3
+      },
+      "job_id": null,
+      "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+      "backtest_metrics": {
+        "total_trades": 105.0,
+        "win_count": 44.0,
+        "loss_count": 61.0,
+        "win_rate": 0.41904761904761906,
+        "net_pnl": -45.76000000000868,
+        "net_return_pct": -0.045760000000009314,
+        "annualized_return_pct": -0.045760000000009314,
+        "sharpe_ratio": -0.023326169528811124,
+        "sortino_ratio": -0.004508901038676019,
+        "max_drawdown_pct": 0.06571991856450268,
+        "avg_win": 2.933409090909016,
+        "avg_loss": -2.8660655737705802,
+        "expectancy": -0.43580952380960625,
+        "profit_factor": 0.7382600240232953,
+        "avg_holding_bars": 23.83809523809524
+      },
+      "backtest_trades": [],
+      "equity_curve": [],
+      "diagnosis_summary": null,
+      "recommended_mutations": null,
+      "discard": null,
+      "comparison_summary": null,
+      "comparison_recommendation": null,
+      "regime_context": null,
+      "strategy_candidates": [
+        {
+          "candidate_id": "7e40276c-4430-4ed6-8711-e8f358d06b06",
+          "hypothesis": "This strategy captures price action breakouts by entering long positions when the close is above the open and the high exceeds the close (indicating upward momentum), and short positions when the close is below the open and the low is below the close (indicating downward momentum). The strategy exits after 24 hours to limit exposure and uses ATR-based stops and targets for risk management.",
+          "strategy_id": "7e40276c-4430-4ed6-8711-e8f358d06b06",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "gt"
+                },
+                {
+                  "field": "high",
+                  "field2": "close",
+                  "op": "gt"
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "lt"
+                },
+                {
+                  "field": "low",
+                  "field2": "close",
+                  "op": "lt"
+                }
+              ]
+            },
+            "exit": {
+              "field": "bars_in_trade",
+              "op": "gte",
+              "value": 24
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+          "metrics": {
+            "total_trades": 105.0,
+            "win_count": 44.0,
+            "loss_count": 61.0,
+            "win_rate": 0.41904761904761906,
+            "net_pnl": -45.76000000000868,
+            "net_return_pct": -0.045760000000009314,
+            "annualized_return_pct": -0.045760000000009314,
+            "sharpe_ratio": -0.023326169528811124,
+            "sortino_ratio": -0.004508901038676019,
+            "max_drawdown_pct": 0.06571991856450268,
+            "avg_win": 2.933409090909016,
+            "avg_loss": -2.8660655737705802,
+            "expectancy": -0.43580952380960625,
+            "profit_factor": 0.7382600240232953,
+            "avg_holding_bars": 23.83809523809524
+          },
+          "trade_count": 105,
+          "sharpe": -0.023326169528811124,
+          "max_drawdown_pct": 0.06571991856450268,
+          "win_rate": 0.41904761904761906,
+          "generation": 0,
+          "created_at": "2026-03-19T15:00:04.157561+00:00",
+          "validation_errors": [],
+          "error": null
+        }
+      ],
+      "selected_candidate_id": null,
+      "diagnostic_summary": null,
+      "comparison_result": null,
+      "robustness_passed": null,
+      "robustness_report": null,
+      "feature_eval_results": null,
+      "research_mode": null,
+      "automl_job_id": null,
+      "model_evaluation": null,
+      "marker_scores": null,
+      "marker_action": null,
+      "composite_score": null,
+      "next_node": "END",
+      "task": "done",
+      "iteration": 3,
+      "errors": [
+        "strategy_researcher: Bedrock error during tool loop: An error occurred (ValidationException) when calling the Converse operation: The model returned the following errors: Input is too long for requested model."
+      ],
+      "human_approval_required": false
+    }
+  },
+  "c4b51639-9661-4cb6-81c6-dd33e4353c77": {
+    "id": "c4b51639-9661-4cb6-81c6-dd33e4353c77",
+    "session_id": "7fc9480e-ae8e-4a73-8321-3195bb07d500",
+    "parent_id": null,
+    "generation": 0,
+    "status": "succeeded",
+    "instrument": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01",
+    "test_end": "2026-01-01",
+    "model_id": null,
+    "feature_run_id": null,
+    "task": "generate_seed",
+    "requested_by": "api",
+    "hypothesis": null,
+    "strategy_id": null,
+    "backtest_run_id": null,
+    "score": null,
+    "sharpe": null,
+    "max_drawdown_pct": null,
+    "win_rate": null,
+    "total_trades": null,
+    "failure_taxonomy": null,
+    "comparison_recommendation": null,
+    "error_message": null,
+    "discard_reason": null,
+    "created_at": "2026-03-19T19:54:08.176575+00:00",
+    "updated_at": "2026-03-19T23:23:08.342004+00:00",
+    "final_state_snapshot": null
+  },
+  "dcc8ff60-54f0-4c2f-8c9b-883df8d6fd72": {
+    "id": "dcc8ff60-54f0-4c2f-8c9b-883df8d6fd72",
+    "session_id": "2b39780b-32af-4a02-9583-6fadc18aa982",
+    "parent_id": null,
+    "generation": 0,
+    "status": "archived",
+    "instrument": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01",
+    "test_end": "2026-01-01",
+    "model_id": null,
+    "feature_run_id": null,
+    "task": "generate_seed",
+    "requested_by": "api",
+    "hypothesis": "EUR_USD tends to show intraday momentum during active trading sessions, particularly during European and US overlap periods. I'll create a simple breakout strategy that enters long positions when price breaks above the previous bar's high during active trading hours (6-16 UTC), with position management based on ATR-like price ranges.",
+    "strategy_id": "54d490bf-27a9-48df-9fb6-00ccd6e285d8",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "score": null,
+    "sharpe": null,
+    "max_drawdown_pct": null,
+    "win_rate": null,
+    "total_trades": 0,
+    "failure_taxonomy": "zero_trades",
+    "comparison_recommendation": null,
+    "error_message": null,
+    "discard_reason": null,
+    "created_at": "2026-03-19T23:25:43.303428+00:00",
+    "updated_at": "2026-03-19T23:32:46.522283+00:00",
+    "final_state_snapshot": {
+      "session_id": "2b39780b-32af-4a02-9583-6fadc18aa982",
+      "trace_id": "09e893c9-5990-452d-a559-8b4e91b4393a",
+      "requested_by": "api",
+      "created_at": "2026-03-19T23:25:43.303117+00:00",
+      "instrument": "EUR_USD",
+      "timeframe": "H1",
+      "test_start": "2022-01-01",
+      "test_end": "2026-01-01",
+      "model_id": null,
+      "feature_run_id": null,
+      "experiment_id": "dcc8ff60-54f0-4c2f-8c9b-883df8d6fd72",
+      "parent_experiment_id": null,
+      "generation": 0,
+      "hypothesis": "EUR_USD tends to show intraday momentum during active trading sessions, particularly during European and US overlap periods. I'll create a simple breakout strategy that enters long positions when price breaks above the previous bar's high during active trading hours (6-16 UTC), with position management based on ATR-like price ranges.",
+      "mutation_plan": "The entry conditions contain logically impossible requirements that can never be satisfied. For long entries, close > high is impossible since close is always <= high by definition. For short entries, close < low is impossible since close is always >= low by definition.",
+      "strategy_id": "54d490bf-27a9-48df-9fb6-00ccd6e285d8",
+      "strategy_definition": {
+        "entry_long": {
+          "all": [
+            {
+              "field": "close",
+              "field2": "high",
+              "offset2": 1,
+              "op": "gt"
+            },
+            {
+              "field": "hour_of_day",
+              "op": "gte",
+              "value": 6
+            },
+            {
+              "field": "hour_of_day",
+              "op": "lte",
+              "value": 16
+            },
+            {
+              "field": "day_of_week",
+              "op": "in",
+              "value": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            }
+          ]
+        },
+        "entry_short": {
+          "all": [
+            {
+              "field": "close",
+              "field2": "low",
+              "offset2": 1,
+              "op": "lt"
+            },
+            {
+              "field": "hour_of_day",
+              "op": "gte",
+              "value": 6
+            },
+            {
+              "field": "hour_of_day",
+              "op": "lte",
+              "value": 16
+            },
+            {
+              "field": "day_of_week",
+              "op": "in",
+              "value": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            }
+          ]
+        },
+        "exit": {
+          "field": "hour_of_day",
+          "op": "eq",
+          "value": 17
+        },
+        "position_size_units": 1000,
+        "stop_atr_multiplier": 2,
+        "take_profit_atr_multiplier": 3
+      },
+      "job_id": null,
+      "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+      "backtest_metrics": {
+        "total_trades": 0.0,
+        "win_count": null,
+        "loss_count": null,
+        "win_rate": null,
+        "net_pnl": null,
+        "net_return_pct": null,
+        "annualized_return_pct": null,
+        "sharpe_ratio": null,
+        "sortino_ratio": null,
+        "max_drawdown_pct": null,
+        "avg_win": null,
+        "avg_loss": null,
+        "expectancy": null,
+        "profit_factor": null,
+        "avg_holding_bars": null
+      },
+      "backtest_trades": [],
+      "equity_curve": [],
+      "diagnosis_summary": "The entry conditions contain logically impossible requirements that can never be satisfied. For long entries, close > high is impossible since close is always <= high by definition. For short entries, close < low is impossible since close is always >= low by definition.",
+      "recommended_mutations": [
+        "Change long entry condition from 'close > high' to 'close > sma_20' or another meaningful technical condition",
+        "Change short entry condition from 'close < low' to 'close < sma_20' or another meaningful technical condition",
+        "Replace impossible price comparisons with momentum indicators like 'rsi > 70' for long and 'rsi < 30' for short",
+        "Add trend confirmation using moving average crossovers instead of the current price logic"
+      ],
+      "discard": false,
+      "comparison_summary": null,
+      "comparison_recommendation": null,
+      "regime_context": null,
+      "strategy_candidates": [
+        {
+          "candidate_id": "c2ab92f4-be03-4ce5-81fb-df5712b07e6f",
+          "hypothesis": "EUR_USD tends to show momentum patterns during active trading sessions, particularly during European and US overlap periods. A simple breakout strategy that enters long positions when price breaks above recent highs during active hours (avoiding overnight gaps) and uses session-based filtering should capture trending moves while avoiding low-liquidity periods.",
+          "strategy_id": "c2ab92f4-be03-4ce5-81fb-df5712b07e6f",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "gt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lt",
+                  "value": 18
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "lt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lt",
+                  "value": 18
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "exit": {
+              "field": "days_in_trade",
+              "op": "gte",
+              "value": 2
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+          "metrics": {
+            "total_trades": 0.0,
+            "win_count": null,
+            "loss_count": null,
+            "win_rate": null,
+            "net_pnl": null,
+            "net_return_pct": null,
+            "annualized_return_pct": null,
+            "sharpe_ratio": null,
+            "sortino_ratio": null,
+            "max_drawdown_pct": null,
+            "avg_win": null,
+            "avg_loss": null,
+            "expectancy": null,
+            "profit_factor": null,
+            "avg_holding_bars": null
+          },
+          "trade_count": 0,
+          "sharpe": null,
+          "max_drawdown_pct": null,
+          "win_rate": null,
+          "generation": 0,
+          "created_at": "2026-03-19T23:26:31.695513+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "61a13eac-c3b9-447a-9162-c83bf8df27d3",
+          "hypothesis": "EUR_USD tends to show momentum patterns during active trading sessions, particularly during European and US overlap periods. A simple breakout strategy that enters long positions when price breaks above recent highs during active hours (avoiding overnight gaps) and uses session-based filtering should capture trending moves while avoiding low-liquidity periods.",
+          "strategy_id": "61a13eac-c3b9-447a-9162-c83bf8df27d3",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "gt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lt",
+                  "value": 18
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "lt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lt",
+                  "value": 18
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "exit": {
+              "any": [
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 22
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    6,
+                    7
+                  ]
+                }
+              ]
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+          "metrics": {
+            "total_trades": 0.0,
+            "win_count": null,
+            "loss_count": null,
+            "win_rate": null,
+            "net_pnl": null,
+            "net_return_pct": null,
+            "annualized_return_pct": null,
+            "sharpe_ratio": null,
+            "sortino_ratio": null,
+            "max_drawdown_pct": null,
+            "avg_win": null,
+            "avg_loss": null,
+            "expectancy": null,
+            "profit_factor": null,
+            "avg_holding_bars": null
+          },
+          "trade_count": 0,
+          "sharpe": null,
+          "max_drawdown_pct": null,
+          "win_rate": null,
+          "generation": 0,
+          "created_at": "2026-03-19T23:27:23.614139+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "786d9385-5ceb-4f34-b6cc-1af2a5964760",
+          "hypothesis": "EUR_USD tends to show momentum patterns during active trading sessions, particularly during European and US overlap periods. A simple breakout strategy that enters long positions when price breaks above recent highs during active hours (avoiding overnight gaps) should capture trending moves while limiting exposure during low-liquidity periods.",
+          "strategy_id": "786d9385-5ceb-4f34-b6cc-1af2a5964760",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "gt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lte",
+                  "value": 16
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "gte",
+                  "value": 1
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "lte",
+                  "value": 5
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "lt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lte",
+                  "value": 16
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "gte",
+                  "value": 1
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "lte",
+                  "value": 5
+                }
+              ]
+            },
+            "exit": {
+              "field": "hour_of_day",
+              "op": "eq",
+              "value": 21
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+          "metrics": {
+            "total_trades": 0.0,
+            "win_count": null,
+            "loss_count": null,
+            "win_rate": null,
+            "net_pnl": null,
+            "net_return_pct": null,
+            "annualized_return_pct": null,
+            "sharpe_ratio": null,
+            "sortino_ratio": null,
+            "max_drawdown_pct": null,
+            "avg_win": null,
+            "avg_loss": null,
+            "expectancy": null,
+            "profit_factor": null,
+            "avg_holding_bars": null
+          },
+          "trade_count": 0,
+          "sharpe": null,
+          "max_drawdown_pct": null,
+          "win_rate": null,
+          "generation": 0,
+          "created_at": "2026-03-19T23:28:12.857089+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "4e172408-6b4a-4fa6-86bf-46aad4b55f47",
+          "hypothesis": "EUR_USD tends to show momentum patterns during active trading sessions, particularly during European and US overlap periods. A simple breakout strategy that enters long positions when price breaks above recent highs during active hours (avoiding overnight gaps) and uses session-based filtering should capture trending moves while avoiding low-liquidity periods.",
+          "strategy_id": "4e172408-6b4a-4fa6-86bf-46aad4b55f47",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "gt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lt",
+                  "value": 18
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "lt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lt",
+                  "value": 18
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "exit": {
+              "field": "days_in_trade",
+              "op": "gte",
+              "value": 2
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+          "metrics": {
+            "total_trades": 0.0,
+            "win_count": null,
+            "loss_count": null,
+            "win_rate": null,
+            "net_pnl": null,
+            "net_return_pct": null,
+            "annualized_return_pct": null,
+            "sharpe_ratio": null,
+            "sortino_ratio": null,
+            "max_drawdown_pct": null,
+            "avg_win": null,
+            "avg_loss": null,
+            "expectancy": null,
+            "profit_factor": null,
+            "avg_holding_bars": null
+          },
+          "trade_count": 0,
+          "sharpe": null,
+          "max_drawdown_pct": null,
+          "win_rate": null,
+          "generation": 0,
+          "created_at": "2026-03-19T23:28:59.540989+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "d3fd0b1b-baef-4524-bc01-b15cdfe0b32e",
+          "hypothesis": "EUR_USD tends to show momentum during active trading sessions, particularly during European and US overlap periods. We'll capture intraday breakouts by going long when price breaks above the previous bar's high during active hours (8-16 UTC), and use session-based filtering to avoid low-liquidity periods.",
+          "strategy_id": "d3fd0b1b-baef-4524-bc01-b15cdfe0b32e",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "lag2": 1,
+                  "op": "gt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lte",
+                  "value": 16
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "entry_short": null,
+            "exit": {
+              "field": "hour_of_day",
+              "op": "eq",
+              "value": 21
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_multiplier": 3
+          },
+          "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+          "metrics": {
+            "total_trades": 0.0,
+            "win_count": null,
+            "loss_count": null,
+            "win_rate": null,
+            "net_pnl": null,
+            "net_return_pct": null,
+            "annualized_return_pct": null,
+            "sharpe_ratio": null,
+            "sortino_ratio": null,
+            "max_drawdown_pct": null,
+            "avg_win": null,
+            "avg_loss": null,
+            "expectancy": null,
+            "profit_factor": null,
+            "avg_holding_bars": null
+          },
+          "trade_count": 0,
+          "sharpe": null,
+          "max_drawdown_pct": null,
+          "win_rate": null,
+          "generation": 0,
+          "created_at": "2026-03-19T23:29:40.277619+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "a9b7be54-0983-4fed-b8f1-21af46903f78",
+          "hypothesis": "EUR_USD tends to show momentum patterns during active trading sessions, particularly during European and US overlap periods. A simple breakout strategy that enters long positions when price breaks above recent highs during active hours (avoiding overnight gaps) should capture trending moves while limiting exposure during low-liquidity periods.",
+          "strategy_id": "a9b7be54-0983-4fed-b8f1-21af46903f78",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "gt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lte",
+                  "value": 16
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "gte",
+                  "value": 1
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "lte",
+                  "value": 5
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "lt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lte",
+                  "value": 16
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "gte",
+                  "value": 1
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "lte",
+                  "value": 5
+                }
+              ]
+            },
+            "exit": {
+              "field": "hour_of_day",
+              "op": "eq",
+              "value": 21
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+          "metrics": {
+            "total_trades": 0.0,
+            "win_count": null,
+            "loss_count": null,
+            "win_rate": null,
+            "net_pnl": null,
+            "net_return_pct": null,
+            "annualized_return_pct": null,
+            "sharpe_ratio": null,
+            "sortino_ratio": null,
+            "max_drawdown_pct": null,
+            "avg_win": null,
+            "avg_loss": null,
+            "expectancy": null,
+            "profit_factor": null,
+            "avg_holding_bars": null
+          },
+          "trade_count": 0,
+          "sharpe": null,
+          "max_drawdown_pct": null,
+          "win_rate": null,
+          "generation": 0,
+          "created_at": "2026-03-19T23:30:29.479361+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "3855eaf3-0699-4045-b907-bb9cee75ca04",
+          "hypothesis": "EUR_USD tends to show momentum patterns during active trading sessions, particularly during European and US overlap periods. A simple breakout strategy that enters long positions when price breaks above recent highs during active hours (avoiding overnight gaps) should capture intraday momentum while limiting exposure during low-liquidity periods.",
+          "strategy_id": "3855eaf3-0699-4045-b907-bb9cee75ca04",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "gt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "in",
+                  "value": [
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17
+                  ]
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "lt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "in",
+                  "value": [
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17
+                  ]
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "exit": {
+              "field": "hour_of_day",
+              "op": "eq",
+              "value": 21
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+          "metrics": {
+            "total_trades": 0.0,
+            "win_count": null,
+            "loss_count": null,
+            "win_rate": null,
+            "net_pnl": null,
+            "net_return_pct": null,
+            "annualized_return_pct": null,
+            "sharpe_ratio": null,
+            "sortino_ratio": null,
+            "max_drawdown_pct": null,
+            "avg_win": null,
+            "avg_loss": null,
+            "expectancy": null,
+            "profit_factor": null,
+            "avg_holding_bars": null
+          },
+          "trade_count": 0,
+          "sharpe": null,
+          "max_drawdown_pct": null,
+          "win_rate": null,
+          "generation": 0,
+          "created_at": "2026-03-19T23:31:16.660354+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "65dc1c66-f9c7-4901-99c6-8bf20f6d0ad4",
+          "hypothesis": "EUR_USD tends to show intraday momentum during active trading sessions, particularly during European and US overlap periods. We'll capture breakouts above recent highs during high-activity hours (8-16 UTC) when volatility and volume are typically higher, using simple price action signals.",
+          "strategy_id": "65dc1c66-f9c7-4901-99c6-8bf20f6d0ad4",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "gt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lte",
+                  "value": 16
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "lt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lte",
+                  "value": 16
+                }
+              ]
+            },
+            "exit": {
+              "field": "hour_of_day",
+              "op": "eq",
+              "value": 21
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+          "metrics": {
+            "total_trades": 0.0,
+            "win_count": null,
+            "loss_count": null,
+            "win_rate": null,
+            "net_pnl": null,
+            "net_return_pct": null,
+            "annualized_return_pct": null,
+            "sharpe_ratio": null,
+            "sortino_ratio": null,
+            "max_drawdown_pct": null,
+            "avg_win": null,
+            "avg_loss": null,
+            "expectancy": null,
+            "profit_factor": null,
+            "avg_holding_bars": null
+          },
+          "trade_count": 0,
+          "sharpe": null,
+          "max_drawdown_pct": null,
+          "win_rate": null,
+          "generation": 0,
+          "created_at": "2026-03-19T23:31:59.748087+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "54d490bf-27a9-48df-9fb6-00ccd6e285d8",
+          "hypothesis": "EUR_USD tends to show intraday momentum during active trading sessions, particularly during European and US overlap periods. I'll create a simple breakout strategy that enters long positions when price breaks above the previous bar's high during active trading hours (6-16 UTC), with position management based on ATR-like price ranges.",
+          "strategy_id": "54d490bf-27a9-48df-9fb6-00ccd6e285d8",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "offset2": 1,
+                  "op": "gt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 6
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lte",
+                  "value": 16
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "offset2": 1,
+                  "op": "lt"
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "gte",
+                  "value": 6
+                },
+                {
+                  "field": "hour_of_day",
+                  "op": "lte",
+                  "value": 16
+                },
+                {
+                  "field": "day_of_week",
+                  "op": "in",
+                  "value": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "exit": {
+              "field": "hour_of_day",
+              "op": "eq",
+              "value": 17
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+          "metrics": {
+            "total_trades": 0.0,
+            "win_count": null,
+            "loss_count": null,
+            "win_rate": null,
+            "net_pnl": null,
+            "net_return_pct": null,
+            "annualized_return_pct": null,
+            "sharpe_ratio": null,
+            "sortino_ratio": null,
+            "max_drawdown_pct": null,
+            "avg_win": null,
+            "avg_loss": null,
+            "expectancy": null,
+            "profit_factor": null,
+            "avg_holding_bars": null
+          },
+          "trade_count": 0,
+          "sharpe": null,
+          "max_drawdown_pct": null,
+          "win_rate": null,
+          "generation": 0,
+          "created_at": "2026-03-19T23:32:46.480030+00:00",
+          "validation_errors": [],
+          "error": null
+        }
+      ],
+      "selected_candidate_id": null,
+      "diagnostic_summary": {
+        "failure_taxonomy": "zero_trades",
+        "root_cause": "The entry conditions contain logically impossible requirements that can never be satisfied. For long entries, close > high is impossible since close is always <= high by definition. For short entries, close < low is impossible since close is always >= low by definition.",
+        "recommended_mutations": [
+          "Change long entry condition from 'close > high' to 'close > sma_20' or another meaningful technical condition",
+          "Change short entry condition from 'close < low' to 'close < sma_20' or another meaningful technical condition",
+          "Replace impossible price comparisons with momentum indicators like 'rsi > 70' for long and 'rsi < 30' for short",
+          "Add trend confirmation using moving average crossovers instead of the current price logic"
+        ],
+        "confidence": 1.0,
+        "discard": false
+      },
+      "comparison_result": null,
+      "robustness_passed": null,
+      "robustness_report": null,
+      "feature_eval_results": null,
+      "research_mode": null,
+      "automl_job_id": null,
+      "model_evaluation": null,
+      "marker_scores": {
+        "dopamine": 0.5,
+        "serotonin": 0.0,
+        "noradrenaline": 0.0,
+        "amygdala": 0.0
+      },
+      "marker_action": "continue",
+      "composite_score": 0.15,
+      "next_node": "END",
+      "task": "generate_seed",
+      "iteration": 11,
+      "errors": [],
+      "human_approval_required": false,
+      "_marker_context": {
+        "marker_scores": {
+          "dopamine": 0.5,
+          "serotonin": 0.0,
+          "noradrenaline": 0.0,
+          "amygdala": 0.0
+        },
+        "marker_action": "continue",
+        "composite_score": 0.15
+      }
+    }
+  },
+  "aa3ac247-7059-425b-bc5d-7f1d2708895b": {
+    "id": "aa3ac247-7059-425b-bc5d-7f1d2708895b",
+    "session_id": "7cdae08f-9604-4809-ae48-9a10d45d9455",
+    "parent_id": null,
+    "generation": 0,
+    "status": "running",
+    "instrument": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01",
+    "test_end": "2026-01-01",
+    "model_id": null,
+    "feature_run_id": null,
+    "task": "generate_seed",
+    "requested_by": "api",
+    "hypothesis": null,
+    "strategy_id": null,
+    "backtest_run_id": null,
+    "score": null,
+    "sharpe": null,
+    "max_drawdown_pct": null,
+    "win_rate": null,
+    "total_trades": null,
+    "failure_taxonomy": null,
+    "comparison_recommendation": null,
+    "error_message": null,
+    "discard_reason": null,
+    "created_at": "2026-03-20T00:00:25.985152+00:00",
+    "updated_at": "2026-03-20T00:00:25.988287+00:00",
+    "final_state_snapshot": null
+  },
+  "57a5eaf0-4417-4329-a673-c26fbee0bee5": {
+    "id": "57a5eaf0-4417-4329-a673-c26fbee0bee5",
+    "session_id": "50b558e9-aa6d-412a-97fb-ebdcfdf46902",
+    "parent_id": null,
+    "generation": 0,
+    "status": "archived",
+    "instrument": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01",
+    "test_end": "2026-01-01",
+    "model_id": null,
+    "feature_run_id": null,
+    "task": "generate_seed",
+    "requested_by": "api",
+    "hypothesis": "EUR_USD exhibits short-term momentum patterns where strong directional moves (measured by the relationship between close and open prices) tend to continue in the same direction. A strategy that enters long positions when the current bar shows strong bullish momentum (close significantly above open) and uses reasonable risk management should capture these momentum bursts while limiting downside risk.",
+    "strategy_id": "e226e49d-168f-4c6f-a09a-bba6cc98b5cb",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "score": null,
+    "sharpe": -0.06048500163614447,
+    "max_drawdown_pct": 0.12032000000003608,
+    "win_rate": 0.39069767441860465,
+    "total_trades": 430,
+    "failure_taxonomy": "no_edge",
+    "comparison_recommendation": null,
+    "error_message": null,
+    "discard_reason": null,
+    "created_at": "2026-03-20T00:40:55.667334+00:00",
+    "updated_at": "2026-03-20T00:48:39.877876+00:00",
+    "final_state_snapshot": {
+      "session_id": "50b558e9-aa6d-412a-97fb-ebdcfdf46902",
+      "trace_id": "941cac4d-8f24-4241-9da3-f4808e8d4a58",
+      "requested_by": "api",
+      "created_at": "2026-03-20T00:40:55.667081+00:00",
+      "instrument": "EUR_USD",
+      "timeframe": "H1",
+      "test_start": "2022-01-01",
+      "test_end": "2026-01-01",
+      "model_id": null,
+      "feature_run_id": null,
+      "experiment_id": "57a5eaf0-4417-4329-a673-c26fbee0bee5",
+      "parent_experiment_id": null,
+      "generation": 0,
+      "hypothesis": "EUR_USD exhibits short-term momentum patterns where strong directional moves (measured by the relationship between close and open prices) tend to continue in the same direction. A strategy that enters long positions when the current bar shows strong bullish momentum (close significantly above open) and uses reasonable risk management should capture these momentum bursts while limiting downside risk.",
+      "mutation_plan": "The strategy has fundamental logical flaws in its entry conditions that create contradictory signals and meaningless price comparisons. The open > 0.5 condition is nonsensical for EUR/USD (which trades around 1.0-1.2), and having opposite entry conditions for long/short with identical secondary filters creates conflicting signals that erode any potential edge.",
+      "strategy_id": "e226e49d-168f-4c6f-a09a-bba6cc98b5cb",
+      "strategy_definition": {
+        "entry_long": {
+          "all": [
+            {
+              "field": "close",
+              "field2": "open",
+              "op": "gt"
+            },
+            {
+              "field": "close",
+              "op": "gte",
+              "value": 1.0001
+            }
+          ]
+        },
+        "entry_short": {
+          "all": [
+            {
+              "field": "close",
+              "field2": "open",
+              "op": "lt"
+            },
+            {
+              "field": "close",
+              "op": "lte",
+              "value": 1.9999
+            }
+          ]
+        },
+        "exit": {
+          "any": [
+            {
+              "field": "bars_in_trade",
+              "op": "gte",
+              "value": 24
+            },
+            {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "lt"
+                },
+                {
+                  "field": "bars_in_trade",
+                  "op": "gte",
+                  "value": 4
+                }
+              ]
+            }
+          ]
+        },
+        "position_size_units": 1000
+      },
+      "job_id": null,
+      "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+      "backtest_metrics": {
+        "annualized_return_pct": -0.11446000000003552,
+        "avg_holding_bars": 5.065116279069767,
+        "avg_loss": -1.2421374045802374,
+        "avg_win": 1.2558333333332459,
+        "expectancy": -0.2661860465117138,
+        "loss_count": 262.0,
+        "max_drawdown_pct": 0.12032000000003608,
+        "net_pnl": -114.46000000003687,
+        "net_return_pct": -0.11446000000003552,
+        "profit_factor": 0.6482915437560561,
+        "sharpe_ratio": -0.06048500163614447,
+        "sortino_ratio": -0.025122349043744618,
+        "total_trades": 430.0,
+        "win_count": 168.0,
+        "win_rate": 0.39069767441860465
+      },
+      "backtest_trades": [],
+      "equity_curve": [],
+      "diagnosis_summary": "The strategy has fundamental logical flaws in its entry conditions that create contradictory signals and meaningless price comparisons. The open > 0.5 condition is nonsensical for EUR/USD (which trades around 1.0-1.2), and having opposite entry conditions for long/short with identical secondary filters creates conflicting signals that erode any potential edge.",
+      "recommended_mutations": [
+        "Remove the nonsensical 'open > 0.5' condition from both entry_long and entry_short",
+        "Replace 'high > low' condition with meaningful technical indicator like 'rsi < 30' for long and 'rsi > 70' for short",
+        "Add trend filter using moving averages: 'sma_20 > sma_50' for long entries, 'sma_20 < sma_50' for short entries",
+        "Increase stop_atr_multiplier from 2 to 3 to reduce premature exits",
+        "Add momentum confirmation using 'close > sma_5' for long and 'close < sma_5' for short"
+      ],
+      "discard": false,
+      "comparison_summary": null,
+      "comparison_recommendation": null,
+      "regime_context": null,
+      "strategy_candidates": [
+        {
+          "candidate_id": "a24ec066-9e79-4176-bc3a-6937f670bede",
+          "hypothesis": "EUR_USD exhibits mean-reverting behavior on H1 timeframes where significant intrabar price movements (high-low range relative to opening price) often signal temporary overextension that reverses within a few hours. This strategy enters long when the current bar shows a large downward move from open to close relative to the bar's range, and exits after a reasonable holding period or when price recovers.",
+          "strategy_id": "a24ec066-9e79-4176-bc3a-6937f670bede",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "lt"
+                },
+                {
+                  "field": "open",
+                  "op": "gt",
+                  "value": 0.5
+                },
+                {
+                  "field": "high",
+                  "field2": "low",
+                  "op": "gt"
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "gt"
+                },
+                {
+                  "field": "open",
+                  "op": "gt",
+                  "value": 0.5
+                },
+                {
+                  "field": "high",
+                  "field2": "low",
+                  "op": "gt"
+                }
+              ]
+            },
+            "exit": {
+              "any": [
+                {
+                  "field": "bars_in_trade",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "minutes_in_trade",
+                  "op": "gte",
+                  "value": 480
+                }
+              ]
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+          "metrics": {
+            "annualized_return_pct": -0.04197000000003027,
+            "avg_holding_bars": 7.6072607260726075,
+            "avg_loss": -1.3935593220339804,
+            "avg_win": 1.6245238095237307,
+            "expectancy": -0.13851485148522935,
+            "loss_count": 177.0,
+            "max_drawdown_pct": 0.05152685170937395,
+            "net_pnl": -41.970000000024484,
+            "net_return_pct": -0.04197000000003027,
+            "profit_factor": 0.8298467526148463,
+            "sharpe_ratio": -0.02165569524416904,
+            "sortino_ratio": -0.00808160926220606,
+            "total_trades": 303.0,
+            "win_count": 126.0,
+            "win_rate": 0.4158415841584158
+          },
+          "trade_count": 303,
+          "sharpe": -0.02165569524416904,
+          "max_drawdown_pct": 0.05152685170937395,
+          "win_rate": 0.4158415841584158,
+          "generation": 0,
+          "created_at": "2026-03-20T00:41:33.146522+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "649a92e8-8eb7-4d82-a037-07399bbc8f03",
+          "hypothesis": "EUR_USD exhibits mean-reverting behavior on H1 timeframes where extreme intrabar moves (large gaps between open and close relative to the bar's range) tend to reverse in subsequent periods. A strategy that enters long when the current bar shows a significant downward move (close well below open) within a reasonable range should capture these reversions.",
+          "strategy_id": "649a92e8-8eb7-4d82-a037-07399bbc8f03",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "lt"
+                },
+                {
+                  "field": "open",
+                  "field2": "low",
+                  "op": "gt"
+                },
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "gt"
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "gt"
+                },
+                {
+                  "field": "open",
+                  "field2": "high",
+                  "op": "lt"
+                },
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "lt"
+                }
+              ]
+            },
+            "exit": {
+              "any": [
+                {
+                  "field": "bars_in_trade",
+                  "op": "gte",
+                  "value": 24
+                },
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "gt"
+                }
+              ]
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2.5,
+            "take_profit_atr_multiplier": 4.0
+          },
+          "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+          "metrics": {
+            "annualized_return_pct": -0.2369400000000751,
+            "avg_holding_bars": 1.9711981566820276,
+            "avg_loss": -0.706611018364027,
+            "avg_win": 0.692639405204386,
+            "expectancy": -0.272972350230498,
+            "loss_count": 599.0,
+            "max_drawdown_pct": 0.23725924077051158,
+            "net_pnl": -236.9400000000723,
+            "net_return_pct": -0.2369400000000751,
+            "profit_factor": 0.44020223975796646,
+            "sharpe_ratio": -0.1437652729836134,
+            "sortino_ratio": -0.08052979988916635,
+            "total_trades": 868.0,
+            "win_count": 269.0,
+            "win_rate": 0.3099078341013825
+          },
+          "trade_count": 868,
+          "sharpe": -0.1437652729836134,
+          "max_drawdown_pct": 0.23725924077051158,
+          "win_rate": 0.3099078341013825,
+          "generation": 0,
+          "created_at": "2026-03-20T00:42:33.796298+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "7ffaf480-6e40-4346-a561-65888ae4a6da",
+          "hypothesis": "EUR_USD exhibits mean-reverting behavior on H1 timeframes where intrabar price movements that close against the opening direction tend to reverse within a few hours. This contrarian strategy enters long when close < open (bearish bar) and short when close > open (bullish bar), expecting the trend to reverse.",
+          "strategy_id": "7ffaf480-6e40-4346-a561-65888ae4a6da",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "lt"
+                },
+                {
+                  "field": "volume",
+                  "op": "gt",
+                  "value": 0
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "gt"
+                },
+                {
+                  "field": "volume",
+                  "op": "gt",
+                  "value": 0
+                }
+              ]
+            },
+            "exit": {
+              "any": [
+                {
+                  "field": "bars_in_trade",
+                  "op": "gte",
+                  "value": 6
+                },
+                {
+                  "field": "minutes_in_trade",
+                  "op": "gte",
+                  "value": 360
+                }
+              ]
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2.5,
+            "take_profit_atr_multiplier": 4
+          },
+          "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+          "metrics": {
+            "annualized_return_pct": -0.07794000000003143,
+            "avg_holding_bars": 5.873684210526315,
+            "avg_loss": -1.2671945701358325,
+            "avg_win": 1.2711320754716129,
+            "expectancy": -0.20510526315798028,
+            "loss_count": 221.0,
+            "max_drawdown_pct": 0.08953263146445317,
+            "net_pnl": -77.94000000003254,
+            "net_return_pct": -0.07794000000003143,
+            "profit_factor": 0.7216925549008132,
+            "sharpe_ratio": -0.04283082149847177,
+            "sortino_ratio": -0.01701591740677958,
+            "total_trades": 380.0,
+            "win_count": 159.0,
+            "win_rate": 0.41842105263157897
+          },
+          "trade_count": 380,
+          "sharpe": -0.04283082149847177,
+          "max_drawdown_pct": 0.08953263146445317,
+          "win_rate": 0.41842105263157897,
+          "generation": 0,
+          "created_at": "2026-03-20T00:43:36.949272+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "a6963f63-6f42-4b89-bdd8-b3f6c544e183",
+          "hypothesis": "EUR_USD on H1 timeframe exhibits mean-reverting behavior where bars that close away from their open but not at extremes (high/low) indicate temporary overextension that may reverse. This strategy enters long when price closes below open but above the low, and short when price closes above open but below the high, expecting mean reversion.",
+          "strategy_id": "a6963f63-6f42-4b89-bdd8-b3f6c544e183",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "lt"
+                },
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "gt"
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "gt"
+                },
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "lt"
+                }
+              ]
+            },
+            "exit": {
+              "any": [
+                {
+                  "field": "bars_in_trade",
+                  "op": "gte",
+                  "value": 24
+                },
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "gt"
+                }
+              ]
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+          "metrics": {
+            "annualized_return_pct": -0.2369400000000751,
+            "avg_holding_bars": 1.9711981566820276,
+            "avg_loss": -0.706611018364027,
+            "avg_win": 0.692639405204386,
+            "expectancy": -0.272972350230498,
+            "loss_count": 599.0,
+            "max_drawdown_pct": 0.23725924077051158,
+            "net_pnl": -236.9400000000723,
+            "net_return_pct": -0.2369400000000751,
+            "profit_factor": 0.44020223975796646,
+            "sharpe_ratio": -0.1437652729836134,
+            "sortino_ratio": -0.08052979988916635,
+            "total_trades": 868.0,
+            "win_count": 269.0,
+            "win_rate": 0.3099078341013825
+          },
+          "trade_count": 868,
+          "sharpe": -0.1437652729836134,
+          "max_drawdown_pct": 0.23725924077051158,
+          "win_rate": 0.3099078341013825,
+          "generation": 0,
+          "created_at": "2026-03-20T00:44:28.997796+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "3452a097-048d-4355-be4a-72ac306d78af",
+          "hypothesis": "EUR_USD exhibits mean-reverting behavior on H1 timeframes where extreme intrabar moves (large gaps between open and close relative to the bar's range) tend to reverse in subsequent periods. A strategy that enters long when the current bar shows a significant downward move (close well below open) within a reasonable range should capture these reversions.",
+          "strategy_id": "3452a097-048d-4355-be4a-72ac306d78af",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "lt"
+                },
+                {
+                  "field": "open",
+                  "field2": "low",
+                  "op": "gt"
+                },
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "gt"
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "gt"
+                },
+                {
+                  "field": "open",
+                  "field2": "high",
+                  "op": "lt"
+                },
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "lt"
+                }
+              ]
+            },
+            "exit": {
+              "field": "bars_in_trade",
+              "op": "gte",
+              "value": 24
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+          "metrics": {
+            "annualized_return_pct": 0.019880000000004658,
+            "avg_holding_bars": 2613.0,
+            "avg_loss": null,
+            "avg_win": 19.879999999999896,
+            "expectancy": 19.879999999999896,
+            "loss_count": 0.0,
+            "max_drawdown_pct": 0.0,
+            "net_pnl": 19.879999999999896,
+            "net_return_pct": 0.019880000000004658,
+            "profit_factor": null,
+            "sharpe_ratio": 0.019562767576168476,
+            "sortino_ratio": null,
+            "total_trades": 1.0,
+            "win_count": 1.0,
+            "win_rate": 1.0
+          },
+          "trade_count": 1,
+          "sharpe": 0.019562767576168476,
+          "max_drawdown_pct": 0.0,
+          "win_rate": 1.0,
+          "generation": 0,
+          "created_at": "2026-03-20T00:45:19.003350+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "5b94fe03-ae4f-4750-905a-b67e3c6f98a1",
+          "hypothesis": "EUR_USD exhibits mean-reverting behavior on H1 timeframes where significant intraday price movements tend to partially reverse. This strategy enters long positions when the current close is significantly below the recent high within the same trading session, and enters short when the close is significantly above the recent low, expecting partial reversion.",
+          "strategy_id": "5b94fe03-ae4f-4750-905a-b67e3c6f98a1",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "lt"
+                },
+                {
+                  "field": "volume",
+                  "op": "gt",
+                  "value": 0
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "gt"
+                },
+                {
+                  "field": "volume",
+                  "op": "gt",
+                  "value": 0
+                }
+              ]
+            },
+            "exit": {
+              "any": [
+                {
+                  "field": "bars_in_trade",
+                  "op": "gte",
+                  "value": 8
+                },
+                {
+                  "field": "close",
+                  "field2": "high",
+                  "op": "gte"
+                },
+                {
+                  "field": "close",
+                  "field2": "low",
+                  "op": "lte"
+                }
+              ]
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2,
+            "take_profit_atr_multiplier": 3
+          },
+          "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+          "metrics": {
+            "annualized_return_pct": -0.08594000000003142,
+            "avg_holding_bars": 7.432258064516129,
+            "avg_loss": -1.620416666666751,
+            "avg_win": 1.311901408450622,
+            "expectancy": -0.27722580645169637,
+            "loss_count": 168.0,
+            "max_drawdown_pct": 0.08594000000003142,
+            "net_pnl": -85.94000000002589,
+            "net_return_pct": -0.08594000000003142,
+            "profit_factor": 0.6843110605002337,
+            "sharpe_ratio": -0.04633866875642582,
+            "sortino_ratio": -0.01410551772926245,
+            "total_trades": 310.0,
+            "win_count": 142.0,
+            "win_rate": 0.45806451612903226
+          },
+          "trade_count": 310,
+          "sharpe": -0.04633866875642582,
+          "max_drawdown_pct": 0.08594000000003142,
+          "win_rate": 0.45806451612903226,
+          "generation": 0,
+          "created_at": "2026-03-20T00:46:03.844045+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "46dae673-8583-4ea5-9e6c-1b14ca5e15bc",
+          "hypothesis": "EUR_USD exhibits short-term momentum patterns where strong directional moves (measured by the relationship between current close and recent highs/lows) tend to continue for several bars. By entering long when price closes near recent highs and managing positions with reasonable stop-losses and profit targets, we can capture these momentum moves while limiting downside risk.",
+          "strategy_id": "46dae673-8583-4ea5-9e6c-1b14ca5e15bc",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "gt"
+                },
+                {
+                  "field": "high",
+                  "field2": "low",
+                  "op": "gt"
+                }
+              ]
+            },
+            "entry_short": null,
+            "exit": {
+              "field": "days_in_trade",
+              "op": "gte",
+              "value": 2
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2.5,
+            "take_profit_atr_multiplier": 4
+          },
+          "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+          "metrics": {
+            "annualized_return_pct": -0.03395000000001164,
+            "avg_holding_bars": 37.95384615384615,
+            "avg_loss": -4.013870967741987,
+            "avg_win": 2.6611764705881344,
+            "expectancy": -0.5223076923077694,
+            "loss_count": 31.0,
+            "max_drawdown_pct": 0.05033000000000175,
+            "net_pnl": -33.95000000000503,
+            "net_return_pct": -0.03395000000001164,
+            "profit_factor": 0.7271558305874419,
+            "sharpe_ratio": -0.018256785758071485,
+            "sortino_ratio": -0.002368031357370671,
+            "total_trades": 65.0,
+            "win_count": 34.0,
+            "win_rate": 0.5230769230769231
+          },
+          "trade_count": 65,
+          "sharpe": -0.018256785758071485,
+          "max_drawdown_pct": 0.05033000000000175,
+          "win_rate": 0.5230769230769231,
+          "generation": 0,
+          "created_at": "2026-03-20T00:46:44.501354+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "789fac17-e549-4605-9e3f-3a3c472a0546",
+          "hypothesis": "EUR_USD exhibits mean-reverting behavior on H1 timeframes where intrabar directional moves (close vs open) tend to reverse in subsequent periods. A simple strategy that enters opposite to the current bar's direction should capture these short-term reversions.",
+          "strategy_id": "789fac17-e549-4605-9e3f-3a3c472a0546",
+          "strategy_definition": {
+            "entry_long": {
+              "field": "close",
+              "field2": "open",
+              "op": "lt"
+            },
+            "entry_short": {
+              "field": "close",
+              "field2": "open",
+              "op": "gt"
+            },
+            "exit": {
+              "any": [
+                {
+                  "field": "bars_in_trade",
+                  "op": "gte",
+                  "value": 12
+                }
+              ]
+            },
+            "position_size_units": 1000,
+            "stop_atr_multiplier": 2.5,
+            "take_profit_atr_multiplier": 4
+          },
+          "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+          "metrics": {
+            "annualized_return_pct": 0.0421699999999837,
+            "avg_holding_bars": 11.99502487562189,
+            "avg_loss": -1.6005102040817205,
+            "avg_win": 1.932233009708649,
+            "expectancy": 0.20980099502478733,
+            "loss_count": 98.0,
+            "max_drawdown_pct": 0.02413423191857088,
+            "net_pnl": 42.16999999998228,
+            "net_return_pct": 0.0421699999999837,
+            "profit_factor": 1.2688555945169266,
+            "sharpe_ratio": 0.023387933059709202,
+            "sortino_ratio": 0.006988417390652722,
+            "total_trades": 201.0,
+            "win_count": 103.0,
+            "win_rate": 0.5124378109452736
+          },
+          "trade_count": 201,
+          "sharpe": 0.023387933059709202,
+          "max_drawdown_pct": 0.02413423191857088,
+          "win_rate": 0.5124378109452736,
+          "generation": 0,
+          "created_at": "2026-03-20T00:47:51.241368+00:00",
+          "validation_errors": [],
+          "error": null
+        },
+        {
+          "candidate_id": "e226e49d-168f-4c6f-a09a-bba6cc98b5cb",
+          "hypothesis": "EUR_USD exhibits short-term momentum patterns where strong directional moves (measured by the relationship between close and open prices) tend to continue in the same direction. A strategy that enters long positions when the current bar shows strong bullish momentum (close significantly above open) and uses reasonable risk management should capture these momentum bursts while limiting downside risk.",
+          "strategy_id": "e226e49d-168f-4c6f-a09a-bba6cc98b5cb",
+          "strategy_definition": {
+            "entry_long": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "gt"
+                },
+                {
+                  "field": "close",
+                  "op": "gte",
+                  "value": 1.0001
+                }
+              ]
+            },
+            "entry_short": {
+              "all": [
+                {
+                  "field": "close",
+                  "field2": "open",
+                  "op": "lt"
+                },
+                {
+                  "field": "close",
+                  "op": "lte",
+                  "value": 1.9999
+                }
+              ]
+            },
+            "exit": {
+              "any": [
+                {
+                  "field": "bars_in_trade",
+                  "op": "gte",
+                  "value": 24
+                },
+                {
+                  "all": [
+                    {
+                      "field": "close",
+                      "field2": "open",
+                      "op": "lt"
+                    },
+                    {
+                      "field": "bars_in_trade",
+                      "op": "gte",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            "position_size_units": 1000
+          },
+          "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+          "metrics": {
+            "annualized_return_pct": -0.11446000000003552,
+            "avg_holding_bars": 5.065116279069767,
+            "avg_loss": -1.2421374045802374,
+            "avg_win": 1.2558333333332459,
+            "expectancy": -0.2661860465117138,
+            "loss_count": 262.0,
+            "max_drawdown_pct": 0.12032000000003608,
+            "net_pnl": -114.46000000003687,
+            "net_return_pct": -0.11446000000003552,
+            "profit_factor": 0.6482915437560561,
+            "sharpe_ratio": -0.06048500163614447,
+            "sortino_ratio": -0.025122349043744618,
+            "total_trades": 430.0,
+            "win_count": 168.0,
+            "win_rate": 0.39069767441860465
+          },
+          "trade_count": 430,
+          "sharpe": -0.06048500163614447,
+          "max_drawdown_pct": 0.12032000000003608,
+          "win_rate": 0.39069767441860465,
+          "generation": 0,
+          "created_at": "2026-03-20T00:48:39.719177+00:00",
+          "validation_errors": [],
+          "error": null
+        }
+      ],
+      "selected_candidate_id": null,
+      "diagnostic_summary": {
+        "failure_taxonomy": "no_edge",
+        "root_cause": "The strategy has fundamental logical flaws in its entry conditions that create contradictory signals and meaningless price comparisons. The open > 0.5 condition is nonsensical for EUR/USD (which trades around 1.0-1.2), and having opposite entry conditions for long/short with identical secondary filters creates conflicting signals that erode any potential edge.",
+        "recommended_mutations": [
+          "Remove the nonsensical 'open > 0.5' condition from both entry_long and entry_short",
+          "Replace 'high > low' condition with meaningful technical indicator like 'rsi < 30' for long and 'rsi > 70' for short",
+          "Add trend filter using moving averages: 'sma_20 > sma_50' for long entries, 'sma_20 < sma_50' for short entries",
+          "Increase stop_atr_multiplier from 2 to 3 to reduce premature exits",
+          "Add momentum confirmation using 'close > sma_5' for long and 'close < sma_5' for short"
+        ],
+        "confidence": 0.95,
+        "discard": false
+      },
+      "comparison_result": null,
+      "robustness_passed": null,
+      "robustness_report": null,
+      "feature_eval_results": null,
+      "research_mode": null,
+      "automl_job_id": null,
+      "model_evaluation": null,
+      "marker_scores": {
+        "dopamine": 0.5,
+        "serotonin": 0.0,
+        "noradrenaline": 0.0,
+        "amygdala": 0.0
+      },
+      "marker_action": "continue",
+      "composite_score": 0.15,
+      "next_node": "END",
+      "task": "generate_seed",
+      "iteration": 11,
+      "errors": [],
+      "human_approval_required": false,
+      "_marker_context": {
+        "marker_scores": {
+          "dopamine": 0.5,
+          "serotonin": 0.0,
+          "noradrenaline": 0.0,
+          "amygdala": 0.0
+        },
+        "marker_action": "continue",
+        "composite_score": 0.15
+      }
+    }
+  }
+}

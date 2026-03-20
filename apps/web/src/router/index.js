@@ -41,6 +41,11 @@ const routes = [
     component: () => import('@/views/ResultsView.vue'),
     meta: { label: 'RESULTS', icon: 'mdi-chart-line' },
   },
+  { path: '/research',    name: 'Research',    component: () => import('@/views/ResearchView.vue'),    meta: { label: 'RESEARCH',    icon: 'mdi-flask' } },
+  { path: '/experiments', name: 'Experiments', component: () => import('@/views/ExperimentsView.vue'), meta: { label: 'EXPERIMENTS', icon: 'mdi-atom' } },
+  { path: '/chat',        name: 'Chat',        component: () => import('@/views/ChatView.vue'),        meta: { label: 'CHAT',        icon: 'mdi-chat-processing' } },
+  { path: '/automl',      name: 'AutoML',      component: () => import('@/views/AutoMLView.vue'),      meta: { label: 'AUTOML',      icon: 'mdi-robot' } },
+  { path: '/knowledge',   name: 'Knowledge',   component: () => import('@/views/KnowledgeView.vue'),   meta: { label: 'KNOWLEDGE',   icon: 'mdi-graph' } },
 ]
 
 const router = createRouter({

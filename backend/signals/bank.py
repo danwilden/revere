@@ -56,6 +56,7 @@ def create_signal_from_hmm(
             "timeframe": model_record.get("timeframe", ""),
             "description": description,
         },
+        metadata={"field_name": "hmm_regime"},
         source_model_id=model_id,
         version=1,
         created_at=datetime.utcnow(),

@@ -25,8 +25,16 @@ class RulesStrategy(BaseStrategy):
         "take_profit_atr_multiplier": 3.0,     # optional
         "cooldown_hours": 48.0,                # optional
         "position_size_units": 10000.0,        # optional
+        "max_holding_bars": 10,                # optional positive int
+        "exit_before_weekend": true,           # optional bool, exits Friday >= 20:00 UTC
         "named_conditions": {}                 # optional
     }
+
+    Fields available in rule evaluation context:
+      bar fields:     open, high, low, close, volume, timestamp_utc, ...
+      feature fields: rsi_14, atr_14, adx_14, day_of_week, is_friday, hour_of_day, ...
+      state markers:  bars_in_trade (int), minutes_in_trade (float)
+      signal fields:  any pre-joined signal column (e.g. hmm_regime)
     """
 
     def __init__(self, definition_json: dict) -> None:
@@ -79,6 +87,22 @@ class RulesStrategy(BaseStrategy):
         position: dict,
         state: StrategyState,
     ) -> bool:
+        # --- Native exit primitives (checked before the rules DSL node) ---
+
+        # 1. max_holding_bars: exit when the trade has been open long enough
+        max_bars = self._def.get("max_holding_bars")
+        if max_bars is not None and isinstance(max_bars, int):
+            if bar.get("bars_in_trade", 0) >= max_bars:
+                return True
+
+        # 2. exit_before_weekend: exit on Friday bar at or after 20:00 UTC
+        #    (buffer before weekend forex gap risk)
+        if self._def.get("exit_before_weekend"):
+            ts = bar.get("timestamp_utc")
+            if ts is not None and ts.weekday() == 4 and ts.hour >= 20:
+                return True
+
+        # --- Rules DSL exit node ---
         exit_node = self._def.get("exit")
         if exit_node is None:
             return False

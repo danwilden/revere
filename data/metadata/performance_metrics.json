@@ -350,5 +350,5117 @@
     "metric_value": 36.0,
     "segment_type": "regime",
     "segment_key": "state_3"
+  },
+  "03de8c4c-67e7-4646-9d7e-12cc3d33160b": {
+    "id": "03de8c4c-67e7-4646-9d7e-12cc3d33160b",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "total_trades",
+    "metric_value": 105.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8800a9ee-9317-43ca-aa05-d90c8fdaf376": {
+    "id": "8800a9ee-9317-43ca-aa05-d90c8fdaf376",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "win_count",
+    "metric_value": 44.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "357cbde6-eea9-49da-8fc7-5c67a04da2c0": {
+    "id": "357cbde6-eea9-49da-8fc7-5c67a04da2c0",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "loss_count",
+    "metric_value": 61.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "bc9bb178-c644-407d-9acc-64e639b76d5d": {
+    "id": "bc9bb178-c644-407d-9acc-64e639b76d5d",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "win_rate",
+    "metric_value": 0.41904761904761906,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a5c611f3-d61a-4405-8672-7779b2b4538f": {
+    "id": "a5c611f3-d61a-4405-8672-7779b2b4538f",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "net_pnl",
+    "metric_value": -45.76000000000868,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8eeec0d8-2bba-4697-a6c1-711316705109": {
+    "id": "8eeec0d8-2bba-4697-a6c1-711316705109",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.045760000000009314,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1a73e53d-26a1-4d4b-b316-07521d934beb": {
+    "id": "1a73e53d-26a1-4d4b-b316-07521d934beb",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.045760000000009314,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5b928573-3433-403f-b049-6492d986fd0a": {
+    "id": "5b928573-3433-403f-b049-6492d986fd0a",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.023326169528811124,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "985ca8d0-0ebc-49e1-b4df-fc6da57c7c5e": {
+    "id": "985ca8d0-0ebc-49e1-b4df-fc6da57c7c5e",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.004508901038676019,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "15768db6-70d1-419a-9453-d8793d8a7dfa": {
+    "id": "15768db6-70d1-419a-9453-d8793d8a7dfa",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.06571991856450268,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5164b152-d3df-4a7d-a098-117f7f5ba669": {
+    "id": "5164b152-d3df-4a7d-a098-117f7f5ba669",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "avg_win",
+    "metric_value": 2.933409090909016,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "de765e22-013a-4135-a828-a2bcd538fe14": {
+    "id": "de765e22-013a-4135-a828-a2bcd538fe14",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "avg_loss",
+    "metric_value": -2.8660655737705802,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5791a15d-3fba-4ee5-90a1-b73dc9d2408c": {
+    "id": "5791a15d-3fba-4ee5-90a1-b73dc9d2408c",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "expectancy",
+    "metric_value": -0.43580952380960625,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ea5b220c-c4e8-4135-996e-decf242ebc57": {
+    "id": "ea5b220c-c4e8-4135-996e-decf242ebc57",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "profit_factor",
+    "metric_value": 0.7382600240232953,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7810d963-b72b-4201-8e32-80f811299b8e": {
+    "id": "7810d963-b72b-4201-8e32-80f811299b8e",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 23.83809523809524,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "21097f80-f8fc-4bde-9b46-7a62cf9ce320": {
+    "id": "21097f80-f8fc-4bde-9b46-7a62cf9ce320",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "net_pnl",
+    "metric_value": -45.76000000000868,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "c4c8f13a-208f-44be-8311-3b26cb459825": {
+    "id": "c4c8f13a-208f-44be-8311-3b26cb459825",
+    "backtest_run_id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "metric_name": "trade_count",
+    "metric_value": 105.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "a0ef928a-f2f1-445d-b85f-c88befc76335": {
+    "id": "a0ef928a-f2f1-445d-b85f-c88befc76335",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "total_trades",
+    "metric_value": 667.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "80a07c63-8009-49bb-926c-6e9f460ea953": {
+    "id": "80a07c63-8009-49bb-926c-6e9f460ea953",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "win_count",
+    "metric_value": 147.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a40804f5-d0ef-4c02-bf6b-c49bad987c7b": {
+    "id": "a40804f5-d0ef-4c02-bf6b-c49bad987c7b",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "loss_count",
+    "metric_value": 520.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8090e876-c5e2-44f4-b437-b3612272b63c": {
+    "id": "8090e876-c5e2-44f4-b437-b3612272b63c",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "win_rate",
+    "metric_value": 0.22038980509745126,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "62eb8549-ee15-4813-8b7f-0813f5392c4a": {
+    "id": "62eb8549-ee15-4813-8b7f-0813f5392c4a",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "net_pnl",
+    "metric_value": -204.8500000000537,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "71b6ee07-63a7-40cc-a098-0a0ab36460e0": {
+    "id": "71b6ee07-63a7-40cc-a098-0a0ab36460e0",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.2048500000000495,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "63c3ef4d-fb8a-4d6f-ac94-863085f2e1e6": {
+    "id": "63c3ef4d-fb8a-4d6f-ac94-863085f2e1e6",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.2048500000000495,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "eb98d4cd-4c95-4f49-bbb5-d8c8ea65584d": {
+    "id": "eb98d4cd-4c95-4f49-bbb5-d8c8ea65584d",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.15746139793482083,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "14032d88-b7b4-4f3c-bf65-2a1422ea8667": {
+    "id": "14032d88-b7b4-4f3c-bf65-2a1422ea8667",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.09156350664461153,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "183cdea6-1947-47a5-b13c-21c3585aa2ad": {
+    "id": "183cdea6-1947-47a5-b13c-21c3585aa2ad",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.20744000000006055,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "53d678d0-7def-4415-98d4-876c52c544fd": {
+    "id": "53d678d0-7def-4415-98d4-876c52c544fd",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "avg_win",
+    "metric_value": 0.9176190476189733,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "bdaf6b5c-0504-4b08-bc01-725ba701cc72": {
+    "id": "bdaf6b5c-0504-4b08-bc01-725ba701cc72",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "avg_loss",
+    "metric_value": -0.6533461538462362,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9a6dd610-1379-41ab-a956-4394a9652d89": {
+    "id": "9a6dd610-1379-41ab-a956-4394a9652d89",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "expectancy",
+    "metric_value": -0.30712143928044033,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "24b8c20a-2876-47ab-bee7-03915735f566": {
+    "id": "24b8c20a-2876-47ab-bee7-03915735f566",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "profit_factor",
+    "metric_value": 0.3970389121091778,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "89d1f9b0-755d-45a8-8318-2899e83307a7": {
+    "id": "89d1f9b0-755d-45a8-8318-2899e83307a7",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 1.9505247376311845,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d2fc48a8-cc53-453b-83df-4ecbca5062c7": {
+    "id": "d2fc48a8-cc53-453b-83df-4ecbca5062c7",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "net_pnl",
+    "metric_value": -204.8500000000537,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "19c85300-21da-4b5e-8d20-dfb2e06d709a": {
+    "id": "19c85300-21da-4b5e-8d20-dfb2e06d709a",
+    "backtest_run_id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "metric_name": "trade_count",
+    "metric_value": 667.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "0f511a7e-cc3b-4101-924e-cc0e9f8c6fc6": {
+    "id": "0f511a7e-cc3b-4101-924e-cc0e9f8c6fc6",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "total_trades",
+    "metric_value": 86.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a41dcbb4-93a8-4413-ab56-d8b778f9123b": {
+    "id": "a41dcbb4-93a8-4413-ab56-d8b778f9123b",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "win_count",
+    "metric_value": 39.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "00e9ff9a-c638-4ea1-9ceb-c0d8c4378629": {
+    "id": "00e9ff9a-c638-4ea1-9ceb-c0d8c4378629",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "loss_count",
+    "metric_value": 47.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1590730d-d07f-4d97-8562-7727b76c761f": {
+    "id": "1590730d-d07f-4d97-8562-7727b76c761f",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "win_rate",
+    "metric_value": 0.45348837209302323,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "732f5d35-4d88-4efe-89cf-a648a200b02b": {
+    "id": "732f5d35-4d88-4efe-89cf-a648a200b02b",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "net_pnl",
+    "metric_value": -40.58000000000583,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ff72a002-e359-4de3-8142-35e3d2f7479c": {
+    "id": "ff72a002-e359-4de3-8142-35e3d2f7479c",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.04058000000000175,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6d9738bd-9948-406d-b8ab-c9af2e4ea8ee": {
+    "id": "6d9738bd-9948-406d-b8ab-c9af2e4ea8ee",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.04058000000000175,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b42ec32b-fe34-41c6-abcb-b2ea443b13c9": {
+    "id": "b42ec32b-fe34-41c6-abcb-b2ea443b13c9",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.05599029887791066,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d4a71b1b-758f-45d7-bb5a-9825f12598a1": {
+    "id": "d4a71b1b-758f-45d7-bb5a-9825f12598a1",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.01832707556326052,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3f15fca5-e9d8-4224-8a43-b85b3273f25f": {
+    "id": "3f15fca5-e9d8-4224-8a43-b85b3273f25f",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.052529999999998835,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a7eddb01-7621-43af-a1f2-974e7e753ff6": {
+    "id": "a7eddb01-7621-43af-a1f2-974e7e753ff6",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "avg_win",
+    "metric_value": 2.1241025641024853,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8405fa1a-064c-4651-a87f-a10724dbab16": {
+    "id": "8405fa1a-064c-4651-a87f-a10724dbab16",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "avg_loss",
+    "metric_value": -2.625957446808569,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "afc73c4f-6c94-4682-9fec-d7d2175fe7f0": {
+    "id": "afc73c4f-6c94-4682-9fec-d7d2175fe7f0",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "expectancy",
+    "metric_value": -0.47186046511634694,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "22f3df4f-3754-4622-b0ba-7ed239acebad": {
+    "id": "22f3df4f-3754-4622-b0ba-7ed239acebad",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "profit_factor",
+    "metric_value": 0.6712040187975618,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d5b7257f-339e-451e-991e-76afa82ac35e": {
+    "id": "d5b7257f-339e-451e-991e-76afa82ac35e",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 6.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ec76dbdb-9243-4557-85ad-40f7ffc1dbe8": {
+    "id": "ec76dbdb-9243-4557-85ad-40f7ffc1dbe8",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "net_pnl",
+    "metric_value": -40.58000000000583,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "10505db3-f7ae-4b4a-83ed-880de68d3f90": {
+    "id": "10505db3-f7ae-4b4a-83ed-880de68d3f90",
+    "backtest_run_id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "metric_name": "trade_count",
+    "metric_value": 86.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "afcdebc9-2833-43fc-b3d3-f14a1cd2abb0": {
+    "id": "afcdebc9-2833-43fc-b3d3-f14a1cd2abb0",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ed086ca7-d6d2-4875-8d56-acbe2a471495": {
+    "id": "ed086ca7-d6d2-4875-8d56-acbe2a471495",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0134d06e-ab0b-4ec0-b769-c896b6a3ed88": {
+    "id": "0134d06e-ab0b-4ec0-b769-c896b6a3ed88",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "544f482e-be86-4cf1-8866-c2834f2884a5": {
+    "id": "544f482e-be86-4cf1-8866-c2834f2884a5",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "fa10266f-380f-4e6f-9dfa-b4f0604b32e9": {
+    "id": "fa10266f-380f-4e6f-9dfa-b4f0604b32e9",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4e3d6056-22ae-4d55-b072-d7a79c582bb8": {
+    "id": "4e3d6056-22ae-4d55-b072-d7a79c582bb8",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6ecc6589-6da1-4375-ba56-f146759773fe": {
+    "id": "6ecc6589-6da1-4375-ba56-f146759773fe",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ef2a33bc-6cef-4615-9754-ca196f340fed": {
+    "id": "ef2a33bc-6cef-4615-9754-ca196f340fed",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0da20cc9-c5b5-4a2b-bbce-dbfe17147cdf": {
+    "id": "0da20cc9-c5b5-4a2b-bbce-dbfe17147cdf",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "75dacd0c-a042-46fb-8451-244fe216cd05": {
+    "id": "75dacd0c-a042-46fb-8451-244fe216cd05",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1ca892cf-a493-45be-93ed-dc4d32a9fda9": {
+    "id": "1ca892cf-a493-45be-93ed-dc4d32a9fda9",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "987ff9fc-b098-49ed-aaaa-21b946b72e9f": {
+    "id": "987ff9fc-b098-49ed-aaaa-21b946b72e9f",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "81c09691-19cb-437f-89b0-7e8422d9f08f": {
+    "id": "81c09691-19cb-437f-89b0-7e8422d9f08f",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6d4fd9d2-88c8-4c73-9385-9b47cc41c259": {
+    "id": "6d4fd9d2-88c8-4c73-9385-9b47cc41c259",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "43082839-4209-49ba-8652-d093e5667222": {
+    "id": "43082839-4209-49ba-8652-d093e5667222",
+    "backtest_run_id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5705b204-07fb-47e3-9ced-13170065fd24": {
+    "id": "5705b204-07fb-47e3-9ced-13170065fd24",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "total_trades",
+    "metric_value": 33.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "965a0ac7-b6d7-4ad2-96b7-ba33bde5c01a": {
+    "id": "965a0ac7-b6d7-4ad2-96b7-ba33bde5c01a",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "win_count",
+    "metric_value": 18.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "455c42bb-7274-4bf5-9ca3-d4e320d0f9d9": {
+    "id": "455c42bb-7274-4bf5-9ca3-d4e320d0f9d9",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "loss_count",
+    "metric_value": 15.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a39a3277-8086-4101-846a-eb9b549495e3": {
+    "id": "a39a3277-8086-4101-846a-eb9b549495e3",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "win_rate",
+    "metric_value": 0.5454545454545454,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f2a9e254-4dbe-4fbe-bbb3-5ee1b77dafc4": {
+    "id": "f2a9e254-4dbe-4fbe-bbb3-5ee1b77dafc4",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "net_pnl",
+    "metric_value": 1.7499999999979217,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7526a3ee-38a6-41cf-a5f1-9897bf747430": {
+    "id": "7526a3ee-38a6-41cf-a5f1-9897bf747430",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "net_return_pct",
+    "metric_value": 0.0017499999999999998,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "72636e68-205c-4d5c-b560-352d362c61dc": {
+    "id": "72636e68-205c-4d5c-b560-352d362c61dc",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "annualized_return_pct",
+    "metric_value": 0.0017499999999999998,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "41ab2eee-654a-4406-bc5d-a293e401fce5": {
+    "id": "41ab2eee-654a-4406-bc5d-a293e401fce5",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "sharpe_ratio",
+    "metric_value": 0.002236805942853094,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9e7bc26e-78bd-405a-ad8d-72689a0f1c16": {
+    "id": "9e7bc26e-78bd-405a-ad8d-72689a0f1c16",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "sortino_ratio",
+    "metric_value": 0.0005681550779328068,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "81b0dcb2-e65e-4a63-9adb-7dbf78bdc7b0": {
+    "id": "81b0dcb2-e65e-4a63-9adb-7dbf78bdc7b0",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.01757661825864878,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "2dcefb65-ee94-4cb7-af76-639a26991f44": {
+    "id": "2dcefb65-ee94-4cb7-af76-639a26991f44",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "avg_win",
+    "metric_value": 3.4272222222221744,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f1c32a4a-bde0-488e-b307-91d29e6fced3": {
+    "id": "f1c32a4a-bde0-488e-b307-91d29e6fced3",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "avg_loss",
+    "metric_value": -3.996000000000081,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d45dea36-244e-41b2-88d8-71fd48b6f965": {
+    "id": "d45dea36-244e-41b2-88d8-71fd48b6f965",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "expectancy",
+    "metric_value": 0.05303030303023992,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3bfd8dea-569a-4fd3-8e04-d23126f19a3c": {
+    "id": "3bfd8dea-569a-4fd3-8e04-d23126f19a3c",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "profit_factor",
+    "metric_value": 1.0291958625291606,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9faa0915-caca-45d0-9314-58d0fd0ea90f": {
+    "id": "9faa0915-caca-45d0-9314-58d0fd0ea90f",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 19.424242424242426,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "437eaf20-15fa-4e35-af96-9f1d2bad761a": {
+    "id": "437eaf20-15fa-4e35-af96-9f1d2bad761a",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "net_pnl",
+    "metric_value": 1.7499999999979217,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "3f5f05f7-8162-4f90-8e2a-5a1c35bff18c": {
+    "id": "3f5f05f7-8162-4f90-8e2a-5a1c35bff18c",
+    "backtest_run_id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "metric_name": "trade_count",
+    "metric_value": 33.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "446a6adc-2549-4a4e-a299-3daa43f24c2a": {
+    "id": "446a6adc-2549-4a4e-a299-3daa43f24c2a",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "total_trades",
+    "metric_value": 62.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "acdb0d47-bf45-4987-bb4d-e1bab485c3dd": {
+    "id": "acdb0d47-bf45-4987-bb4d-e1bab485c3dd",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "win_count",
+    "metric_value": 20.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "055f7b3b-d88f-4ee7-ab30-db6621eae1b6": {
+    "id": "055f7b3b-d88f-4ee7-ab30-db6621eae1b6",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "loss_count",
+    "metric_value": 42.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "13771970-0cbe-478f-9e61-dd239b84eb85": {
+    "id": "13771970-0cbe-478f-9e61-dd239b84eb85",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "win_rate",
+    "metric_value": 0.3225806451612903,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ce45ce4e-baa9-4e59-a3f5-5f9e870750ec": {
+    "id": "ce45ce4e-baa9-4e59-a3f5-5f9e870750ec",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "net_pnl",
+    "metric_value": -61.57000000000457,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "fe421238-2ccc-470d-8c83-1801ac0ec267": {
+    "id": "fe421238-2ccc-470d-8c83-1801ac0ec267",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.06157000000000699,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6a593e64-ac5d-474d-9787-b3b349d341c8": {
+    "id": "6a593e64-ac5d-474d-9787-b3b349d341c8",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.06157000000000699,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7fe0fba9-7365-4243-909c-b4bf7aaa89f6": {
+    "id": "7fe0fba9-7365-4243-909c-b4bf7aaa89f6",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.06465002396048142,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4fb7f687-6509-4fa9-b6fe-5112a6faacef": {
+    "id": "4fb7f687-6509-4fa9-b6fe-5112a6faacef",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.020194391726832444,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "82b1c1f0-864f-4052-9d97-98c94edc8d06": {
+    "id": "82b1c1f0-864f-4052-9d97-98c94edc8d06",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.09169811592418262,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "11e6b8b0-44f7-48f4-82ff-2f2a4f0a4e90": {
+    "id": "11e6b8b0-44f7-48f4-82ff-2f2a4f0a4e90",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "avg_win",
+    "metric_value": 3.560499999999911,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0a60831f-96e4-4a58-a8e2-aaa3ed4d920a": {
+    "id": "0a60831f-96e4-4a58-a8e2-aaa3ed4d920a",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "avg_loss",
+    "metric_value": -3.1614285714286376,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d3a1d749-64fb-4c78-a274-26daa861bca5": {
+    "id": "d3a1d749-64fb-4c78-a274-26daa861bca5",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "expectancy",
+    "metric_value": -0.9930645161291058,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "045fe939-6cf8-4600-841e-a587e8cbb978": {
+    "id": "045fe939-6cf8-4600-841e-a587e8cbb978",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "profit_factor",
+    "metric_value": 0.5363006476878801,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d7287727-7ba1-4006-a050-3e6893bd33f3": {
+    "id": "d7287727-7ba1-4006-a050-3e6893bd33f3",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 9.85483870967742,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "74d5c6e6-6e6c-42af-8bfb-e77b2a28d866": {
+    "id": "74d5c6e6-6e6c-42af-8bfb-e77b2a28d866",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "net_pnl",
+    "metric_value": -61.57000000000457,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "19127d1c-2fe3-44cd-9f5e-d68988f03ea5": {
+    "id": "19127d1c-2fe3-44cd-9f5e-d68988f03ea5",
+    "backtest_run_id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "metric_name": "trade_count",
+    "metric_value": 62.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "40d4a963-8e54-4193-b979-db60df176c55": {
+    "id": "40d4a963-8e54-4193-b979-db60df176c55",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "total_trades",
+    "metric_value": 334.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "bc927022-a20b-4aa5-912e-5544c92a0a45": {
+    "id": "bc927022-a20b-4aa5-912e-5544c92a0a45",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "win_count",
+    "metric_value": 119.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a541fc4b-a82d-45d1-baa5-11379edd7d1d": {
+    "id": "a541fc4b-a82d-45d1-baa5-11379edd7d1d",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "loss_count",
+    "metric_value": 215.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "51ba4042-50fa-428a-94b1-79757e07ea33": {
+    "id": "51ba4042-50fa-428a-94b1-79757e07ea33",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "win_rate",
+    "metric_value": 0.3562874251497006,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d1fc4aaa-a153-4122-ae64-f2952fa2f848": {
+    "id": "d1fc4aaa-a153-4122-ae64-f2952fa2f848",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "net_pnl",
+    "metric_value": -98.91000000002714,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "cf2128f8-e15e-480a-a06f-dc87c382309b": {
+    "id": "cf2128f8-e15e-480a-a06f-dc87c382309b",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.09891000000003261,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ef8de0ce-d2dd-49e0-89c3-f1da81e6190b": {
+    "id": "ef8de0ce-d2dd-49e0-89c3-f1da81e6190b",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.09891000000003261,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "26592544-8f1c-4b13-a7f2-d3f473ea3994": {
+    "id": "26592544-8f1c-4b13-a7f2-d3f473ea3994",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.14205200313086272,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f64c11f3-436f-4a3a-b18d-d692ff8d6101": {
+    "id": "f64c11f3-436f-4a3a-b18d-d692ff8d6101",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.09557173014048131,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "97044eac-1a2a-46cb-95c7-57d493306e49": {
+    "id": "97044eac-1a2a-46cb-95c7-57d493306e49",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.10685311865918803,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c040c8b2-643d-4449-b417-470ad8c7804a": {
+    "id": "c040c8b2-643d-4449-b417-470ad8c7804a",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "avg_win",
+    "metric_value": 1.0075630252099974,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "01c354e6-0991-4c44-9527-29d6aecaf346": {
+    "id": "01c354e6-0991-4c44-9527-29d6aecaf346",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "avg_loss",
+    "metric_value": -1.0177209302326364,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1926060e-f98c-41cc-8fad-519ef47311ea": {
+    "id": "1926060e-f98c-41cc-8fad-519ef47311ea",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "expectancy",
+    "metric_value": -0.29613772455097953,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c3b835a8-61db-4df6-8db2-bfc63488b8dd": {
+    "id": "c3b835a8-61db-4df6-8db2-bfc63488b8dd",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "profit_factor",
+    "metric_value": 0.5479639870206137,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a8f5124b-5682-4f65-81b1-d4e63a31d71f": {
+    "id": "a8f5124b-5682-4f65-81b1-d4e63a31d71f",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 0.9970059880239521,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e18e397e-cf17-4926-a0f9-221402244665": {
+    "id": "e18e397e-cf17-4926-a0f9-221402244665",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "net_pnl",
+    "metric_value": -98.91000000002714,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "ee7e25b6-338e-4f88-8c2e-703ba8cfa3d0": {
+    "id": "ee7e25b6-338e-4f88-8c2e-703ba8cfa3d0",
+    "backtest_run_id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "metric_name": "trade_count",
+    "metric_value": 334.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "df444514-7e32-41d5-9d23-18dbe37b63f4": {
+    "id": "df444514-7e32-41d5-9d23-18dbe37b63f4",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "total_trades",
+    "metric_value": 1.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ad1f2972-45b5-4142-99dd-2a872ee4cc67": {
+    "id": "ad1f2972-45b5-4142-99dd-2a872ee4cc67",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "win_count",
+    "metric_value": 1.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a886dd1b-8368-42aa-8cc5-73eadf719c2b": {
+    "id": "a886dd1b-8368-42aa-8cc5-73eadf719c2b",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "loss_count",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1f1d4251-ae68-468f-b0d1-b04b569289ba": {
+    "id": "1f1d4251-ae68-468f-b0d1-b04b569289ba",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "win_rate",
+    "metric_value": 1.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "63930979-5be7-4651-a754-f486d2d5a837": {
+    "id": "63930979-5be7-4651-a754-f486d2d5a837",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "net_pnl",
+    "metric_value": 19.15,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "fcc90335-2385-4bd2-837b-90b9f8850f7b": {
+    "id": "fcc90335-2385-4bd2-837b-90b9f8850f7b",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "net_return_pct",
+    "metric_value": 0.01914999999999418,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "dc95e667-9004-4666-bd9f-76b29c4184f6": {
+    "id": "dc95e667-9004-4666-bd9f-76b29c4184f6",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "annualized_return_pct",
+    "metric_value": 0.01914999999999418,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "78a4679f-fbfe-46cc-8931-58c822f70ba0": {
+    "id": "78a4679f-fbfe-46cc-8931-58c822f70ba0",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "sharpe_ratio",
+    "metric_value": 0.03851856078856727,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d2078712-e9dc-4d9f-b838-7b49f255cb01": {
+    "id": "d2078712-e9dc-4d9f-b838-7b49f255cb01",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "81fc59c8-ad40-4e7c-bdf6-41c69863dc60": {
+    "id": "81fc59c8-ad40-4e7c-bdf6-41c69863dc60",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5626e01c-22c6-4168-ac29-7f01f36efbf6": {
+    "id": "5626e01c-22c6-4168-ac29-7f01f36efbf6",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "avg_win",
+    "metric_value": 19.15,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "80cf36cf-1e03-44dd-ba87-e2857f50931b": {
+    "id": "80cf36cf-1e03-44dd-ba87-e2857f50931b",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1cb79ffa-b293-451e-a4f8-6be75f3106ca": {
+    "id": "1cb79ffa-b293-451e-a4f8-6be75f3106ca",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "expectancy",
+    "metric_value": 19.15,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5246919e-c05f-43b6-8e72-17b1bf3401ed": {
+    "id": "5246919e-c05f-43b6-8e72-17b1bf3401ed",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f4b2047b-03b5-4db5-b28f-a71bc6aa80ba": {
+    "id": "f4b2047b-03b5-4db5-b28f-a71bc6aa80ba",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 674.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "49086a9c-d228-4cf5-9480-293aacf40a74": {
+    "id": "49086a9c-d228-4cf5-9480-293aacf40a74",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "net_pnl",
+    "metric_value": 19.15,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "5170b7a1-01ee-479c-9f84-e483e8e17fe2": {
+    "id": "5170b7a1-01ee-479c-9f84-e483e8e17fe2",
+    "backtest_run_id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "metric_name": "trade_count",
+    "metric_value": 1.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "892bb10c-feb6-4e7b-903d-f1fb9b011bdf": {
+    "id": "892bb10c-feb6-4e7b-903d-f1fb9b011bdf",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "total_trades",
+    "metric_value": 334.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e4667d88-1089-4984-91c8-e9546c91138a": {
+    "id": "e4667d88-1089-4984-91c8-e9546c91138a",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "win_count",
+    "metric_value": 119.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b03a4b73-00cd-47ec-b439-6f449fb68162": {
+    "id": "b03a4b73-00cd-47ec-b439-6f449fb68162",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "loss_count",
+    "metric_value": 215.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e2176ebd-b2c0-494a-bb7f-27da0bfe87fc": {
+    "id": "e2176ebd-b2c0-494a-bb7f-27da0bfe87fc",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "win_rate",
+    "metric_value": 0.3562874251497006,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e7771070-14ea-4857-ac5a-8a18460bea34": {
+    "id": "e7771070-14ea-4857-ac5a-8a18460bea34",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "net_pnl",
+    "metric_value": -98.91000000002714,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "39408f62-65d3-405c-b902-9c8e4e903418": {
+    "id": "39408f62-65d3-405c-b902-9c8e4e903418",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.09891000000003261,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "bb63273c-1594-4ea9-b844-ac1a6d1fc9db": {
+    "id": "bb63273c-1594-4ea9-b844-ac1a6d1fc9db",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.09891000000003261,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1e86566c-07ae-40f1-b8ec-701064574100": {
+    "id": "1e86566c-07ae-40f1-b8ec-701064574100",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.14205200313086272,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c82e29b3-9f1f-46b4-b38c-1e5073716d13": {
+    "id": "c82e29b3-9f1f-46b4-b38c-1e5073716d13",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.09557173014048131,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f76fd713-ad8a-4921-9401-26572e5623e5": {
+    "id": "f76fd713-ad8a-4921-9401-26572e5623e5",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.10685311865918803,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "912fa98b-bb17-4b0b-8410-369b894707a4": {
+    "id": "912fa98b-bb17-4b0b-8410-369b894707a4",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "avg_win",
+    "metric_value": 1.0075630252099974,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "97007cee-afab-4710-82ee-0d785fa4fee0": {
+    "id": "97007cee-afab-4710-82ee-0d785fa4fee0",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "avg_loss",
+    "metric_value": -1.0177209302326364,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7bfa984e-c4c0-487e-99f8-fa21dfff443b": {
+    "id": "7bfa984e-c4c0-487e-99f8-fa21dfff443b",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "expectancy",
+    "metric_value": -0.29613772455097953,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8a547d64-df91-4545-bc0b-e4673e60670d": {
+    "id": "8a547d64-df91-4545-bc0b-e4673e60670d",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "profit_factor",
+    "metric_value": 0.5479639870206137,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "40322796-2202-4bbd-a958-20e87fafec4f": {
+    "id": "40322796-2202-4bbd-a958-20e87fafec4f",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 0.9970059880239521,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5c4d76c2-3c99-41b1-9349-35491e021f91": {
+    "id": "5c4d76c2-3c99-41b1-9349-35491e021f91",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "net_pnl",
+    "metric_value": -98.91000000002714,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "05ccb6c1-3423-48c6-b9cf-ff49023fb705": {
+    "id": "05ccb6c1-3423-48c6-b9cf-ff49023fb705",
+    "backtest_run_id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "metric_name": "trade_count",
+    "metric_value": 334.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "ee0408f3-3a53-4d72-814e-fb511d6f9082": {
+    "id": "ee0408f3-3a53-4d72-814e-fb511d6f9082",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0437884e-3780-4ddf-872c-5118c4533b91": {
+    "id": "0437884e-3780-4ddf-872c-5118c4533b91",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c083848a-7fb7-4484-b175-5e29ad313bcd": {
+    "id": "c083848a-7fb7-4484-b175-5e29ad313bcd",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d2774a4f-4611-4449-a688-c47384356c86": {
+    "id": "d2774a4f-4611-4449-a688-c47384356c86",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e4c8ba24-6f44-46a9-8679-0eb5cba8833f": {
+    "id": "e4c8ba24-6f44-46a9-8679-0eb5cba8833f",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "bbb82b45-dc2a-4b5f-87c9-f8bd488ccf5a": {
+    "id": "bbb82b45-dc2a-4b5f-87c9-f8bd488ccf5a",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ad94d7f6-48d7-4c17-ba65-e770bc826a4a": {
+    "id": "ad94d7f6-48d7-4c17-ba65-e770bc826a4a",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0a0a8e89-c459-40f2-bf8f-49bb140583b2": {
+    "id": "0a0a8e89-c459-40f2-bf8f-49bb140583b2",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b27851a9-0a36-47fc-8e14-76b6b5fb71a6": {
+    "id": "b27851a9-0a36-47fc-8e14-76b6b5fb71a6",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "45f560a9-4141-44d5-b780-a595164f6aad": {
+    "id": "45f560a9-4141-44d5-b780-a595164f6aad",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ee14183d-add5-4246-a928-84881bcdfb3e": {
+    "id": "ee14183d-add5-4246-a928-84881bcdfb3e",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "dd065e9d-385a-4813-b197-f4b6d51056f6": {
+    "id": "dd065e9d-385a-4813-b197-f4b6d51056f6",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e87bdd59-2e6f-4e1d-b4be-ab7e4b78231e": {
+    "id": "e87bdd59-2e6f-4e1d-b4be-ab7e4b78231e",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f05a9949-9dfb-4f6b-8c63-ce02874f5b94": {
+    "id": "f05a9949-9dfb-4f6b-8c63-ce02874f5b94",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4a8af32e-ed15-4767-8e14-13bd63351b95": {
+    "id": "4a8af32e-ed15-4767-8e14-13bd63351b95",
+    "backtest_run_id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b9d2c17e-198e-4c04-96aa-0461713ee29b": {
+    "id": "b9d2c17e-198e-4c04-96aa-0461713ee29b",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "total_trades",
+    "metric_value": 172.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "81cf067f-2d9f-4376-99c0-c6a5b00d0874": {
+    "id": "81cf067f-2d9f-4376-99c0-c6a5b00d0874",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "win_count",
+    "metric_value": 53.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9cab13b8-14c2-4562-9ce8-1b589bd567f8": {
+    "id": "9cab13b8-14c2-4562-9ce8-1b589bd567f8",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "loss_count",
+    "metric_value": 119.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "55962eca-d8f7-4261-af5a-8e720b3b6c7c": {
+    "id": "55962eca-d8f7-4261-af5a-8e720b3b6c7c",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "win_rate",
+    "metric_value": 0.3081395348837209,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9c67e9b2-b500-4a83-91ad-f18b7d774221": {
+    "id": "9c67e9b2-b500-4a83-91ad-f18b7d774221",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "net_pnl",
+    "metric_value": -52.70000000001307,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "91569b4e-6e0e-4d94-9e2a-d66fe886c838": {
+    "id": "91569b4e-6e0e-4d94-9e2a-d66fe886c838",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.05270000000001165,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d8f79a02-8440-46c3-be11-988b16f1cec1": {
+    "id": "d8f79a02-8440-46c3-be11-988b16f1cec1",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.05270000000001165,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7b53a0ec-82cb-4368-b6a7-c70a29b09c26": {
+    "id": "7b53a0ec-82cb-4368-b6a7-c70a29b09c26",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.07186161172109502,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "00e0c663-64ed-41d1-b97a-6b27830db175": {
+    "id": "00e0c663-64ed-41d1-b97a-6b27830db175",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.039816161307474465,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "168ce5fa-3353-42a2-b618-d944f29e28b2": {
+    "id": "168ce5fa-3353-42a2-b618-d944f29e28b2",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.0605690006114969,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f31bc342-c4cd-4be7-b2e3-67487df25a5f": {
+    "id": "f31bc342-c4cd-4be7-b2e3-67487df25a5f",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "avg_win",
+    "metric_value": 1.862641509433877,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b98592dd-50ac-4ce4-8e93-a32070e14a5b": {
+    "id": "b98592dd-50ac-4ce4-8e93-a32070e14a5b",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "avg_loss",
+    "metric_value": -1.2724369747899877,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "eb805897-7dd1-489a-a5e7-70c74114ff07": {
+    "id": "eb805897-7dd1-489a-a5e7-70c74114ff07",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "expectancy",
+    "metric_value": -0.30639534883728525,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ced3f662-b53d-400b-ae71-ca9efb2d03ea": {
+    "id": "ced3f662-b53d-400b-ae71-ca9efb2d03ea",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "profit_factor",
+    "metric_value": 0.6519614317790907,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "20f38d4a-095d-434c-930b-bfca47bb7ed1": {
+    "id": "20f38d4a-095d-434c-930b-bfca47bb7ed1",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 2.005813953488372,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "071f26f0-ebd2-4de4-8a8c-55d7a8dc964f": {
+    "id": "071f26f0-ebd2-4de4-8a8c-55d7a8dc964f",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "net_pnl",
+    "metric_value": -52.70000000001307,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "0d4fd6a6-462f-4757-9483-4820ec4c6482": {
+    "id": "0d4fd6a6-462f-4757-9483-4820ec4c6482",
+    "backtest_run_id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "metric_name": "trade_count",
+    "metric_value": 172.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "ec333550-c80c-48a6-b334-dbfb796c65a9": {
+    "id": "ec333550-c80c-48a6-b334-dbfb796c65a9",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0de085f1-2da3-4934-af56-43533c185e8c": {
+    "id": "0de085f1-2da3-4934-af56-43533c185e8c",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "471c7998-538b-47c5-8ed7-eb5a27d02e21": {
+    "id": "471c7998-538b-47c5-8ed7-eb5a27d02e21",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3b376c1f-15b7-49d6-8594-3008711efd63": {
+    "id": "3b376c1f-15b7-49d6-8594-3008711efd63",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b4a924da-4e9f-4f94-83ce-f94ed118f186": {
+    "id": "b4a924da-4e9f-4f94-83ce-f94ed118f186",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4234f1f1-84da-49c0-a26b-f43c0c478aab": {
+    "id": "4234f1f1-84da-49c0-a26b-f43c0c478aab",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "da439bb5-005b-48a5-b07c-2a8881839716": {
+    "id": "da439bb5-005b-48a5-b07c-2a8881839716",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "cbe1c3bd-d23f-45ca-b3a1-e99be53e1fa9": {
+    "id": "cbe1c3bd-d23f-45ca-b3a1-e99be53e1fa9",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a92b7f63-7601-4a75-b370-86ac52b2f504": {
+    "id": "a92b7f63-7601-4a75-b370-86ac52b2f504",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5976f426-2c4b-4465-98a9-8fc286996b18": {
+    "id": "5976f426-2c4b-4465-98a9-8fc286996b18",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "af41c99f-6abc-4ac8-8c20-1a84f4aa392b": {
+    "id": "af41c99f-6abc-4ac8-8c20-1a84f4aa392b",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9d256aab-3fa1-49da-8bc5-beda3d4e4227": {
+    "id": "9d256aab-3fa1-49da-8bc5-beda3d4e4227",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3fcda73c-b193-42a5-8322-2ff912fa9490": {
+    "id": "3fcda73c-b193-42a5-8322-2ff912fa9490",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "792428a4-3afd-4f48-80aa-d10eac0bd116": {
+    "id": "792428a4-3afd-4f48-80aa-d10eac0bd116",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d1658b89-1b71-40ae-82b3-6ec15d09dbde": {
+    "id": "d1658b89-1b71-40ae-82b3-6ec15d09dbde",
+    "backtest_run_id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "babecda8-8889-409f-a921-b8a28d112880": {
+    "id": "babecda8-8889-409f-a921-b8a28d112880",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "52fec152-26de-41bb-a519-2113f0027fe4": {
+    "id": "52fec152-26de-41bb-a519-2113f0027fe4",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ececaf2d-3029-47da-b219-0e64198bd50b": {
+    "id": "ececaf2d-3029-47da-b219-0e64198bd50b",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8e999fe4-0f21-423c-bc5c-b020933827ae": {
+    "id": "8e999fe4-0f21-423c-bc5c-b020933827ae",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "cdbff3d3-341e-4ccc-b4cc-d93f4283d313": {
+    "id": "cdbff3d3-341e-4ccc-b4cc-d93f4283d313",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0f494dcd-5f75-40d1-9cdd-e5eff8afa840": {
+    "id": "0f494dcd-5f75-40d1-9cdd-e5eff8afa840",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e6ecab4a-4b94-417e-a87d-0994857e08b0": {
+    "id": "e6ecab4a-4b94-417e-a87d-0994857e08b0",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "47ecb99e-b586-458a-94bd-2afa4a98b227": {
+    "id": "47ecb99e-b586-458a-94bd-2afa4a98b227",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "75840bf7-3d0c-41e3-b7a7-76a03e818612": {
+    "id": "75840bf7-3d0c-41e3-b7a7-76a03e818612",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f6391280-a9a0-441c-a0b8-77b6aca12928": {
+    "id": "f6391280-a9a0-441c-a0b8-77b6aca12928",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c61c2502-0f79-448b-be58-6f86dfb181eb": {
+    "id": "c61c2502-0f79-448b-be58-6f86dfb181eb",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "21c781e2-b765-4739-b562-b7c3049c3260": {
+    "id": "21c781e2-b765-4739-b562-b7c3049c3260",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "017495e2-3378-4e3b-8054-10d04457efa7": {
+    "id": "017495e2-3378-4e3b-8054-10d04457efa7",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "af8a64bf-c111-4446-8efd-1f556926df44": {
+    "id": "af8a64bf-c111-4446-8efd-1f556926df44",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "64e6858c-e2a7-497c-bec2-0ebcfa25a0a4": {
+    "id": "64e6858c-e2a7-497c-bec2-0ebcfa25a0a4",
+    "backtest_run_id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "03af26a0-e20b-473d-ba1c-27e85066c8fb": {
+    "id": "03af26a0-e20b-473d-ba1c-27e85066c8fb",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6e2b61d2-6a8d-41dc-a9ed-487076afc689": {
+    "id": "6e2b61d2-6a8d-41dc-a9ed-487076afc689",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "81fb4c23-3110-4c2b-9f7c-dd5294ae04ab": {
+    "id": "81fb4c23-3110-4c2b-9f7c-dd5294ae04ab",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "34f7537d-c309-4c86-ae0a-8dba3ba37bd7": {
+    "id": "34f7537d-c309-4c86-ae0a-8dba3ba37bd7",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "097a74e5-d187-4cc4-bcf4-a1fcfe222018": {
+    "id": "097a74e5-d187-4cc4-bcf4-a1fcfe222018",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ddf02043-e05a-4254-9321-c5bcf3be0c40": {
+    "id": "ddf02043-e05a-4254-9321-c5bcf3be0c40",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9d1bff54-3027-4888-8889-7c0fdd53d854": {
+    "id": "9d1bff54-3027-4888-8889-7c0fdd53d854",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "02c9cb89-98a5-4a1c-95e6-16d4325464c7": {
+    "id": "02c9cb89-98a5-4a1c-95e6-16d4325464c7",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "71d22abb-a0b0-41ac-886c-b39178a5102b": {
+    "id": "71d22abb-a0b0-41ac-886c-b39178a5102b",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1345f4ec-8f0e-41d7-abe0-6529b0cfa8a2": {
+    "id": "1345f4ec-8f0e-41d7-abe0-6529b0cfa8a2",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f6fe8677-bf9d-4925-8b12-9e546e7b40b5": {
+    "id": "f6fe8677-bf9d-4925-8b12-9e546e7b40b5",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "51c06195-a3a5-4c74-9a17-266928044e60": {
+    "id": "51c06195-a3a5-4c74-9a17-266928044e60",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3db6b430-53d8-4620-b5c2-98640ab6730c": {
+    "id": "3db6b430-53d8-4620-b5c2-98640ab6730c",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "cfc69948-72ac-4a7b-a7e5-752fa5e408ac": {
+    "id": "cfc69948-72ac-4a7b-a7e5-752fa5e408ac",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "94b9435e-6782-4763-9d66-8172cb30bd69": {
+    "id": "94b9435e-6782-4763-9d66-8172cb30bd69",
+    "backtest_run_id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "22eed1e5-1729-439d-81cd-e6088429d28e": {
+    "id": "22eed1e5-1729-439d-81cd-e6088429d28e",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "940cc01b-9f6c-4224-a8ae-cc5299bdb9b9": {
+    "id": "940cc01b-9f6c-4224-a8ae-cc5299bdb9b9",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "203b64f7-46cb-453f-96da-029961b841b9": {
+    "id": "203b64f7-46cb-453f-96da-029961b841b9",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "de796b44-7db2-455f-ac0c-ab3542788cee": {
+    "id": "de796b44-7db2-455f-ac0c-ab3542788cee",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b94307c2-c650-40bf-ac8c-a939d2ec55d1": {
+    "id": "b94307c2-c650-40bf-ac8c-a939d2ec55d1",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "db00a961-bb60-4942-a5c6-4704d5970464": {
+    "id": "db00a961-bb60-4942-a5c6-4704d5970464",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9398cb4c-1f5f-4f64-b256-db00c96b7c40": {
+    "id": "9398cb4c-1f5f-4f64-b256-db00c96b7c40",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "05d7a32a-0ea7-4820-b34b-d7831f7e8fa7": {
+    "id": "05d7a32a-0ea7-4820-b34b-d7831f7e8fa7",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9c8df628-2c1b-4221-b905-3f08909ab410": {
+    "id": "9c8df628-2c1b-4221-b905-3f08909ab410",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "17902130-063d-46f1-bdaf-543507567165": {
+    "id": "17902130-063d-46f1-bdaf-543507567165",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "74de21d0-ded5-4a24-b250-48afd6730941": {
+    "id": "74de21d0-ded5-4a24-b250-48afd6730941",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "deba7038-ac5e-4942-9a73-4abbd3d4419c": {
+    "id": "deba7038-ac5e-4942-9a73-4abbd3d4419c",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "29125a99-1333-4d18-8e2b-42c0c632ff9c": {
+    "id": "29125a99-1333-4d18-8e2b-42c0c632ff9c",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "53f3fd31-ea3b-4f51-b13c-37f92b030155": {
+    "id": "53f3fd31-ea3b-4f51-b13c-37f92b030155",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f89f01b8-8b43-4153-9696-a1d14e13db44": {
+    "id": "f89f01b8-8b43-4153-9696-a1d14e13db44",
+    "backtest_run_id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8c031c09-64ff-44c9-a698-8367f408f907": {
+    "id": "8c031c09-64ff-44c9-a698-8367f408f907",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a4930541-65d7-49dc-8d97-c61a08ae67af": {
+    "id": "a4930541-65d7-49dc-8d97-c61a08ae67af",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d83130d6-6493-4d80-aac6-20aee8c49b19": {
+    "id": "d83130d6-6493-4d80-aac6-20aee8c49b19",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0d0f0167-dcf3-4aa1-9133-a197df85e449": {
+    "id": "0d0f0167-dcf3-4aa1-9133-a197df85e449",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d104165c-b78d-43d4-bb9a-7d578a160d5f": {
+    "id": "d104165c-b78d-43d4-bb9a-7d578a160d5f",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3c4ca36d-26f1-4117-874f-97ec03c6cf5d": {
+    "id": "3c4ca36d-26f1-4117-874f-97ec03c6cf5d",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b4feb686-eabe-4df0-9e34-1c5a52b2adeb": {
+    "id": "b4feb686-eabe-4df0-9e34-1c5a52b2adeb",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5d5ee7c3-a980-4e93-acaa-c0af40e188de": {
+    "id": "5d5ee7c3-a980-4e93-acaa-c0af40e188de",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b5914f06-0518-4ac8-9976-50843a478524": {
+    "id": "b5914f06-0518-4ac8-9976-50843a478524",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3dce54a1-90cd-4281-a9b4-4d6b35acffdb": {
+    "id": "3dce54a1-90cd-4281-a9b4-4d6b35acffdb",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "bc18c47a-1a4e-4f97-8481-cf8fee9ae398": {
+    "id": "bc18c47a-1a4e-4f97-8481-cf8fee9ae398",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9cc8aad5-c71a-49d3-a457-c0b2e5debf32": {
+    "id": "9cc8aad5-c71a-49d3-a457-c0b2e5debf32",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6ac32e8f-9655-40f4-9cad-7c1a5186857a": {
+    "id": "6ac32e8f-9655-40f4-9cad-7c1a5186857a",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ce922f68-6e1e-4d3a-94aa-0fe39181c094": {
+    "id": "ce922f68-6e1e-4d3a-94aa-0fe39181c094",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "68291a52-25a6-47f8-970a-d81acb5ab21f": {
+    "id": "68291a52-25a6-47f8-970a-d81acb5ab21f",
+    "backtest_run_id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "dfd879a9-58b0-43aa-82f7-5cc7cba9c44c": {
+    "id": "dfd879a9-58b0-43aa-82f7-5cc7cba9c44c",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ec44b5e8-d51f-4fba-9e7a-fe7fa8771884": {
+    "id": "ec44b5e8-d51f-4fba-9e7a-fe7fa8771884",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e7aff8a5-05a5-4c18-91de-55d0bd9cc556": {
+    "id": "e7aff8a5-05a5-4c18-91de-55d0bd9cc556",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d5fcb3b7-e8fe-414c-a615-2897c58aaa29": {
+    "id": "d5fcb3b7-e8fe-414c-a615-2897c58aaa29",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6f2f01ce-f619-45bc-9d12-a850101ffea7": {
+    "id": "6f2f01ce-f619-45bc-9d12-a850101ffea7",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f4c4ecb0-dedf-4bf8-a4a3-81a0d3737bd0": {
+    "id": "f4c4ecb0-dedf-4bf8-a4a3-81a0d3737bd0",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "65284583-cdf0-402d-aab4-c3cbb44d1fc5": {
+    "id": "65284583-cdf0-402d-aab4-c3cbb44d1fc5",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "dae9db77-611f-4b33-87a9-2a57edcc9f01": {
+    "id": "dae9db77-611f-4b33-87a9-2a57edcc9f01",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d7ce53c3-35f7-4092-abd0-5a90a43549ac": {
+    "id": "d7ce53c3-35f7-4092-abd0-5a90a43549ac",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6449f1e6-a5c4-4d34-85a3-1022a0d76358": {
+    "id": "6449f1e6-a5c4-4d34-85a3-1022a0d76358",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d613bbd9-7ac7-4b2b-8a18-679fe4a67c2c": {
+    "id": "d613bbd9-7ac7-4b2b-8a18-679fe4a67c2c",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4b853e34-9aaf-4468-bb06-e1bcf0f6cd66": {
+    "id": "4b853e34-9aaf-4468-bb06-e1bcf0f6cd66",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d9c302e9-45cd-4d37-a8a7-6a9faee90c15": {
+    "id": "d9c302e9-45cd-4d37-a8a7-6a9faee90c15",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "34c41202-5cf1-4802-8364-027228ad9122": {
+    "id": "34c41202-5cf1-4802-8364-027228ad9122",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d6172378-b613-41af-b7eb-3c57460b017e": {
+    "id": "d6172378-b613-41af-b7eb-3c57460b017e",
+    "backtest_run_id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "fca00873-aa5c-45ea-8b29-ab480533c734": {
+    "id": "fca00873-aa5c-45ea-8b29-ab480533c734",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "26074481-ec9b-4e69-a57a-b35b013203a1": {
+    "id": "26074481-ec9b-4e69-a57a-b35b013203a1",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "aa9e9e7c-30ec-4811-8557-853d3b43c921": {
+    "id": "aa9e9e7c-30ec-4811-8557-853d3b43c921",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6af5952a-b0e2-49ee-8b57-8cb2db6e9e45": {
+    "id": "6af5952a-b0e2-49ee-8b57-8cb2db6e9e45",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "159a3c92-4b73-41a2-a419-7ca7975b79d3": {
+    "id": "159a3c92-4b73-41a2-a419-7ca7975b79d3",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9690edd1-afea-4f67-9118-13f1b48197e4": {
+    "id": "9690edd1-afea-4f67-9118-13f1b48197e4",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "32cc21a0-510a-4833-a8aa-7fbfc0f88532": {
+    "id": "32cc21a0-510a-4833-a8aa-7fbfc0f88532",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e00a6b5b-00e4-4a2f-b2e5-4b693920ffb7": {
+    "id": "e00a6b5b-00e4-4a2f-b2e5-4b693920ffb7",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6197eab2-d56e-494c-9ac7-b7d8d25daeb1": {
+    "id": "6197eab2-d56e-494c-9ac7-b7d8d25daeb1",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "74425a75-8eef-4429-8e5d-cbbf3175528a": {
+    "id": "74425a75-8eef-4429-8e5d-cbbf3175528a",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "aa1cd7b4-4297-4e24-b393-6af90df20e44": {
+    "id": "aa1cd7b4-4297-4e24-b393-6af90df20e44",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "26becb47-699d-4eec-9e0c-af38ddfbf4b0": {
+    "id": "26becb47-699d-4eec-9e0c-af38ddfbf4b0",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8664e0f4-eff3-4dba-b09b-81b8b76d8d21": {
+    "id": "8664e0f4-eff3-4dba-b09b-81b8b76d8d21",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "249f72b7-99f5-4cff-ba51-aa59c4bcb081": {
+    "id": "249f72b7-99f5-4cff-ba51-aa59c4bcb081",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c37ca8fe-b826-489e-a020-7bbf008fcdf8": {
+    "id": "c37ca8fe-b826-489e-a020-7bbf008fcdf8",
+    "backtest_run_id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "dceefe44-ebf8-4938-aa67-3430ed69e99b": {
+    "id": "dceefe44-ebf8-4938-aa67-3430ed69e99b",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0bc4f6b8-b88f-48b6-b54a-6f0172e41a81": {
+    "id": "0bc4f6b8-b88f-48b6-b54a-6f0172e41a81",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3e0374c4-4ac0-460e-9d9a-fb5101f17e6e": {
+    "id": "3e0374c4-4ac0-460e-9d9a-fb5101f17e6e",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4dbf05a1-770b-4e5c-a9ec-41b70e61add2": {
+    "id": "4dbf05a1-770b-4e5c-a9ec-41b70e61add2",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "681b4dd6-2d0d-4c43-b3b4-1a5ce132ad54": {
+    "id": "681b4dd6-2d0d-4c43-b3b4-1a5ce132ad54",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "106b7ba9-7587-473c-932b-00dabdce3ff4": {
+    "id": "106b7ba9-7587-473c-932b-00dabdce3ff4",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b0de05c3-ae3f-4e9b-8690-a79a0e7b1825": {
+    "id": "b0de05c3-ae3f-4e9b-8690-a79a0e7b1825",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0e5fe509-ef4c-4f59-bba6-92256aeda502": {
+    "id": "0e5fe509-ef4c-4f59-bba6-92256aeda502",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "69f1d003-e284-424c-b86b-754b2ec8dc3c": {
+    "id": "69f1d003-e284-424c-b86b-754b2ec8dc3c",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1d0fc29d-680d-4892-845a-4bac1c821c50": {
+    "id": "1d0fc29d-680d-4892-845a-4bac1c821c50",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "31efc82f-ee2c-493f-b61c-1bc0e8a8b57f": {
+    "id": "31efc82f-ee2c-493f-b61c-1bc0e8a8b57f",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "65dbe0fb-4ed6-46ff-afd7-c8270a9a21cd": {
+    "id": "65dbe0fb-4ed6-46ff-afd7-c8270a9a21cd",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "85e68e10-9dc8-43c1-a069-3c695f8cf010": {
+    "id": "85e68e10-9dc8-43c1-a069-3c695f8cf010",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "2d6a7b9f-617b-4b09-a499-970c501dd95c": {
+    "id": "2d6a7b9f-617b-4b09-a499-970c501dd95c",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d9f4182d-a600-4bed-972d-e19c98dfd472": {
+    "id": "d9f4182d-a600-4bed-972d-e19c98dfd472",
+    "backtest_run_id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "146f1b05-3b36-40d6-8c75-cdc107497625": {
+    "id": "146f1b05-3b36-40d6-8c75-cdc107497625",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "fb9d6e0e-b9ca-40c3-9e4c-32620986e553": {
+    "id": "fb9d6e0e-b9ca-40c3-9e4c-32620986e553",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "fb39bb46-50bb-44ba-8578-c2426ef78492": {
+    "id": "fb39bb46-50bb-44ba-8578-c2426ef78492",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ff7958c5-7665-4473-a51d-c04c849ed118": {
+    "id": "ff7958c5-7665-4473-a51d-c04c849ed118",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ea2e8aa5-d52b-4314-8ed6-0e95ee18a1d7": {
+    "id": "ea2e8aa5-d52b-4314-8ed6-0e95ee18a1d7",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5ec854a4-e6b4-4bf8-b5ff-c2e262a86b49": {
+    "id": "5ec854a4-e6b4-4bf8-b5ff-c2e262a86b49",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "70b2324b-fcc5-4127-baf2-e59913f3a02f": {
+    "id": "70b2324b-fcc5-4127-baf2-e59913f3a02f",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "14abb044-717f-42c5-ad49-9a5a476bc50f": {
+    "id": "14abb044-717f-42c5-ad49-9a5a476bc50f",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e5a52e0e-166d-477d-b5fe-1176a2410f33": {
+    "id": "e5a52e0e-166d-477d-b5fe-1176a2410f33",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f4af65ac-943b-412f-9250-250e3614a0fc": {
+    "id": "f4af65ac-943b-412f-9250-250e3614a0fc",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1648b5ab-4f3f-441f-98fb-840e93a69bbe": {
+    "id": "1648b5ab-4f3f-441f-98fb-840e93a69bbe",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b926923e-9933-41a0-9971-8a28ec55ae8d": {
+    "id": "b926923e-9933-41a0-9971-8a28ec55ae8d",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b58b2e02-d9bb-4a3d-aaf8-5fed23481af0": {
+    "id": "b58b2e02-d9bb-4a3d-aaf8-5fed23481af0",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "907d4523-e9fb-4658-b5a8-98180c964f1b": {
+    "id": "907d4523-e9fb-4658-b5a8-98180c964f1b",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "97fb7115-1948-4512-869d-840c1ff6e262": {
+    "id": "97fb7115-1948-4512-869d-840c1ff6e262",
+    "backtest_run_id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f012caf4-54ab-4431-aa27-cf7c019e191b": {
+    "id": "f012caf4-54ab-4431-aa27-cf7c019e191b",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "total_trades",
+    "metric_value": 522.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ce242901-a210-4466-a355-760fd1398558": {
+    "id": "ce242901-a210-4466-a355-760fd1398558",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "win_count",
+    "metric_value": 213.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1bb18242-8c04-453f-be7b-fa0cbfd3d05f": {
+    "id": "1bb18242-8c04-453f-be7b-fa0cbfd3d05f",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "loss_count",
+    "metric_value": 309.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "95e1e9a8-429f-4290-8298-b685ebf86593": {
+    "id": "95e1e9a8-429f-4290-8298-b685ebf86593",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "win_rate",
+    "metric_value": 0.40804597701149425,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a6617baf-c02b-49b9-83f3-face2e714acd": {
+    "id": "a6617baf-c02b-49b9-83f3-face2e714acd",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "net_pnl",
+    "metric_value": -107.6800000000373,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e657522d-e0ad-47ac-aebf-05d8a09f44ad": {
+    "id": "e657522d-e0ad-47ac-aebf-05d8a09f44ad",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.10768000000003666,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3b0baeae-f5f9-4422-b2bd-1f340b984861": {
+    "id": "3b0baeae-f5f9-4422-b2bd-1f340b984861",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.10768000000003666,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6bd0bf3c-57bb-4326-95ad-1bf0ba26e581": {
+    "id": "6bd0bf3c-57bb-4326-95ad-1bf0ba26e581",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.05635177284036527,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4bac989e-5795-4a52-8919-99dbf85047e9": {
+    "id": "4bac989e-5795-4a52-8919-99dbf85047e9",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.026681379615639267,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "103e7ae3-35e3-4859-ba65-9eeae1753f31": {
+    "id": "103e7ae3-35e3-4859-ba65-9eeae1753f31",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.11795258078270428,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c6cf65b8-4099-42b4-8af7-a14d9b7ce6c7": {
+    "id": "c6cf65b8-4099-42b4-8af7-a14d9b7ce6c7",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "avg_win",
+    "metric_value": 1.0815962441313909,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "728e6601-f81b-4d05-8186-fd71ed54dd80": {
+    "id": "728e6601-f81b-4d05-8186-fd71ed54dd80",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "avg_loss",
+    "metric_value": -1.094045307443442,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "24cfd5e0-6e16-4ade-8977-4280ebff41f8": {
+    "id": "24cfd5e0-6e16-4ade-8977-4280ebff41f8",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "expectancy",
+    "metric_value": -0.20628352490428603,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "24841c4a-160c-497a-ad4b-9313515b602d": {
+    "id": "24841c4a-160c-497a-ad4b-9313515b602d",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "profit_factor",
+    "metric_value": 0.6814766609476726,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "621d920c-70ab-48b4-b6b6-43b6ce1c4407": {
+    "id": "621d920c-70ab-48b4-b6b6-43b6ce1c4407",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 4.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0ddc8bd3-3f34-424d-8fa1-94222850b64c": {
+    "id": "0ddc8bd3-3f34-424d-8fa1-94222850b64c",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "net_pnl",
+    "metric_value": -107.6800000000373,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "12bf9209-b770-4483-883a-e6752ee282f7": {
+    "id": "12bf9209-b770-4483-883a-e6752ee282f7",
+    "backtest_run_id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "metric_name": "trade_count",
+    "metric_value": 522.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "e1bf0e38-060e-4d47-b060-979a20163f95": {
+    "id": "e1bf0e38-060e-4d47-b060-979a20163f95",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "total_trades",
+    "metric_value": 65.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "32880bad-f0cc-49e3-8031-d752450b10bc": {
+    "id": "32880bad-f0cc-49e3-8031-d752450b10bc",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "win_count",
+    "metric_value": 31.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "84974703-b16f-442e-a568-b6f8dcbbd16f": {
+    "id": "84974703-b16f-442e-a568-b6f8dcbbd16f",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "loss_count",
+    "metric_value": 34.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "398a14d9-912a-4daa-9916-78cad5e1151f": {
+    "id": "398a14d9-912a-4daa-9916-78cad5e1151f",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "win_rate",
+    "metric_value": 0.47692307692307695,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "071d8765-95f6-45c0-b359-0b2aa5481872": {
+    "id": "071d8765-95f6-45c0-b359-0b2aa5481872",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "net_pnl",
+    "metric_value": 33.73999999999411,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a820a9eb-9fa9-4b72-b27b-0edabe2fe691": {
+    "id": "a820a9eb-9fa9-4b72-b27b-0edabe2fe691",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "net_return_pct",
+    "metric_value": 0.03373999999999069,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d93e9284-e590-48c0-8f4f-8c377ac2673d": {
+    "id": "d93e9284-e590-48c0-8f4f-8c377ac2673d",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "annualized_return_pct",
+    "metric_value": 0.03373999999999069,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7125922a-e6ad-4ff4-b8ba-5996da70b679": {
+    "id": "7125922a-e6ad-4ff4-b8ba-5996da70b679",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "sharpe_ratio",
+    "metric_value": 0.01913788757973064,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f2af3655-3d1b-42df-8bb9-9710f591a3a5": {
+    "id": "f2af3655-3d1b-42df-8bb9-9710f591a3a5",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "sortino_ratio",
+    "metric_value": 0.003788383008423065,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "57a968e8-5b40-41ad-b89e-d8a8d8ce043c": {
+    "id": "57a968e8-5b40-41ad-b89e-d8a8d8ce043c",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.01911693746662774,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "71941654-21d3-49e4-8cfc-d53d10addfd3": {
+    "id": "71941654-21d3-49e4-8cfc-d53d10addfd3",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "avg_win",
+    "metric_value": 3.8832258064515175,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d6e354d0-c9fa-43e8-b69f-7f6a195a1c78": {
+    "id": "d6e354d0-c9fa-43e8-b69f-7f6a195a1c78",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "avg_loss",
+    "metric_value": -2.5482352941177338,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b894df03-7f88-4d70-9a6a-1d1613947b1b": {
+    "id": "b894df03-7f88-4d70-9a6a-1d1613947b1b",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "expectancy",
+    "metric_value": 0.5190769230768326,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9d7796d1-fcfe-45ac-8a6d-cffdb58199f0": {
+    "id": "9d7796d1-fcfe-45ac-8a6d-cffdb58199f0",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "profit_factor",
+    "metric_value": 1.3894275161587368,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "32f0be46-80d3-4cdc-8e06-05f8a326f08e": {
+    "id": "32f0be46-80d3-4cdc-8e06-05f8a326f08e",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 39.215384615384615,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "952b5bd0-e1f2-4d8e-80c4-c683853ff9b1": {
+    "id": "952b5bd0-e1f2-4d8e-80c4-c683853ff9b1",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "net_pnl",
+    "metric_value": 33.73999999999411,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "96d9c2a7-60f4-4f9f-939b-68d3cd687207": {
+    "id": "96d9c2a7-60f4-4f9f-939b-68d3cd687207",
+    "backtest_run_id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "metric_name": "trade_count",
+    "metric_value": 65.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "a861c2f7-90c9-46f1-8134-d397bb1a805f": {
+    "id": "a861c2f7-90c9-46f1-8134-d397bb1a805f",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "total_trades",
+    "metric_value": 51.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c8de9d51-43a1-40de-870d-3ed522e95cb7": {
+    "id": "c8de9d51-43a1-40de-870d-3ed522e95cb7",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "win_count",
+    "metric_value": 23.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7e65f14e-d81a-4284-84a4-cd5239d4f371": {
+    "id": "7e65f14e-d81a-4284-84a4-cd5239d4f371",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "loss_count",
+    "metric_value": 28.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "791e0356-7097-4d1c-a0ce-c35127ade2d5": {
+    "id": "791e0356-7097-4d1c-a0ce-c35127ade2d5",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "win_rate",
+    "metric_value": 0.45098039215686275,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1625ff96-3f8b-4548-88a0-31391a07e495": {
+    "id": "1625ff96-3f8b-4548-88a0-31391a07e495",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "net_pnl",
+    "metric_value": -10.610000000004893,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b31ef4fb-92d5-4efb-ad70-0d0beefd6ab5": {
+    "id": "b31ef4fb-92d5-4efb-ad70-0d0beefd6ab5",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.010610000000000583,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "bd318e29-bef1-4ec2-afde-9e3d6cb6263a": {
+    "id": "bd318e29-bef1-4ec2-afde-9e3d6cb6263a",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.010610000000000583,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d97ad1ce-2730-4888-bfa1-2d6319b6b519": {
+    "id": "d97ad1ce-2730-4888-bfa1-2d6319b6b519",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.022571188209638385,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "dc7befdd-4a3e-4cf8-8261-55a178c16b9d": {
+    "id": "dc7befdd-4a3e-4cf8-8261-55a178c16b9d",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.003042862236870775,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c8d17043-69a9-4c66-bacd-ba0bcf97ef7a": {
+    "id": "c8d17043-69a9-4c66-bacd-ba0bcf97ef7a",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.011639997672014435,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "02e35691-9ea6-4e60-9e44-c61f5a2e8bf9": {
+    "id": "02e35691-9ea6-4e60-9e44-c61f5a2e8bf9",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "avg_win",
+    "metric_value": 0.7986956521738261,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "638805f2-a5ef-4c7b-9868-329c053cea17": {
+    "id": "638805f2-a5ef-4c7b-9868-329c053cea17",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "avg_loss",
+    "metric_value": -1.0350000000001034,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "bee9c10f-c127-4673-b5cc-ef2041903631": {
+    "id": "bee9c10f-c127-4673-b5cc-ef2041903631",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "expectancy",
+    "metric_value": -0.20803921568637057,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "684e9396-ac1a-48d6-bedd-48aa4aec85bd": {
+    "id": "684e9396-ac1a-48d6-bedd-48aa4aec85bd",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "profit_factor",
+    "metric_value": 0.633885438233132,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7202cd6f-1e3a-476a-844b-00ac6e3a418f": {
+    "id": "7202cd6f-1e3a-476a-844b-00ac6e3a418f",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 4.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f84e0b05-f34e-4594-b90d-e83021a8a352": {
+    "id": "f84e0b05-f34e-4594-b90d-e83021a8a352",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "net_pnl",
+    "metric_value": -10.610000000004893,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "592b8224-fdd8-4090-ad0f-c7552cfd44f4": {
+    "id": "592b8224-fdd8-4090-ad0f-c7552cfd44f4",
+    "backtest_run_id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "metric_name": "trade_count",
+    "metric_value": 51.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "feba7e63-3a8b-4e2b-a10c-7eaa180ebc9d": {
+    "id": "feba7e63-3a8b-4e2b-a10c-7eaa180ebc9d",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "total_trades",
+    "metric_value": 40.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "69f4e601-8a71-4485-91b1-a9832c8188af": {
+    "id": "69f4e601-8a71-4485-91b1-a9832c8188af",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "win_count",
+    "metric_value": 16.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a4430e8b-30ee-4f6c-a548-595bd13ca85e": {
+    "id": "a4430e8b-30ee-4f6c-a548-595bd13ca85e",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "loss_count",
+    "metric_value": 24.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3e2be68f-359f-47e8-86a0-72cd14b79909": {
+    "id": "3e2be68f-359f-47e8-86a0-72cd14b79909",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "win_rate",
+    "metric_value": 0.4,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a4c99736-761a-4de7-ada3-e1fffbdce566": {
+    "id": "a4c99736-761a-4de7-ada3-e1fffbdce566",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "net_pnl",
+    "metric_value": -12.880000000002667,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "77820448-d8a8-441d-921c-50fc91f2228b": {
+    "id": "77820448-d8a8-441d-921c-50fc91f2228b",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.012880000000004655,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "214018da-33ad-4ddf-b493-d7eee9ef22df": {
+    "id": "214018da-33ad-4ddf-b493-d7eee9ef22df",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.012880000000004655,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4fae1cb8-8e8a-4b3e-804d-1dd03e200425": {
+    "id": "4fae1cb8-8e8a-4b3e-804d-1dd03e200425",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.01228519854493257,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4105bcfd-e47b-4627-9a17-7addca9efd60": {
+    "id": "4105bcfd-e47b-4627-9a17-7addca9efd60",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.0016986704533190826,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "dbdd1ff2-238e-442b-b949-327b9437422f": {
+    "id": "dbdd1ff2-238e-442b-b949-327b9437422f",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.024458055584572876,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ed45b1ef-57f8-469b-85cb-d8c2f6658934": {
+    "id": "ed45b1ef-57f8-469b-85cb-d8c2f6658934",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "avg_win",
+    "metric_value": 2.674374999999965,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c5412bf1-8c78-4413-a624-e4ce35d62ac3": {
+    "id": "c5412bf1-8c78-4413-a624-e4ce35d62ac3",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "avg_loss",
+    "metric_value": -2.319583333333421,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "223c4b7d-5862-4448-b5d0-c20a77cf9378": {
+    "id": "223c4b7d-5862-4448-b5d0-c20a77cf9378",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "expectancy",
+    "metric_value": -0.3220000000000667,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9237585c-b8cf-4679-bab0-68e6c2268e86": {
+    "id": "9237585c-b8cf-4679-bab0-68e6c2268e86",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "profit_factor",
+    "metric_value": 0.768636608586273,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "02131182-ce4b-4723-a2f2-ce87a3b9750c": {
+    "id": "02131182-ce4b-4723-a2f2-ce87a3b9750c",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 19.9,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "561a19f6-c3a5-4c11-b702-99500dbac620": {
+    "id": "561a19f6-c3a5-4c11-b702-99500dbac620",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "net_pnl",
+    "metric_value": -12.880000000002667,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "6cd9daed-deee-4f30-b807-8f65d720c057": {
+    "id": "6cd9daed-deee-4f30-b807-8f65d720c057",
+    "backtest_run_id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "metric_name": "trade_count",
+    "metric_value": 40.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "cf97d809-2e07-473a-8e81-ebcc9258c0a2": {
+    "id": "cf97d809-2e07-473a-8e81-ebcc9258c0a2",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "total_trades",
+    "metric_value": 520.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0637412c-7f58-4058-ad52-560afa6f1adc": {
+    "id": "0637412c-7f58-4058-ad52-560afa6f1adc",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "win_count",
+    "metric_value": 184.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4417d9bc-3e41-446c-a513-70cf50bf44d3": {
+    "id": "4417d9bc-3e41-446c-a513-70cf50bf44d3",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "loss_count",
+    "metric_value": 336.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b561c122-63ac-4ca4-90bd-488579afe505": {
+    "id": "b561c122-63ac-4ca4-90bd-488579afe505",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "win_rate",
+    "metric_value": 0.35384615384615387,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "66cab959-8cfe-4d40-a4a4-fdb00ee495f5": {
+    "id": "66cab959-8cfe-4d40-a4a4-fdb00ee495f5",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "net_pnl",
+    "metric_value": -205.9300000000408,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7966700b-de45-498d-9743-2db1cb6df9fb": {
+    "id": "7966700b-de45-498d-9743-2db1cb6df9fb",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.2059300000000367,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ba56bcee-54bc-4cf3-8314-f2e9bf323ba6": {
+    "id": "ba56bcee-54bc-4cf3-8314-f2e9bf323ba6",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.2059300000000367,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "573be3ac-c79f-4d87-91c0-8ca1f7a6f92d": {
+    "id": "573be3ac-c79f-4d87-91c0-8ca1f7a6f92d",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.10970677399225201,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "562ed366-ba74-4b1a-89bd-eece4a9c96a0": {
+    "id": "562ed366-ba74-4b1a-89bd-eece4a9c96a0",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.045446197503716014,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "cf212397-a3af-4d51-8f31-1c911df1fa2e": {
+    "id": "cf212397-a3af-4d51-8f31-1c911df1fa2e",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.2101495166561495,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "75b56a5d-8a94-4fae-acd1-ca0a7922a15e": {
+    "id": "75b56a5d-8a94-4fae-acd1-ca0a7922a15e",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "avg_win",
+    "metric_value": 0.9897826086955778,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f25a2f4f-01ad-45cd-aac2-4b96802c6753": {
+    "id": "f25a2f4f-01ad-45cd-aac2-4b96802c6753",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "avg_loss",
+    "metric_value": -1.1549107142857948,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0b31601b-7672-47c4-ba00-bcff90c96354": {
+    "id": "0b31601b-7672-47c4-ba00-bcff90c96354",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "expectancy",
+    "metric_value": -0.396019230769309,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c75df03a-d7a4-4ee0-aa8e-2e8141958a44": {
+    "id": "c75df03a-d7a4-4ee0-aa8e-2e8141958a44",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "profit_factor",
+    "metric_value": 0.46932096379325755,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0390fa17-941d-42c5-99ec-6767b2cd713f": {
+    "id": "0390fa17-941d-42c5-99ec-6767b2cd713f",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 4.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1f816bb3-9c44-4c93-8fb8-a6d64c454af7": {
+    "id": "1f816bb3-9c44-4c93-8fb8-a6d64c454af7",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "net_pnl",
+    "metric_value": -205.9300000000408,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "96bdfecc-d6c8-4763-954e-a5607ce27474": {
+    "id": "96bdfecc-d6c8-4763-954e-a5607ce27474",
+    "backtest_run_id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "metric_name": "trade_count",
+    "metric_value": 520.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "5786f479-e462-4056-9df7-9cd0579aa2c0": {
+    "id": "5786f479-e462-4056-9df7-9cd0579aa2c0",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "total_trades",
+    "metric_value": 373.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "71022a1d-433e-4863-a056-279935bcecc8": {
+    "id": "71022a1d-433e-4863-a056-279935bcecc8",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "win_count",
+    "metric_value": 147.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "100b66b5-1698-46bf-8fe8-c35ac190d51d": {
+    "id": "100b66b5-1698-46bf-8fe8-c35ac190d51d",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "loss_count",
+    "metric_value": 226.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "df9ab9af-49c1-4360-be93-31eeeb6ed79d": {
+    "id": "df9ab9af-49c1-4360-be93-31eeeb6ed79d",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "win_rate",
+    "metric_value": 0.3941018766756032,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7bb43f60-eed7-4ad3-a6d6-724a5782aa77": {
+    "id": "7bb43f60-eed7-4ad3-a6d6-724a5782aa77",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "net_pnl",
+    "metric_value": -102.53000000003199,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e94b652f-0620-4e11-8fa4-cc7acf0bd08b": {
+    "id": "e94b652f-0620-4e11-8fa4-cc7acf0bd08b",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.10253000000002793,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c95931bc-3b91-4f34-844f-2c1ac0b6bf11": {
+    "id": "c95931bc-3b91-4f34-844f-2c1ac0b6bf11",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.10253000000002793,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "34d24adc-9623-4eb7-bfb1-b54006c5f7cf": {
+    "id": "34d24adc-9623-4eb7-bfb1-b54006c5f7cf",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.05929009088397126,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5e00b0e5-008c-4500-8822-f865199d30f3": {
+    "id": "5e00b0e5-008c-4500-8822-f865199d30f3",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.02246128818468266,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a2277752-e9ef-4fd8-9cce-ad83a786a27c": {
+    "id": "a2277752-e9ef-4fd8-9cce-ad83a786a27c",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.11075088520217174,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "762ba67f-edfd-4a42-a38a-61d511e72000": {
+    "id": "762ba67f-edfd-4a42-a38a-61d511e72000",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "avg_win",
+    "metric_value": 1.2644897959182786,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "aacd4736-870f-4f74-ad9d-f984e4401a07": {
+    "id": "aacd4736-870f-4f74-ad9d-f984e4401a07",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "avg_loss",
+    "metric_value": -1.27615044247796,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9ee82779-cc24-4b7c-8c47-97b665819d16": {
+    "id": "9ee82779-cc24-4b7c-8c47-97b665819d16",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "expectancy",
+    "metric_value": -0.27487935656845036,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "30b7d0ad-5967-4526-a906-7cad38ed50ef": {
+    "id": "30b7d0ad-5967-4526-a906-7cad38ed50ef",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "profit_factor",
+    "metric_value": 0.6444991505148044,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a4007e0d-40d0-47f2-b513-84d20bf8616d": {
+    "id": "a4007e0d-40d0-47f2-b513-84d20bf8616d",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 5.991957104557641,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "596b240d-2571-4f42-91a0-8b2021d20461": {
+    "id": "596b240d-2571-4f42-91a0-8b2021d20461",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "net_pnl",
+    "metric_value": -102.53000000003199,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "58d73a34-b3a6-4121-8cb2-258d9ced5944": {
+    "id": "58d73a34-b3a6-4121-8cb2-258d9ced5944",
+    "backtest_run_id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "metric_name": "trade_count",
+    "metric_value": 373.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "5b75b9a1-bc2e-4a24-be53-3b00747a69ac": {
+    "id": "5b75b9a1-bc2e-4a24-be53-3b00747a69ac",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "total_trades",
+    "metric_value": 373.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b98670fa-4e76-43bc-a91e-42f1e5055944": {
+    "id": "b98670fa-4e76-43bc-a91e-42f1e5055944",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "win_count",
+    "metric_value": 147.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "13f635ef-5e9d-4da6-9bd8-c79b4d0ba123": {
+    "id": "13f635ef-5e9d-4da6-9bd8-c79b4d0ba123",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "loss_count",
+    "metric_value": 226.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4a6e3052-6837-40fb-9944-c6769cb9328b": {
+    "id": "4a6e3052-6837-40fb-9944-c6769cb9328b",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "win_rate",
+    "metric_value": 0.3941018766756032,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "dda89906-d691-4e81-b691-36386aba7647": {
+    "id": "dda89906-d691-4e81-b691-36386aba7647",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "net_pnl",
+    "metric_value": -102.53000000003199,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "2a41f424-e0a1-4df9-8cff-7edc4cc13ae7": {
+    "id": "2a41f424-e0a1-4df9-8cff-7edc4cc13ae7",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.10253000000002793,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a74f39ae-4655-4686-9d1a-7f8af5af1f15": {
+    "id": "a74f39ae-4655-4686-9d1a-7f8af5af1f15",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.10253000000002793,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "82ab59bd-05b7-4fa8-90a4-d6f7b5384f6e": {
+    "id": "82ab59bd-05b7-4fa8-90a4-d6f7b5384f6e",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.05929009088397126,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a44b8346-125f-4a16-9406-7dab9372d526": {
+    "id": "a44b8346-125f-4a16-9406-7dab9372d526",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.02246128818468266,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "00e2c888-405a-4a07-b928-41d842abd638": {
+    "id": "00e2c888-405a-4a07-b928-41d842abd638",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.11075088520217174,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6845f331-dc3d-4e38-b733-68738e7fd5bf": {
+    "id": "6845f331-dc3d-4e38-b733-68738e7fd5bf",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "avg_win",
+    "metric_value": 1.2644897959182786,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9ce31f97-b1b4-4a43-8bb6-e0251ce2d997": {
+    "id": "9ce31f97-b1b4-4a43-8bb6-e0251ce2d997",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "avg_loss",
+    "metric_value": -1.27615044247796,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8d5608fc-1cb2-463e-89b5-7c83486de806": {
+    "id": "8d5608fc-1cb2-463e-89b5-7c83486de806",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "expectancy",
+    "metric_value": -0.27487935656845036,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6a00cbd0-3616-484e-a14a-4bc2c7478ba5": {
+    "id": "6a00cbd0-3616-484e-a14a-4bc2c7478ba5",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "profit_factor",
+    "metric_value": 0.6444991505148044,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d15f9d9d-74b5-4cdf-8900-1acfff6b7a87": {
+    "id": "d15f9d9d-74b5-4cdf-8900-1acfff6b7a87",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 5.991957104557641,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e3cbb2aa-01ce-46bf-a058-e622ea9aa7ec": {
+    "id": "e3cbb2aa-01ce-46bf-a058-e622ea9aa7ec",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "net_pnl",
+    "metric_value": -102.53000000003199,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "54358f35-b57b-476f-8415-40d31e2dfc00": {
+    "id": "54358f35-b57b-476f-8415-40d31e2dfc00",
+    "backtest_run_id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "metric_name": "trade_count",
+    "metric_value": 373.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "42845c7d-74b5-4f48-b5c2-43a1673eb91a": {
+    "id": "42845c7d-74b5-4f48-b5c2-43a1673eb91a",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "total_trades",
+    "metric_value": 38.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3e5779a9-fb8e-4d90-9622-894383602722": {
+    "id": "3e5779a9-fb8e-4d90-9622-894383602722",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "win_count",
+    "metric_value": 14.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "dc282806-0e59-407d-b7d9-2d5fe5c8d3eb": {
+    "id": "dc282806-0e59-407d-b7d9-2d5fe5c8d3eb",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "loss_count",
+    "metric_value": 24.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "94812c31-1bd2-4348-896a-f50b235ceb40": {
+    "id": "94812c31-1bd2-4348-896a-f50b235ceb40",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "win_rate",
+    "metric_value": 0.3684210526315789,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f61b437c-ffaa-4cea-9bdc-e758080eaa07": {
+    "id": "f61b437c-ffaa-4cea-9bdc-e758080eaa07",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "net_pnl",
+    "metric_value": -25.00000000000324,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5a000f3a-f4b8-43f3-b6da-1746a1b269f2": {
+    "id": "5a000f3a-f4b8-43f3-b6da-1746a1b269f2",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.025,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d7e12ba8-60a8-4ef9-b958-d31b9b0fb052": {
+    "id": "d7e12ba8-60a8-4ef9-b958-d31b9b0fb052",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.025,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e575b063-72d1-4910-8083-13f603220f5e": {
+    "id": "e575b063-72d1-4910-8083-13f603220f5e",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.023911722000827473,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8b9b7087-5101-4c27-acea-3dbd59dc7a39": {
+    "id": "8b9b7087-5101-4c27-acea-3dbd59dc7a39",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.003074832777389499,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "aa329ccd-4143-4468-9a59-83d3f4c91a05": {
+    "id": "aa329ccd-4143-4468-9a59-83d3f4c91a05",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.031588821736945716,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4b412c01-a143-4f26-b267-eb4cc55abfe7": {
+    "id": "4b412c01-a143-4f26-b267-eb4cc55abfe7",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "avg_win",
+    "metric_value": 2.8057142857142208,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6e230aae-7c56-43eb-a7a8-bec89c970830": {
+    "id": "6e230aae-7c56-43eb-a7a8-bec89c970830",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "avg_loss",
+    "metric_value": -2.6783333333334305,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "57f8d049-7746-4932-ae98-93cf0cc577f4": {
+    "id": "57f8d049-7746-4932-ae98-93cf0cc577f4",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "expectancy",
+    "metric_value": -0.6578947368421906,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6567988f-d934-4cda-92fd-e272ceb14f9e": {
+    "id": "6567988f-d934-4cda-92fd-e272ceb14f9e",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "profit_factor",
+    "metric_value": 0.6110765401368647,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a00c1743-6e30-49bf-b1ef-33075770a8cc": {
+    "id": "a00c1743-6e30-49bf-b1ef-33075770a8cc",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 23.789473684210527,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ab00b235-4057-439a-8d0f-f15b591c4108": {
+    "id": "ab00b235-4057-439a-8d0f-f15b591c4108",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "net_pnl",
+    "metric_value": -25.00000000000324,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "021a5d63-fbeb-4c36-8753-7214c6aa5092": {
+    "id": "021a5d63-fbeb-4c36-8753-7214c6aa5092",
+    "backtest_run_id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "metric_name": "trade_count",
+    "metric_value": 38.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "e508bb77-b3ab-4f74-87c9-3ec44fe8b4ef": {
+    "id": "e508bb77-b3ab-4f74-87c9-3ec44fe8b4ef",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "total_trades",
+    "metric_value": 303.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "12b6bb82-c6a1-422b-8e8b-10e3549330c5": {
+    "id": "12b6bb82-c6a1-422b-8e8b-10e3549330c5",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "win_count",
+    "metric_value": 126.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a91c9994-86f6-4650-827d-86e9484863cf": {
+    "id": "a91c9994-86f6-4650-827d-86e9484863cf",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "loss_count",
+    "metric_value": 177.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "2afa4b92-5ece-4311-9018-a573c899c63c": {
+    "id": "2afa4b92-5ece-4311-9018-a573c899c63c",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "win_rate",
+    "metric_value": 0.4158415841584158,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0a1cc7b0-5ef0-46d8-b900-5e0cb4e2dbcf": {
+    "id": "0a1cc7b0-5ef0-46d8-b900-5e0cb4e2dbcf",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "net_pnl",
+    "metric_value": -41.970000000024484,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "aa9ddcca-68cb-4d83-bde1-4ec434198678": {
+    "id": "aa9ddcca-68cb-4d83-bde1-4ec434198678",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.04197000000003027,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "083123f2-6c1b-40e8-b10d-5531d7abb7b2": {
+    "id": "083123f2-6c1b-40e8-b10d-5531d7abb7b2",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.04197000000003027,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ec115cb6-7afa-42e9-b4d8-264aad981b76": {
+    "id": "ec115cb6-7afa-42e9-b4d8-264aad981b76",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.02165569524416904,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6b0160b4-c341-45d9-94d9-79bb7d5dc669": {
+    "id": "6b0160b4-c341-45d9-94d9-79bb7d5dc669",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.00808160926220606,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6e4e101a-8169-4e78-97a3-b9c4b88397ec": {
+    "id": "6e4e101a-8169-4e78-97a3-b9c4b88397ec",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.05152685170937395,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "909cc3c7-7d7a-404e-86a8-835d6732fed9": {
+    "id": "909cc3c7-7d7a-404e-86a8-835d6732fed9",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "avg_win",
+    "metric_value": 1.6245238095237307,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6c3057d9-5b99-4b3e-9595-993b499ac357": {
+    "id": "6c3057d9-5b99-4b3e-9595-993b499ac357",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "avg_loss",
+    "metric_value": -1.3935593220339804,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5b71b04a-5d71-4f2c-b981-9f9cc32e1fc6": {
+    "id": "5b71b04a-5d71-4f2c-b981-9f9cc32e1fc6",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "expectancy",
+    "metric_value": -0.13851485148522935,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "bd0f60d6-095a-4863-89e2-0800e1d58a7c": {
+    "id": "bd0f60d6-095a-4863-89e2-0800e1d58a7c",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "profit_factor",
+    "metric_value": 0.8298467526148463,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4c7e35ac-b1d5-4f2a-93c5-a183b6ad430b": {
+    "id": "4c7e35ac-b1d5-4f2a-93c5-a183b6ad430b",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 7.6072607260726075,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4b07064c-49be-4387-a082-9a97180a9163": {
+    "id": "4b07064c-49be-4387-a082-9a97180a9163",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "net_pnl",
+    "metric_value": -41.970000000024484,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "57022faa-6ea0-4fbe-871b-16350b156bb3": {
+    "id": "57022faa-6ea0-4fbe-871b-16350b156bb3",
+    "backtest_run_id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "metric_name": "trade_count",
+    "metric_value": 303.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "e6c18134-b105-4100-b6c7-90a9f9b4479a": {
+    "id": "e6c18134-b105-4100-b6c7-90a9f9b4479a",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "total_trades",
+    "metric_value": 868.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "47b486f2-a0a4-460b-a39b-0d8cebacf920": {
+    "id": "47b486f2-a0a4-460b-a39b-0d8cebacf920",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "win_count",
+    "metric_value": 269.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "183a66cb-604f-4a07-a3e6-7b3f144b51ea": {
+    "id": "183a66cb-604f-4a07-a3e6-7b3f144b51ea",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "loss_count",
+    "metric_value": 599.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "688343ce-570c-4457-8f41-5be306754d7d": {
+    "id": "688343ce-570c-4457-8f41-5be306754d7d",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "win_rate",
+    "metric_value": 0.3099078341013825,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "65fb3881-1614-4b99-be46-9d934395db2f": {
+    "id": "65fb3881-1614-4b99-be46-9d934395db2f",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "net_pnl",
+    "metric_value": -236.9400000000723,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8e30177e-e7d2-427c-8ece-79048f66a801": {
+    "id": "8e30177e-e7d2-427c-8ece-79048f66a801",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.2369400000000751,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ea211c52-92c9-4b0c-a124-b7938a211955": {
+    "id": "ea211c52-92c9-4b0c-a124-b7938a211955",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.2369400000000751,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e60e4d31-789d-4787-b275-ceef1ae972d2": {
+    "id": "e60e4d31-789d-4787-b275-ceef1ae972d2",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.1437652729836134,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "37a53fa6-d252-4c15-9f3e-a0587a1dafeb": {
+    "id": "37a53fa6-d252-4c15-9f3e-a0587a1dafeb",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.08052979988916635,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "01d75d55-26b7-4ad7-bebb-f293e7703e8b": {
+    "id": "01d75d55-26b7-4ad7-bebb-f293e7703e8b",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.23725924077051158,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "604c8080-0e36-4194-91d3-e6800dd3ccd8": {
+    "id": "604c8080-0e36-4194-91d3-e6800dd3ccd8",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "avg_win",
+    "metric_value": 0.692639405204386,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "fc85b2e3-09be-4349-b0ab-6d98f4261993": {
+    "id": "fc85b2e3-09be-4349-b0ab-6d98f4261993",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "avg_loss",
+    "metric_value": -0.706611018364027,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "26e3dbee-0cb8-4b21-8a90-0b472dda82ef": {
+    "id": "26e3dbee-0cb8-4b21-8a90-0b472dda82ef",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "expectancy",
+    "metric_value": -0.272972350230498,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "74ff7ce3-553f-49f1-a4c7-79e7ce384824": {
+    "id": "74ff7ce3-553f-49f1-a4c7-79e7ce384824",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "profit_factor",
+    "metric_value": 0.44020223975796646,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f4c9d82a-716f-4fab-8a10-f1db392c397d": {
+    "id": "f4c9d82a-716f-4fab-8a10-f1db392c397d",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 1.9711981566820276,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e8ef4f84-3ebf-4797-a4f0-f53cf0b07f44": {
+    "id": "e8ef4f84-3ebf-4797-a4f0-f53cf0b07f44",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "net_pnl",
+    "metric_value": -236.9400000000723,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "d9c8a183-a6e0-478b-aa65-8b9983132414": {
+    "id": "d9c8a183-a6e0-478b-aa65-8b9983132414",
+    "backtest_run_id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "metric_name": "trade_count",
+    "metric_value": 868.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "e099fc5c-b12b-4ad3-9c41-922338ceadfe": {
+    "id": "e099fc5c-b12b-4ad3-9c41-922338ceadfe",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "total_trades",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1081000d-d562-4823-ad78-eedab516d905": {
+    "id": "1081000d-d562-4823-ad78-eedab516d905",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "win_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "54300045-d01d-48f2-a720-348dede43cd5": {
+    "id": "54300045-d01d-48f2-a720-348dede43cd5",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "loss_count",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9c083fbd-148e-4b17-9dcb-82ccf622ed3a": {
+    "id": "9c083fbd-148e-4b17-9dcb-82ccf622ed3a",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "win_rate",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1caa15c6-e629-4d4b-a10f-0af2be282a64": {
+    "id": "1caa15c6-e629-4d4b-a10f-0af2be282a64",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "net_pnl",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "13f25487-25cd-457e-a477-208f3b3c2d87": {
+    "id": "13f25487-25cd-457e-a477-208f3b3c2d87",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "net_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "dbdf0590-d481-4e6d-90b7-55826fd4e0ea": {
+    "id": "dbdf0590-d481-4e6d-90b7-55826fd4e0ea",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "annualized_return_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "82710562-8e41-40db-ac24-cd9a9d6ddb4a": {
+    "id": "82710562-8e41-40db-ac24-cd9a9d6ddb4a",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "sharpe_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7379a3e5-5318-49d5-b4f1-ac075b37f966": {
+    "id": "7379a3e5-5318-49d5-b4f1-ac075b37f966",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "2a237dcb-68a3-4427-a649-d7c3f34072a9": {
+    "id": "2a237dcb-68a3-4427-a649-d7c3f34072a9",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c0ec96e5-5508-4b68-9b59-031ca43af64e": {
+    "id": "c0ec96e5-5508-4b68-9b59-031ca43af64e",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "avg_win",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "cd43f7a1-a8a3-4203-8201-7753a6074c96": {
+    "id": "cd43f7a1-a8a3-4203-8201-7753a6074c96",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f0ae521f-7a2b-4f91-92c2-f45299708c85": {
+    "id": "f0ae521f-7a2b-4f91-92c2-f45299708c85",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "expectancy",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e7452be4-98b6-432b-b379-bfdf5790aa80": {
+    "id": "e7452be4-98b6-432b-b379-bfdf5790aa80",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "20a58e37-f248-4328-9d00-6438abfe2add": {
+    "id": "20a58e37-f248-4328-9d00-6438abfe2add",
+    "backtest_run_id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "metric_name": "avg_holding_bars",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7fa74862-bc9c-4c8f-9902-d08c5b8813b4": {
+    "id": "7fa74862-bc9c-4c8f-9902-d08c5b8813b4",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "total_trades",
+    "metric_value": 380.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "acbd622a-b904-4800-a484-a4fe89cd3142": {
+    "id": "acbd622a-b904-4800-a484-a4fe89cd3142",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "win_count",
+    "metric_value": 159.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3597a116-ff65-419b-a1c4-f17865a11c56": {
+    "id": "3597a116-ff65-419b-a1c4-f17865a11c56",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "loss_count",
+    "metric_value": 221.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "51974bf0-9519-4df2-9e0a-dfbeb1f12d50": {
+    "id": "51974bf0-9519-4df2-9e0a-dfbeb1f12d50",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "win_rate",
+    "metric_value": 0.41842105263157897,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d8e03c2d-6ec1-4a6b-b0b1-ac9188031ac8": {
+    "id": "d8e03c2d-6ec1-4a6b-b0b1-ac9188031ac8",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "net_pnl",
+    "metric_value": -77.94000000003254,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "618f3d7a-357f-489d-a18f-0ca632b73dc5": {
+    "id": "618f3d7a-357f-489d-a18f-0ca632b73dc5",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.07794000000003143,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4fd45adb-ef34-40aa-9697-70743d486b2f": {
+    "id": "4fd45adb-ef34-40aa-9697-70743d486b2f",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.07794000000003143,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "62b094f4-e34f-4f69-9a38-a687673ef147": {
+    "id": "62b094f4-e34f-4f69-9a38-a687673ef147",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.04283082149847177,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4aa0c73d-17fa-467c-8492-7a2f8e50d736": {
+    "id": "4aa0c73d-17fa-467c-8492-7a2f8e50d736",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.01701591740677958,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "62e3b178-199d-4d6e-97a4-e18ea0577fa7": {
+    "id": "62e3b178-199d-4d6e-97a4-e18ea0577fa7",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.08953263146445317,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "78ddae61-6a29-4b4a-84b1-4bf4b67b2eb5": {
+    "id": "78ddae61-6a29-4b4a-84b1-4bf4b67b2eb5",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "avg_win",
+    "metric_value": 1.2711320754716129,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b555e593-5d69-4539-999f-2de84bbab171": {
+    "id": "b555e593-5d69-4539-999f-2de84bbab171",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "avg_loss",
+    "metric_value": -1.2671945701358325,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e094782c-f9df-451b-8489-98c4f171aaae": {
+    "id": "e094782c-f9df-451b-8489-98c4f171aaae",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "expectancy",
+    "metric_value": -0.20510526315798028,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7f41ea11-5c3c-481e-8755-bc598e4835f6": {
+    "id": "7f41ea11-5c3c-481e-8755-bc598e4835f6",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "profit_factor",
+    "metric_value": 0.7216925549008132,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "692606c1-4d6a-4ff5-8e99-c9d7b5fb3812": {
+    "id": "692606c1-4d6a-4ff5-8e99-c9d7b5fb3812",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 5.873684210526315,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "659f8987-e33f-4fc4-acc7-c110aef8d169": {
+    "id": "659f8987-e33f-4fc4-acc7-c110aef8d169",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "net_pnl",
+    "metric_value": -77.94000000003254,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "4fae9d29-cb3a-4003-a5bd-5cfcb56b0e5e": {
+    "id": "4fae9d29-cb3a-4003-a5bd-5cfcb56b0e5e",
+    "backtest_run_id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "metric_name": "trade_count",
+    "metric_value": 380.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "8a57b6d6-2841-4a71-a214-7b219dd4b494": {
+    "id": "8a57b6d6-2841-4a71-a214-7b219dd4b494",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "total_trades",
+    "metric_value": 868.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0e3f4e3e-8d0c-40d3-b68c-129f068b09bf": {
+    "id": "0e3f4e3e-8d0c-40d3-b68c-129f068b09bf",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "win_count",
+    "metric_value": 269.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9d6010b4-6b05-485b-85ef-ac60b1f8ec02": {
+    "id": "9d6010b4-6b05-485b-85ef-ac60b1f8ec02",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "loss_count",
+    "metric_value": 599.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "41e34e99-710f-4c3a-9a79-42dc481f7e8c": {
+    "id": "41e34e99-710f-4c3a-9a79-42dc481f7e8c",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "win_rate",
+    "metric_value": 0.3099078341013825,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a5acde01-9376-4b62-8be8-a49551f56b66": {
+    "id": "a5acde01-9376-4b62-8be8-a49551f56b66",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "net_pnl",
+    "metric_value": -236.9400000000723,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7497bf5c-ce43-42d6-bc2c-df7aa3e8288d": {
+    "id": "7497bf5c-ce43-42d6-bc2c-df7aa3e8288d",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.2369400000000751,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e772a40e-db15-41f9-8f96-3148cd38319c": {
+    "id": "e772a40e-db15-41f9-8f96-3148cd38319c",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.2369400000000751,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8024d702-8c66-4ecc-a77d-565be5b461bc": {
+    "id": "8024d702-8c66-4ecc-a77d-565be5b461bc",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.1437652729836134,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9bb19ad7-9bb7-44de-a941-eeabfa331aae": {
+    "id": "9bb19ad7-9bb7-44de-a941-eeabfa331aae",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.08052979988916635,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0dc80195-3d59-4507-b32d-15325b14dccc": {
+    "id": "0dc80195-3d59-4507-b32d-15325b14dccc",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.23725924077051158,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a4c43c94-9e7c-400d-b58d-84bfa855032a": {
+    "id": "a4c43c94-9e7c-400d-b58d-84bfa855032a",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "avg_win",
+    "metric_value": 0.692639405204386,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5e6a89d6-a414-4e8f-bf05-510889b0756b": {
+    "id": "5e6a89d6-a414-4e8f-bf05-510889b0756b",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "avg_loss",
+    "metric_value": -0.706611018364027,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1750b5b0-f959-4a6a-84cb-a3480b6849af": {
+    "id": "1750b5b0-f959-4a6a-84cb-a3480b6849af",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "expectancy",
+    "metric_value": -0.272972350230498,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4f9490bf-fed4-49b9-b38a-971047fb0bc4": {
+    "id": "4f9490bf-fed4-49b9-b38a-971047fb0bc4",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "profit_factor",
+    "metric_value": 0.44020223975796646,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "45436439-bf64-4a74-b399-a63317b64919": {
+    "id": "45436439-bf64-4a74-b399-a63317b64919",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 1.9711981566820276,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "fe84aa0b-d852-4f85-bb0d-bf4e05065f34": {
+    "id": "fe84aa0b-d852-4f85-bb0d-bf4e05065f34",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "net_pnl",
+    "metric_value": -236.9400000000723,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "ec1c8d68-04ec-493a-8228-0b8244485abf": {
+    "id": "ec1c8d68-04ec-493a-8228-0b8244485abf",
+    "backtest_run_id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "metric_name": "trade_count",
+    "metric_value": 868.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "3f3a2d3f-6619-4501-9da4-f07f3830f2d7": {
+    "id": "3f3a2d3f-6619-4501-9da4-f07f3830f2d7",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "total_trades",
+    "metric_value": 1.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "61b88df2-a7f7-493e-9f73-7d5039db34fb": {
+    "id": "61b88df2-a7f7-493e-9f73-7d5039db34fb",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "win_count",
+    "metric_value": 1.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "248e3994-f8bb-4552-85d1-d61007283284": {
+    "id": "248e3994-f8bb-4552-85d1-d61007283284",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "loss_count",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "fa8b92c6-9820-475e-9791-f92cabb533f1": {
+    "id": "fa8b92c6-9820-475e-9791-f92cabb533f1",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "win_rate",
+    "metric_value": 1.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8d67df63-e9ac-4d81-96de-e3d926ac4362": {
+    "id": "8d67df63-e9ac-4d81-96de-e3d926ac4362",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "net_pnl",
+    "metric_value": 19.879999999999896,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "05ad12a1-6ca8-417c-a6d1-787b6ba0145d": {
+    "id": "05ad12a1-6ca8-417c-a6d1-787b6ba0145d",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "net_return_pct",
+    "metric_value": 0.019880000000004658,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "123905ef-6a82-47d5-b606-852502030bd8": {
+    "id": "123905ef-6a82-47d5-b606-852502030bd8",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "annualized_return_pct",
+    "metric_value": 0.019880000000004658,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6e5e4846-ca11-4980-871a-404160ed0407": {
+    "id": "6e5e4846-ca11-4980-871a-404160ed0407",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "sharpe_ratio",
+    "metric_value": 0.019562767576168476,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8db6fb6c-3f3d-46d9-9963-a780303583c8": {
+    "id": "8db6fb6c-3f3d-46d9-9963-a780303583c8",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d24208c7-0dda-4cd5-9a32-f9a5c7e82f3e": {
+    "id": "d24208c7-0dda-4cd5-9a32-f9a5c7e82f3e",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e3607170-ef92-45af-8d99-181952a845bd": {
+    "id": "e3607170-ef92-45af-8d99-181952a845bd",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "avg_win",
+    "metric_value": 19.879999999999896,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b5a298bf-70ba-491f-a9f8-eb41233a78bb": {
+    "id": "b5a298bf-70ba-491f-a9f8-eb41233a78bb",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9d72bda7-718f-4366-8c79-b40bed5e8448": {
+    "id": "9d72bda7-718f-4366-8c79-b40bed5e8448",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "expectancy",
+    "metric_value": 19.879999999999896,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "aead3ba7-877f-403b-9ecc-7e0375eb9a06": {
+    "id": "aead3ba7-877f-403b-9ecc-7e0375eb9a06",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "14dd1ba6-e853-48f4-8312-d617a190e35a": {
+    "id": "14dd1ba6-e853-48f4-8312-d617a190e35a",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 2613.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a972ab1e-4a94-4930-a246-8c269f6ebfd4": {
+    "id": "a972ab1e-4a94-4930-a246-8c269f6ebfd4",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "net_pnl",
+    "metric_value": 19.879999999999896,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "da384805-790e-45c7-a1a7-3d9627ec4fb5": {
+    "id": "da384805-790e-45c7-a1a7-3d9627ec4fb5",
+    "backtest_run_id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "metric_name": "trade_count",
+    "metric_value": 1.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "a5b4c70f-ea14-4a76-9d7d-cfa2cc6b1f79": {
+    "id": "a5b4c70f-ea14-4a76-9d7d-cfa2cc6b1f79",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "total_trades",
+    "metric_value": 310.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "fd185a94-d90a-46dc-97b6-72a731d218e3": {
+    "id": "fd185a94-d90a-46dc-97b6-72a731d218e3",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "win_count",
+    "metric_value": 142.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "51beced2-52cc-4d33-982b-afdd74c483ff": {
+    "id": "51beced2-52cc-4d33-982b-afdd74c483ff",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "loss_count",
+    "metric_value": 168.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "00418eab-32ea-469c-bc6e-22be13f2c1fb": {
+    "id": "00418eab-32ea-469c-bc6e-22be13f2c1fb",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "win_rate",
+    "metric_value": 0.45806451612903226,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e4a89ce1-ff43-4048-b38a-d533a82efd6c": {
+    "id": "e4a89ce1-ff43-4048-b38a-d533a82efd6c",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "net_pnl",
+    "metric_value": -85.94000000002589,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b2652d89-d90d-46b1-901a-4199bfc6bfc7": {
+    "id": "b2652d89-d90d-46b1-901a-4199bfc6bfc7",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.08594000000003142,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4130f7be-f48e-45c7-bcfc-befcc0b76de3": {
+    "id": "4130f7be-f48e-45c7-bcfc-befcc0b76de3",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.08594000000003142,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "120dda19-9a80-4b07-a533-c93eeec8d625": {
+    "id": "120dda19-9a80-4b07-a533-c93eeec8d625",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.04633866875642582,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d3353d63-c1ad-40c2-8a06-c72103c72f26": {
+    "id": "d3353d63-c1ad-40c2-8a06-c72103c72f26",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.01410551772926245,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "861ffc54-8eee-4bcd-bf5b-2024ef6d96c9": {
+    "id": "861ffc54-8eee-4bcd-bf5b-2024ef6d96c9",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.08594000000003142,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7c5b4f8a-718b-4bef-89b6-c4a25f35cb52": {
+    "id": "7c5b4f8a-718b-4bef-89b6-c4a25f35cb52",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "avg_win",
+    "metric_value": 1.311901408450622,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d8b78f5a-4341-49b5-addd-74a5f54d4937": {
+    "id": "d8b78f5a-4341-49b5-addd-74a5f54d4937",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "avg_loss",
+    "metric_value": -1.620416666666751,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "b9122f7f-4cc1-489e-b51f-65c114b2ed07": {
+    "id": "b9122f7f-4cc1-489e-b51f-65c114b2ed07",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "expectancy",
+    "metric_value": -0.27722580645169637,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f332c295-e07d-4062-83f4-a4a6da44367c": {
+    "id": "f332c295-e07d-4062-83f4-a4a6da44367c",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "profit_factor",
+    "metric_value": 0.6843110605002337,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4a0e33c9-5023-451b-8dbb-5c131b5cba87": {
+    "id": "4a0e33c9-5023-451b-8dbb-5c131b5cba87",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 7.432258064516129,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3a344300-13cd-4836-b156-9f33f855d343": {
+    "id": "3a344300-13cd-4836-b156-9f33f855d343",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "net_pnl",
+    "metric_value": -85.94000000002589,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "beaa2388-18c1-4a89-ae7c-fc2b9c45fefa": {
+    "id": "beaa2388-18c1-4a89-ae7c-fc2b9c45fefa",
+    "backtest_run_id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "metric_name": "trade_count",
+    "metric_value": 310.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "06d75823-700a-4bf6-8999-8d856444bcab": {
+    "id": "06d75823-700a-4bf6-8999-8d856444bcab",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "total_trades",
+    "metric_value": 65.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1904f9c4-adc8-415e-afe9-fb3d76fa244f": {
+    "id": "1904f9c4-adc8-415e-afe9-fb3d76fa244f",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "win_count",
+    "metric_value": 34.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "303cf05e-ce51-4012-b228-6279d8786ae7": {
+    "id": "303cf05e-ce51-4012-b228-6279d8786ae7",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "loss_count",
+    "metric_value": 31.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "2de6db8d-8a0c-4c39-952f-1686c78b7c8b": {
+    "id": "2de6db8d-8a0c-4c39-952f-1686c78b7c8b",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "win_rate",
+    "metric_value": 0.5230769230769231,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6dcd02af-6274-418d-97bb-ce98adc9c8e2": {
+    "id": "6dcd02af-6274-418d-97bb-ce98adc9c8e2",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "net_pnl",
+    "metric_value": -33.95000000000503,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3e31bfd6-8782-464a-b46c-5d982f24d65e": {
+    "id": "3e31bfd6-8782-464a-b46c-5d982f24d65e",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.03395000000001164,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "46e2a655-06c2-4514-85a4-71bb53888e2f": {
+    "id": "46e2a655-06c2-4514-85a4-71bb53888e2f",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.03395000000001164,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c51e33d2-f0a0-4504-b346-7d838399a695": {
+    "id": "c51e33d2-f0a0-4504-b346-7d838399a695",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.018256785758071485,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7156165f-f6dc-4144-b311-fda3553a8175": {
+    "id": "7156165f-f6dc-4144-b311-fda3553a8175",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.002368031357370671,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "04e32981-798d-4bd2-81dc-9126b81caaa2": {
+    "id": "04e32981-798d-4bd2-81dc-9126b81caaa2",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.05033000000000175,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "599647da-6790-48ca-b966-e29dc0581286": {
+    "id": "599647da-6790-48ca-b966-e29dc0581286",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "avg_win",
+    "metric_value": 2.6611764705881344,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c64cd9a6-c397-4254-991b-a6e05a1f9d4a": {
+    "id": "c64cd9a6-c397-4254-991b-a6e05a1f9d4a",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "avg_loss",
+    "metric_value": -4.013870967741987,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c113ae4b-b8c3-4fec-b27b-2ff4e3cfdf87": {
+    "id": "c113ae4b-b8c3-4fec-b27b-2ff4e3cfdf87",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "expectancy",
+    "metric_value": -0.5223076923077694,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "036566d2-b8f2-4ab7-aa4d-f85759b4f6b0": {
+    "id": "036566d2-b8f2-4ab7-aa4d-f85759b4f6b0",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "profit_factor",
+    "metric_value": 0.7271558305874419,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1d4924f8-0ab3-463b-9f7d-ebe7a4e8e95f": {
+    "id": "1d4924f8-0ab3-463b-9f7d-ebe7a4e8e95f",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 37.95384615384615,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "84ef97ab-8997-41e2-876d-fbafa8df9a0c": {
+    "id": "84ef97ab-8997-41e2-876d-fbafa8df9a0c",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "net_pnl",
+    "metric_value": -33.95000000000503,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "d773440b-a638-47bc-a903-ee2248fec755": {
+    "id": "d773440b-a638-47bc-a903-ee2248fec755",
+    "backtest_run_id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "metric_name": "trade_count",
+    "metric_value": 65.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "8e9b68cf-a7c3-4484-b87c-e8d026e3c50e": {
+    "id": "8e9b68cf-a7c3-4484-b87c-e8d026e3c50e",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "total_trades",
+    "metric_value": 1.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a5d6ed33-d02a-488e-b4c5-df10239c35d5": {
+    "id": "a5d6ed33-d02a-488e-b4c5-df10239c35d5",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "win_count",
+    "metric_value": 1.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8a223546-069b-45ce-ba13-34afce1d9ee7": {
+    "id": "8a223546-069b-45ce-ba13-34afce1d9ee7",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "loss_count",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5cde17a9-447b-47c3-a523-eaa9682328b6": {
+    "id": "5cde17a9-447b-47c3-a523-eaa9682328b6",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "win_rate",
+    "metric_value": 1.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "45c02ed3-f0e1-4884-a045-85fe11191c3f": {
+    "id": "45c02ed3-f0e1-4884-a045-85fe11191c3f",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "net_pnl",
+    "metric_value": 19.879999999999896,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6d34c9f6-daa3-4c2d-912e-11ca922e2578": {
+    "id": "6d34c9f6-daa3-4c2d-912e-11ca922e2578",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "net_return_pct",
+    "metric_value": 0.019880000000004658,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "55a1c297-bdf4-44b0-8558-be6145b6df94": {
+    "id": "55a1c297-bdf4-44b0-8558-be6145b6df94",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "annualized_return_pct",
+    "metric_value": 0.019880000000004658,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9e6f1123-c4a1-4fa5-9b6d-37295346e18e": {
+    "id": "9e6f1123-c4a1-4fa5-9b6d-37295346e18e",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "sharpe_ratio",
+    "metric_value": 0.019562767576168476,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "38d45a55-05ea-41f7-b70f-96e5d9e323f5": {
+    "id": "38d45a55-05ea-41f7-b70f-96e5d9e323f5",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "sortino_ratio",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c12319bb-a589-48e0-bf8e-13564fdb415c": {
+    "id": "c12319bb-a589-48e0-bf8e-13564fdb415c",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c5cb69b4-dd98-4e8f-8962-233b418699b1": {
+    "id": "c5cb69b4-dd98-4e8f-8962-233b418699b1",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "avg_win",
+    "metric_value": 19.879999999999896,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c46d4793-6dd6-4f37-b560-298013bfef66": {
+    "id": "c46d4793-6dd6-4f37-b560-298013bfef66",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "avg_loss",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "2dfda664-9842-4679-baf1-8656afc4a9ca": {
+    "id": "2dfda664-9842-4679-baf1-8656afc4a9ca",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "expectancy",
+    "metric_value": 19.879999999999896,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8e465d85-2b02-4f57-a69f-ca5ae1b0b309": {
+    "id": "8e465d85-2b02-4f57-a69f-ca5ae1b0b309",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "profit_factor",
+    "metric_value": null,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4d5860fc-5ae8-4732-9350-b92eadd4e013": {
+    "id": "4d5860fc-5ae8-4732-9350-b92eadd4e013",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 2613.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "4481e511-33f6-4758-a61f-01922cac5b3e": {
+    "id": "4481e511-33f6-4758-a61f-01922cac5b3e",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "net_pnl",
+    "metric_value": 19.879999999999896,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "348bcdeb-66e8-4275-bd21-3e80560c4e6e": {
+    "id": "348bcdeb-66e8-4275-bd21-3e80560c4e6e",
+    "backtest_run_id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "metric_name": "trade_count",
+    "metric_value": 1.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "6f2f0735-60d7-440f-aca8-69e08862f8a2": {
+    "id": "6f2f0735-60d7-440f-aca8-69e08862f8a2",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "total_trades",
+    "metric_value": 201.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "96cc3bb3-f33d-4c1d-a932-4fe7a40b1f3f": {
+    "id": "96cc3bb3-f33d-4c1d-a932-4fe7a40b1f3f",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "win_count",
+    "metric_value": 103.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5fa97d4e-b8ee-476c-adc8-38f5afcd6fc2": {
+    "id": "5fa97d4e-b8ee-476c-adc8-38f5afcd6fc2",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "loss_count",
+    "metric_value": 98.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "39931e0d-18e9-459c-9f75-dfd1baeb962d": {
+    "id": "39931e0d-18e9-459c-9f75-dfd1baeb962d",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "win_rate",
+    "metric_value": 0.5124378109452736,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "c4c2405a-d07f-4259-a5c7-1243aadaaf87": {
+    "id": "c4c2405a-d07f-4259-a5c7-1243aadaaf87",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "net_pnl",
+    "metric_value": 42.16999999998228,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8c532ed5-3d38-4ce9-9aec-9794d4bf32e5": {
+    "id": "8c532ed5-3d38-4ce9-9aec-9794d4bf32e5",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "net_return_pct",
+    "metric_value": 0.0421699999999837,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9555dcff-ef43-47ee-9dd0-b39ebf17781d": {
+    "id": "9555dcff-ef43-47ee-9dd0-b39ebf17781d",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "annualized_return_pct",
+    "metric_value": 0.0421699999999837,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "f7510232-9e3c-4eb5-b022-2213eb24d439": {
+    "id": "f7510232-9e3c-4eb5-b022-2213eb24d439",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "sharpe_ratio",
+    "metric_value": 0.023387933059709202,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "be5a1c36-9940-4c0c-af10-4c012c942ef6": {
+    "id": "be5a1c36-9940-4c0c-af10-4c012c942ef6",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "sortino_ratio",
+    "metric_value": 0.006988417390652722,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "56fd1461-40e1-425b-ae85-07d04104f66d": {
+    "id": "56fd1461-40e1-425b-ae85-07d04104f66d",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.02413423191857088,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "37b50a18-460c-45de-a1bf-3cd3d941ad76": {
+    "id": "37b50a18-460c-45de-a1bf-3cd3d941ad76",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "avg_win",
+    "metric_value": 1.932233009708649,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1aec7977-feef-450e-91e4-dcdc291b846f": {
+    "id": "1aec7977-feef-450e-91e4-dcdc291b846f",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "avg_loss",
+    "metric_value": -1.6005102040817205,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "71e36866-4e08-4c3b-a75a-7ca9b2e0639b": {
+    "id": "71e36866-4e08-4c3b-a75a-7ca9b2e0639b",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "expectancy",
+    "metric_value": 0.20980099502478733,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "6aad3921-c963-42f7-8c51-23e6fdce459a": {
+    "id": "6aad3921-c963-42f7-8c51-23e6fdce459a",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "profit_factor",
+    "metric_value": 1.2688555945169266,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5c4b4ee4-8e01-4604-9499-96c3d54973b3": {
+    "id": "5c4b4ee4-8e01-4604-9499-96c3d54973b3",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 11.99502487562189,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "8dd3189a-c4bc-438a-84d6-7d83d55d9e16": {
+    "id": "8dd3189a-c4bc-438a-84d6-7d83d55d9e16",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "net_pnl",
+    "metric_value": 42.16999999998228,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "d0617b62-7403-4e90-b283-d8c4f8f91f3c": {
+    "id": "d0617b62-7403-4e90-b283-d8c4f8f91f3c",
+    "backtest_run_id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "metric_name": "trade_count",
+    "metric_value": 201.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "d21afd82-525e-49dd-84fa-7a2f7273d700": {
+    "id": "d21afd82-525e-49dd-84fa-7a2f7273d700",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "total_trades",
+    "metric_value": 430.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "5e91473a-ffc0-46a5-a225-6e33d21d7ea4": {
+    "id": "5e91473a-ffc0-46a5-a225-6e33d21d7ea4",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "win_count",
+    "metric_value": 168.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "3db6579d-537c-4b57-9957-3ad1edc02ffa": {
+    "id": "3db6579d-537c-4b57-9957-3ad1edc02ffa",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "loss_count",
+    "metric_value": 262.0,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "581efcb0-2780-422f-af84-ee77a07f1108": {
+    "id": "581efcb0-2780-422f-af84-ee77a07f1108",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "win_rate",
+    "metric_value": 0.39069767441860465,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "729be706-5d2a-40ed-a57f-2f68ecf18cc2": {
+    "id": "729be706-5d2a-40ed-a57f-2f68ecf18cc2",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "net_pnl",
+    "metric_value": -114.46000000003687,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "e24bf7f8-7c00-4f19-9069-2a9bc691d87b": {
+    "id": "e24bf7f8-7c00-4f19-9069-2a9bc691d87b",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "net_return_pct",
+    "metric_value": -0.11446000000003552,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ed85541f-7bfa-4d96-a1c4-65d1df9503d5": {
+    "id": "ed85541f-7bfa-4d96-a1c4-65d1df9503d5",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "annualized_return_pct",
+    "metric_value": -0.11446000000003552,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "1b0ad730-e58b-453a-b233-397f18101f15": {
+    "id": "1b0ad730-e58b-453a-b233-397f18101f15",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.06048500163614447,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7feb4433-7ad2-49e6-b44f-d565f28f67bb": {
+    "id": "7feb4433-7ad2-49e6-b44f-d565f28f67bb",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "sortino_ratio",
+    "metric_value": -0.025122349043744618,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "2f772bd8-d293-4360-84dd-a4feb2cd7056": {
+    "id": "2f772bd8-d293-4360-84dd-a4feb2cd7056",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 0.12032000000003608,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "9cc9bace-9d4d-444c-abb9-dc3c04b46abb": {
+    "id": "9cc9bace-9d4d-444c-abb9-dc3c04b46abb",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "avg_win",
+    "metric_value": 1.2558333333332459,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "ee758564-de35-48c3-9a91-92d2817289ec": {
+    "id": "ee758564-de35-48c3-9a91-92d2817289ec",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "avg_loss",
+    "metric_value": -1.2421374045802374,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "d224ca5b-235a-4d62-a9ce-8e8b61601e9f": {
+    "id": "d224ca5b-235a-4d62-a9ce-8e8b61601e9f",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "expectancy",
+    "metric_value": -0.2661860465117138,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "a06cd26d-b3f5-4367-8c66-c07f43ce636b": {
+    "id": "a06cd26d-b3f5-4367-8c66-c07f43ce636b",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "profit_factor",
+    "metric_value": 0.6482915437560561,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "0bcd151f-22a5-4770-afa1-5060dc97f327": {
+    "id": "0bcd151f-22a5-4770-afa1-5060dc97f327",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "avg_holding_bars",
+    "metric_value": 5.065116279069767,
+    "segment_type": "overall",
+    "segment_key": "all"
+  },
+  "7957d0e4-a2a1-4b07-b08e-40acfe3c6082": {
+    "id": "7957d0e4-a2a1-4b07-b08e-40acfe3c6082",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "net_pnl",
+    "metric_value": -114.46000000003687,
+    "segment_type": "regime",
+    "segment_key": "unknown"
+  },
+  "026c8640-c2ae-442c-a5e7-42723119cb29": {
+    "id": "026c8640-c2ae-442c-a5e7-42723119cb29",
+    "backtest_run_id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "metric_name": "trade_count",
+    "metric_value": 430.0,
+    "segment_type": "regime",
+    "segment_key": "unknown"
   }
 }

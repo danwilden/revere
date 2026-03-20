@@ -140,6 +140,7 @@ class Signal(BaseModel):
     name: str
     signal_type: SignalType
     definition_json: dict[str, Any] = Field(default_factory=dict)
+    metadata: dict[str, Any] = Field(default_factory=dict)
     source_model_id: str | None = None
     version: int = 1
     created_at: datetime = Field(default_factory=_utcnow)
@@ -239,3 +240,56 @@ class JobRun(BaseModel):
     params_json: dict[str, Any] = Field(default_factory=dict)
     result_ref: str | None = None
     logs_ref: str | None = None
+
+
+# ---------------------------------------------------------------------------
+# AutoML — Phase 5D
+# ---------------------------------------------------------------------------
+
+class DatasetManifest(BaseModel):
+    job_id: str
+    instrument_id: str
+    timeframe: str
+    feature_run_id: str
+    model_id: str
+    target_column: str
+    target_type: str
+    train_rows: int = 0
+    test_rows: int = 0
+    row_count: int = 0              # alias for total rows (Team 3 compat)
+    feature_columns: list[str] = Field(default_factory=list)
+    train_artifact_key: str = ""
+    test_artifact_key: str = ""
+    train_end_date: str = ""
+    test_end_date: str = ""
+    train_s3_uri: str = ""
+    test_s3_uri: str = ""
+    created_at: datetime = Field(default_factory=_utcnow)
+
+
+class AutoMLJobRecord(BaseModel):
+    id: str = Field(default_factory=_new_id)
+    job_id: str
+    sagemaker_job_name: str | None = None
+    instrument_id: str
+    timeframe: str
+    feature_run_id: str
+    model_id: str
+    target_type: str = "direction"
+    dataset_manifest: DatasetManifest | None = None
+    status: str = "queued"
+    best_candidate_id: str | None = None
+    best_auc_roc: float | None = None
+    best_model_artifact_key: str | None = None
+    candidates: list[dict] = Field(default_factory=list)
+    evaluation: dict | None = None
+    signal_id: str | None = None
+    created_at: datetime = Field(default_factory=_utcnow)
+    updated_at: datetime = Field(default_factory=_utcnow)
+
+
+class ModelEvaluation(BaseModel):
+    candidate_id: str
+    accept: bool
+    rationale: str
+    auc_roc: float | None = None

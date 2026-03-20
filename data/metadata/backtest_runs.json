@@ -161,5 +161,5403 @@
     "created_at": "2026-03-15 13:47:42.686688",
     "result_ref": "backtests/2c39a8e3-1a16-497c-9183-39cc8034f258/equity.json",
     "oracle_regime_labels": true
+  },
+  "2652aad3-e81b-4cbb-8ecf-eefd1c0b6376": {
+    "id": "2652aad3-e81b-4cbb-8ecf-eefd1c0b6376",
+    "job_id": "59678971-c346-4b6f-9aae-c971073c7b59",
+    "strategy_id": null,
+    "inline_definition": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "adx_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "ema_slope_50",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "field2": "ema_slope_50"
+          },
+          {
+            "ref": "price_below_ema20_threshold"
+          },
+          {
+            "ref": "not_friday"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "adx_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "ema_slope_50",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "field2": "ema_slope_50"
+          },
+          {
+            "ref": "price_above_ema20_threshold"
+          },
+          {
+            "ref": "not_friday"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "ref": "max_hold_period"
+          },
+          {
+            "ref": "friday_close"
+          }
+        ]
+      },
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4.0,
+      "position_size_units": 1000,
+      "named_conditions": {
+        "price_below_ema20_threshold": {
+          "field": "log_ret_1",
+          "op": "lt",
+          "value": -0.015
+        },
+        "price_above_ema20_threshold": {
+          "field": "log_ret_1",
+          "op": "gt",
+          "value": 0.015
+        },
+        "max_hold_period": {
+          "field": "minutes_in_trade",
+          "op": "gte",
+          "value": 7200
+        },
+        "friday_close": {
+          "field": "day_of_week",
+          "op": "eq",
+          "value": 4
+        },
+        "not_friday": {
+          "field": "day_of_week",
+          "op": "neq",
+          "value": 4
+        }
+      }
+    },
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2024-01-01 00:00:00",
+    "test_end": "2024-06-01 00:00:00",
+    "parameters_json": {},
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-17 16:38:51.167496",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "a63871e3-f4fe-4adb-b3e1-27ddf12513bc": {
+    "id": "a63871e3-f4fe-4adb-b3e1-27ddf12513bc",
+    "job_id": "29a92605-bf13-4f1b-96b1-ee86f3e0c87f",
+    "strategy_id": null,
+    "inline_definition": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "adx_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "ema_slope_50",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "field2": "ema_slope_50"
+          },
+          {
+            "ref": "price_below_ema20_threshold"
+          },
+          {
+            "ref": "not_friday"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "adx_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "ema_slope_50",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "field2": "ema_slope_50"
+          },
+          {
+            "ref": "price_above_ema20_threshold"
+          },
+          {
+            "ref": "not_friday"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "ref": "max_hold_period"
+          },
+          {
+            "ref": "friday_close"
+          }
+        ]
+      },
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4.0,
+      "position_size_units": 1000,
+      "named_conditions": {
+        "price_below_ema20_threshold": {
+          "field": "log_ret_1",
+          "op": "lt",
+          "value": -0.015
+        },
+        "price_above_ema20_threshold": {
+          "field": "log_ret_1",
+          "op": "gt",
+          "value": 0.015
+        },
+        "max_hold_period": {
+          "field": "minutes_in_trade",
+          "op": "gte",
+          "value": 7200
+        },
+        "friday_close": {
+          "field": "day_of_week",
+          "op": "eq",
+          "value": 4
+        },
+        "not_friday": {
+          "field": "day_of_week",
+          "op": "neq",
+          "value": 4
+        }
+      }
+    },
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2024-01-01 00:00:00",
+    "test_end": "2024-06-01 00:00:00",
+    "parameters_json": {},
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-17 17:28:17.343842",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "3d65d88f-bb71-47f6-9641-fa691b7638c6": {
+    "id": "3d65d88f-bb71-47f6-9641-fa691b7638c6",
+    "job_id": "af87bb08-cb48-4f3f-90a6-186349c3ef69",
+    "strategy_id": "a435f46a-0bd0-4830-9357-53990cd861e4",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "adx_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "adx_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "adx_14",
+            "op": "lt",
+            "value": 20
+          },
+          {
+            "field": "rvol_20",
+            "op": "lt",
+            "value": 0.8
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 14:59:03.938508",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "03581b0f-b460-404b-95d0-c4a5914267e9": {
+    "id": "03581b0f-b460-404b-95d0-c4a5914267e9",
+    "job_id": "a034b157-7ffa-4b20-9e70-05b3c5dc7a3f",
+    "strategy_id": null,
+    "inline_definition": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "adx_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "adx_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "adx_14",
+            "op": "lt",
+            "value": 20
+          },
+          {
+            "field": "rvol_20",
+            "op": "lt",
+            "value": 0.8
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {},
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 14:59:13.909682",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd": {
+    "id": "31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd",
+    "job_id": "42cf108d-22bd-4560-bcd0-49a295de9dce",
+    "strategy_id": "7e40276c-4430-4ed6-8711-e8f358d06b06",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 24
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 14:59:37.173429",
+    "result_ref": "backtests/31c8b9c1-97c7-4192-ad39-c3d2c6bb86cd/equity.json",
+    "oracle_regime_labels": true
+  },
+  "d8ad3ce6-fe00-44fe-bc01-07e9a948d145": {
+    "id": "d8ad3ce6-fe00-44fe-bc01-07e9a948d145",
+    "job_id": "601d43cf-df89-4da9-8a56-8f932033d12b",
+    "strategy_id": "33a17560-a77b-47d2-aa80-850887620931",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_1",
+            "op": "gt",
+            "value": 0.0005
+          },
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 80
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "breakout_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 85
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 15:00:26.538343",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "9446a94f-4d90-4e27-b2fb-005228d612c1": {
+    "id": "9446a94f-4d90-4e27-b2fb-005228d612c1",
+    "job_id": "d775de47-833f-44a4-9d84-89e2b573ae73",
+    "strategy_id": "33a17560-a77b-47d2-aa80-850887620931",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_1",
+            "op": "gt",
+            "value": 0.0005
+          },
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 80
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "breakout_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 85
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 15:00:33.853188",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "b5729491-a78f-4a3b-a57b-6cbaf43c556a": {
+    "id": "b5729491-a78f-4a3b-a57b-6cbaf43c556a",
+    "job_id": "f5b57010-df71-4a53-8e46-bd06add7c73a",
+    "strategy_id": "5f5a34c6-cfe5-4f37-9d53-2c5a3d51591b",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "close",
+        "field2": "open",
+        "op": "lt"
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 15:00:47.265519",
+    "result_ref": "backtests/b5729491-a78f-4a3b-a57b-6cbaf43c556a/equity.json",
+    "oracle_regime_labels": true
+  },
+  "3c7f5950-e828-414d-afde-14ddccce1ce9": {
+    "id": "3c7f5950-e828-414d-afde-14ddccce1ce9",
+    "job_id": "18685734-eb8c-4c1e-87e4-cf5dfd6c325b",
+    "strategy_id": "23d617e0-a62b-41e0-a136-a9441787df1f",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rvol_20",
+            "op": "lt",
+            "value": 2
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 80
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 19:54:28.329332",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "4c73a636-38be-4075-a5b8-44f745aa803b": {
+    "id": "4c73a636-38be-4075-a5b8-44f745aa803b",
+    "job_id": "4de7ad35-27bd-4cc5-8172-6538d585f727",
+    "strategy_id": "fbd8659c-70d1-48ab-922a-d66bd02e9ace",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "field": "log_ret_1",
+        "op": "gt",
+        "value": 0.0005
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "log_ret_1",
+        "op": "lt",
+        "value": -0.0005
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 19:54:52.258796",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "fc91cec5-6dd0-4790-9106-5f3b12fdea64": {
+    "id": "fc91cec5-6dd0-4790-9106-5f3b12fdea64",
+    "job_id": "a3e16bfe-0662-4818-bb3d-179862e68579",
+    "strategy_id": "477156b7-45b2-428b-87e6-4c74d2fc54ff",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 12
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 19:55:09.391192",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "68620aca-4aa4-4b02-8f0c-f1c36949aa02": {
+    "id": "68620aca-4aa4-4b02-8f0c-f1c36949aa02",
+    "job_id": "ae2a3c49-2177-40d1-b373-3bda85765be4",
+    "strategy_id": "442276b9-1aa2-42e2-a0c8-9de5caf3dc7e",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "field": "close",
+        "field2": "open",
+        "op": "gt"
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 6
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 19:55:20.555553",
+    "result_ref": "backtests/68620aca-4aa4-4b02-8f0c-f1c36949aa02/equity.json",
+    "oracle_regime_labels": true
+  },
+  "70b298c5-5f74-4690-8cfa-f821d4ae0d9b": {
+    "id": "70b298c5-5f74-4690-8cfa-f821d4ae0d9b",
+    "job_id": "5f76fb7f-6eea-4dcb-b067-2bceb03d1443",
+    "strategy_id": "147c47f9-9db2-4931-b25f-0bcde49885a9",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.1
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.1
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 19:56:07.747236",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "f601163a-99ad-4e2d-af1d-3b54fce711fa": {
+    "id": "f601163a-99ad-4e2d-af1d-3b54fce711fa",
+    "job_id": "61910133-ca48-421f-b045-abad597a7843",
+    "strategy_id": "147c47f9-9db2-4931-b25f-0bcde49885a9",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.1
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.1
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 19:56:17.147860",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "b38a4fc6-9093-4018-9b2b-aab84c615ec1": {
+    "id": "b38a4fc6-9093-4018-9b2b-aab84c615ec1",
+    "job_id": "4726f28b-dc01-4094-b8d0-d34219922576",
+    "strategy_id": "129bdc11-65b4-44ee-aa32-bdc1d1aa446a",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 19:56:31.215523",
+    "result_ref": "backtests/b38a4fc6-9093-4018-9b2b-aab84c615ec1/equity.json",
+    "oracle_regime_labels": true
+  },
+  "6fd37f39-43f9-4039-bdd6-32d90ee4115e": {
+    "id": "6fd37f39-43f9-4039-bdd6-32d90ee4115e",
+    "job_id": "cc7bfc2d-41cb-49b2-a742-465def3ca7a8",
+    "strategy_id": "2c132518-67b5-4d39-9e10-76ff0d75e5bd",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 19:57:17.301507",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "6bb001c6-d64d-45d9-bee0-ca0f5dc02af7": {
+    "id": "6bb001c6-d64d-45d9-bee0-ca0f5dc02af7",
+    "job_id": "f51db1e5-8e23-48e3-90e0-fc1171212ccd",
+    "strategy_id": "0a97ca5d-6287-4d26-8f2f-f6d51f50bd3a",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0.0001
+          },
+          {
+            "field": "breakout_20",
+            "op": "gt",
+            "value": 0.7
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": -0.0001
+          },
+          {
+            "field": "breakout_20",
+            "op": "lt",
+            "value": 0.3
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 19:57:43.211061",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "df89b7cd-b63a-4372-afb6-04f0b0b01218": {
+    "id": "df89b7cd-b63a-4372-afb6-04f0b0b01218",
+    "job_id": "a4879fd6-9759-43f3-9e0e-a11ac25bffcd",
+    "strategy_id": "ddd860b1-9e49-44c0-a306-d85eb7e5955d",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 19:57:56.922249",
+    "result_ref": "backtests/df89b7cd-b63a-4372-afb6-04f0b0b01218/equity.json",
+    "oracle_regime_labels": true
+  },
+  "61d822f6-034a-447d-9539-952fc4ef06d7": {
+    "id": "61d822f6-034a-447d-9539-952fc4ef06d7",
+    "job_id": "4e93b8e7-b9fe-47f7-9dc3-7f426527eccb",
+    "strategy_id": "eb5857ca-ada9-4c99-903d-f56fabb95aa7",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 19:58:46.878663",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9": {
+    "id": "4711839d-6d30-4f76-9a4d-5a9fd58ed2d9",
+    "job_id": "ae4a0b41-29c0-4e1c-918a-ff9492387be0",
+    "strategy_id": "065bf172-c8cb-458f-a305-f827fc21d6e7",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 10
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 19:59:00.208024",
+    "result_ref": "backtests/4711839d-6d30-4f76-9a4d-5a9fd58ed2d9/equity.json",
+    "oracle_regime_labels": true
+  },
+  "3e52f531-6349-40cd-85cb-ec526c2d3793": {
+    "id": "3e52f531-6349-40cd-85cb-ec526c2d3793",
+    "job_id": "ab325285-abe1-4de6-8415-59aa931deee6",
+    "strategy_id": "0974ac5f-1c03-47aa-bee1-484a3568a310",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 55
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 75
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 45
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 25
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 19:59:49.925912",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "1708ef40-9ab7-4997-b61c-20418846db21": {
+    "id": "1708ef40-9ab7-4997-b61c-20418846db21",
+    "job_id": "bc547e4e-ceea-4afd-b6cf-f9966c8ec81b",
+    "strategy_id": "ad2c4477-e071-4a51-bf2e-2377b505d779",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 20:00:07.919009",
+    "result_ref": "backtests/1708ef40-9ab7-4997-b61c-20418846db21/equity.json",
+    "oracle_regime_labels": true
+  },
+  "211e4c4e-b0c8-42d5-bd7e-aeb30c6b561a": {
+    "id": "211e4c4e-b0c8-42d5-bd7e-aeb30c6b561a",
+    "job_id": "45912412-6ff6-4819-8e09-8dc6c0200b26",
+    "strategy_id": "a6fda919-e175-4d85-9bca-b2a113efec2e",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 20:00:58.322405",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "5c7bd384-924c-4a26-947a-eeddca18667f": {
+    "id": "5c7bd384-924c-4a26-947a-eeddca18667f",
+    "job_id": "c23a1895-a9f3-4022-846b-d01fc805d1f5",
+    "strategy_id": "a6fda919-e175-4d85-9bca-b2a113efec2e",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 20:01:06.121942",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "3687931c-51c6-47f6-9f47-4ab14a04dc17": {
+    "id": "3687931c-51c6-47f6-9f47-4ab14a04dc17",
+    "job_id": "f0e4b4d8-78c0-4b61-8e27-a4538f9b55d1",
+    "strategy_id": "7938d8e1-f663-4df5-bb06-44b23cfcabda",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "volume",
+            "op": "lt",
+            "value": 100
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 20:01:20.603355",
+    "result_ref": "backtests/3687931c-51c6-47f6-9f47-4ab14a04dc17/equity.json",
+    "oracle_regime_labels": true
+  },
+  "7a120a09-6ad6-4f30-ba94-deb0a15b79ad": {
+    "id": "7a120a09-6ad6-4f30-ba94-deb0a15b79ad",
+    "job_id": "63683edf-0596-4b3f-89bf-930fd3bdea23",
+    "strategy_id": "fe7707b4-ba72-41bb-9662-5a8278cab177",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "gt",
+            "value": 0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": -0.001
+          },
+          {
+            "field": "log_ret_20",
+            "op": "lt",
+            "value": -0.002
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 80
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 20
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 20:02:09.689956",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "7c87cff7-d847-4c80-b6b1-238b6251f3f6": {
+    "id": "7c87cff7-d847-4c80-b6b1-238b6251f3f6",
+    "job_id": "bbc3f605-87b7-4303-ba35-a595c9748e0a",
+    "strategy_id": "1764fbcd-e5e5-48d8-943e-458726ebc202",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 20:02:29.321916",
+    "result_ref": "backtests/7c87cff7-d847-4c80-b6b1-238b6251f3f6/equity.json",
+    "oracle_regime_labels": true
+  },
+  "c42f770a-289a-443e-b601-aec034b7cdf6": {
+    "id": "c42f770a-289a-443e-b601-aec034b7cdf6",
+    "job_id": "96a303f1-fc0e-4919-a472-c8b3220b80cc",
+    "strategy_id": "65e51cc1-cefc-4ddf-9420-75988dab9989",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0.001
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0.0001
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 75
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 45
+          },
+          {
+            "field": "rvol_20",
+            "op": "lt",
+            "value": 2
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 80
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 20:03:20.305027",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "26fe3601-d690-4ed9-a62b-2e31f329af5d": {
+    "id": "26fe3601-d690-4ed9-a62b-2e31f329af5d",
+    "job_id": "aad55c50-5e0f-49c5-9383-441b0f33732b",
+    "strategy_id": "fa184bba-b3d8-467f-bfce-596d82f6e3f7",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "rsi_14",
+        "op": "gt",
+        "value": 80
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 20:03:48.053690",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "583d8792-e07a-4f8a-9952-c532e6894f0c": {
+    "id": "583d8792-e07a-4f8a-9952-c532e6894f0c",
+    "job_id": "86a6db7c-b39b-46fc-b56a-017f7e84fefe",
+    "strategy_id": "34f426e9-c5ba-4985-bf8f-d96a47005134",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "low",
+        "field2": "close",
+        "op": "lt"
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 20:04:01.623606",
+    "result_ref": "backtests/583d8792-e07a-4f8a-9952-c532e6894f0c/equity.json",
+    "oracle_regime_labels": true
+  },
+  "c56788a7-410b-4f85-a5ee-94a268b9410c": {
+    "id": "c56788a7-410b-4f85-a5ee-94a268b9410c",
+    "job_id": "8bb27dae-1e31-4d82-afaf-fd6cbe84ef5a",
+    "strategy_id": "4249f509-1c9b-44d7-9aef-57304c2ca197",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "close",
+        "field2": "open",
+        "op": "lt"
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 20:04:26.593771",
+    "result_ref": "backtests/c56788a7-410b-4f85-a5ee-94a268b9410c/equity.json",
+    "oracle_regime_labels": true
+  },
+  "55ad5f2e-8bdd-4855-8b7e-bb00020b5751": {
+    "id": "55ad5f2e-8bdd-4855-8b7e-bb00020b5751",
+    "job_id": "87d23fdc-270e-4a12-85ce-f8998441638d",
+    "strategy_id": "14c36e0f-f608-431c-ab0a-f8939bfc30d3",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_1",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_1",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 75
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 25
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 20:05:49.679567",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "b9be1731-df79-4372-98f1-02be731636ed": {
+    "id": "b9be1731-df79-4372-98f1-02be731636ed",
+    "job_id": "75f4e6fe-976e-42e2-8edf-672362d18998",
+    "strategy_id": "14c36e0f-f608-431c-ab0a-f8939bfc30d3",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H4",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "log_ret_1",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "log_ret_5",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 70
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "log_ret_1",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "log_ret_5",
+            "op": "lt",
+            "value": 0
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 50
+          },
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 30
+          },
+          {
+            "field": "rvol_20",
+            "op": "gt",
+            "value": 1.2
+          },
+          {
+            "field": "ema_slope_20",
+            "op": "lt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "rsi_14",
+            "op": "gt",
+            "value": 75
+          },
+          {
+            "field": "rsi_14",
+            "op": "lt",
+            "value": 25
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-19 20:06:00.162102",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c": {
+    "id": "69fffdfc-be5c-41ca-a10f-7e99f0ceea6c",
+    "job_id": "97a9efa0-0c7b-4c0d-8bfa-9b3ecfd7b4c2",
+    "strategy_id": "c2ab92f4-be03-4ce5-81fb-df5712b07e6f",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 2
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 23:26:08.610985",
+    "result_ref": "backtests/69fffdfc-be5c-41ca-a10f-7e99f0ceea6c/equity.json",
+    "oracle_regime_labels": true
+  },
+  "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0": {
+    "id": "66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0",
+    "job_id": "7254378e-197a-463c-9da2-87e25f07022d",
+    "strategy_id": "61a13eac-c3b9-447a-9162-c83bf8df27d3",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 22
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 23:27:01.939299",
+    "result_ref": "backtests/66dd4a69-eb79-47dc-bdd9-ea0fcf8791e0/equity.json",
+    "oracle_regime_labels": true
+  },
+  "df1b3130-33e2-4140-9b7d-c15e8a009aea": {
+    "id": "df1b3130-33e2-4140-9b7d-c15e8a009aea",
+    "job_id": "ec978d26-3c58-430c-b1dd-801b63d8ba7d",
+    "strategy_id": "786d9385-5ceb-4f34-b6cc-1af2a5964760",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 5
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 5
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 21
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 23:27:50.468663",
+    "result_ref": "backtests/df1b3130-33e2-4140-9b7d-c15e8a009aea/equity.json",
+    "oracle_regime_labels": true
+  },
+  "55cc7311-9043-419d-bc66-69de09c0178c": {
+    "id": "55cc7311-9043-419d-bc66-69de09c0178c",
+    "job_id": "8c2b38ae-cb20-438b-be0e-953819354616",
+    "strategy_id": "4e172408-6b4a-4fa6-86bf-46aad4b55f47",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lt",
+            "value": 18
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 2
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 23:28:37.144304",
+    "result_ref": "backtests/55cc7311-9043-419d-bc66-69de09c0178c/equity.json",
+    "oracle_regime_labels": true
+  },
+  "3abb9313-b717-4c76-9216-a0d9bf80c629": {
+    "id": "3abb9313-b717-4c76-9216-a0d9bf80c629",
+    "job_id": "de1a7339-a154-44e0-805d-a095544eebd7",
+    "strategy_id": "d3fd0b1b-baef-4524-bc01-b15cdfe0b32e",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "lag2": 1,
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 21
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 23:29:15.471227",
+    "result_ref": "backtests/3abb9313-b717-4c76-9216-a0d9bf80c629/equity.json",
+    "oracle_regime_labels": true
+  },
+  "b84459e3-9baa-4a6d-a3c2-517c0cc6377f": {
+    "id": "b84459e3-9baa-4a6d-a3c2-517c0cc6377f",
+    "job_id": "c275dd8f-7cd4-4d67-b9b6-a37f8c2c31fc",
+    "strategy_id": "a9b7be54-0983-4fed-b8f1-21af46903f78",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 5
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 5
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 21
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 23:30:05.192577",
+    "result_ref": "backtests/b84459e3-9baa-4a6d-a3c2-517c0cc6377f/equity.json",
+    "oracle_regime_labels": true
+  },
+  "359ed880-11b4-4d1e-9a89-c8c4de8548b8": {
+    "id": "359ed880-11b4-4d1e-9a89-c8c4de8548b8",
+    "job_id": "0d5da7d0-1e29-4022-ade1-c3bdb95a55d5",
+    "strategy_id": "3855eaf3-0699-4045-b907-bb9cee75ca04",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "in",
+            "value": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "in",
+            "value": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 21
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 23:30:52.907099",
+    "result_ref": "backtests/359ed880-11b4-4d1e-9a89-c8c4de8548b8/equity.json",
+    "oracle_regime_labels": true
+  },
+  "0a2205ff-9a92-41a0-a839-fee373d91a9c": {
+    "id": "0a2205ff-9a92-41a0-a839-fee373d91a9c",
+    "job_id": "108b8af2-182f-4581-b7fa-b0139d8d92c7",
+    "strategy_id": "65dc1c66-f9c7-4901-99c6-8bf20f6d0ad4",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 21
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 23:31:38.032950",
+    "result_ref": "backtests/0a2205ff-9a92-41a0-a839-fee373d91a9c/equity.json",
+    "oracle_regime_labels": true
+  },
+  "29e431a3-4d25-416f-a755-ee24d7a89939": {
+    "id": "29e431a3-4d25-416f-a755-ee24d7a89939",
+    "job_id": "e3111c55-a3fa-4888-9729-2ad9840cfe17",
+    "strategy_id": "54d490bf-27a9-48df-9fb6-00ccd6e285d8",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "offset2": 1,
+            "op": "gt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 6
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "offset2": 1,
+            "op": "lt"
+          },
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 6
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "day_of_week",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 17
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-19 23:32:26.030116",
+    "result_ref": "backtests/29e431a3-4d25-416f-a755-ee24d7a89939/equity.json",
+    "oracle_regime_labels": true
+  },
+  "2448a5e4-98bc-4603-a5a8-50e5cc9b4b03": {
+    "id": "2448a5e4-98bc-4603-a5a8-50e5cc9b4b03",
+    "job_id": "b5ec13fe-45cc-47f2-b08a-0234ac90f1fb",
+    "strategy_id": "3c7b2072-6587-4def-8ffc-3aa863998cb9",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 6
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "high",
+            "op": "gt",
+            "value": {
+              "field": "high",
+              "offset": -1
+            }
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 6
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "low",
+            "op": "lt",
+            "value": {
+              "field": "low",
+              "offset": -1
+            }
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 8
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:00:55.347168",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "388b3ae2-d797-495c-8219-fa67a07c1a71": {
+    "id": "388b3ae2-d797-495c-8219-fa67a07c1a71",
+    "job_id": "dba4ae1f-100a-4c13-a199-369aafde6221",
+    "strategy_id": "7be68fa2-a764-4bf3-bd08-302004290f37",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "high",
+            "op": "gt",
+            "value": {
+              "field": "high",
+              "offset": -1
+            }
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "low",
+            "op": "lt",
+            "value": {
+              "field": "low",
+              "offset": -1
+            }
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 8
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:01:13.164572",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "3b712ad4-b6a3-4d90-a23e-013549a4603e": {
+    "id": "3b712ad4-b6a3-4d90-a23e-013549a4603e",
+    "job_id": "d6f2c3f0-e97f-449c-b4b1-01a9e8c398a1",
+    "strategy_id": "604854a8-d1de-4709-99ff-14e3b8d42d9b",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "field": "high",
+        "op": "gt",
+        "value": {
+          "field": "high",
+          "offset": -1
+        }
+      },
+      "entry_short": {
+        "field": "low",
+        "op": "lt",
+        "value": {
+          "field": "low",
+          "offset": -1
+        }
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 6
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:01:26.046184",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "a9fbaa62-4503-4f59-a11b-0888699be201": {
+    "id": "a9fbaa62-4503-4f59-a11b-0888699be201",
+    "job_id": "74fe2b26-4e66-432c-b343-9d1ec2010ae5",
+    "strategy_id": "7d24d78c-7dd8-481f-854d-72a41b53fb3d",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "field": "close",
+        "field2": "open",
+        "op": "gt"
+      },
+      "entry_short": {
+        "field": "close",
+        "field2": "open",
+        "op": "lt"
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:01:38.869273",
+    "result_ref": "backtests/a9fbaa62-4503-4f59-a11b-0888699be201/equity.json",
+    "oracle_regime_labels": true
+  },
+  "bdb57704-ecb4-4155-8371-75636e41b493": {
+    "id": "bdb57704-ecb4-4155-8371-75636e41b493",
+    "job_id": "403f4d17-7801-49b5-b1c5-ffde4ce556ac",
+    "strategy_id": "b66d6316-aab8-4d95-a0ba-e8d3dd769ce3",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "hour_of_day",
+            "op": "eq",
+            "value": 17
+          },
+          {
+            "field": "days_in_trade",
+            "op": "gte",
+            "value": 1
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:02:23.119198",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "36f0aac8-0cd9-4c16-9a98-3296ce30486d": {
+    "id": "36f0aac8-0cd9-4c16-9a98-3296ce30486d",
+    "job_id": "eebb7232-ff1e-49e3-a444-9255badaa66f",
+    "strategy_id": "49e887fe-3dfb-447c-8eb8-ed8d00e27fee",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 1
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:02:40.105536",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "7d1e6785-9624-493d-a385-2836e55edd7b": {
+    "id": "7d1e6785-9624-493d-a385-2836e55edd7b",
+    "job_id": "9fc3bd76-f967-4833-bb2e-314e387087a5",
+    "strategy_id": "e844048a-7622-4c9b-8cfd-aa64bf8df973",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 2
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3.5
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:02:56.044309",
+    "result_ref": "backtests/7d1e6785-9624-493d-a385-2836e55edd7b/equity.json",
+    "oracle_regime_labels": true
+  },
+  "878244e5-8735-4506-9716-51f7e500dbc1": {
+    "id": "878244e5-8735-4506-9716-51f7e500dbc1",
+    "job_id": "a997df0f-1be8-4f0a-b034-d73024ad94a4",
+    "strategy_id": "dcc782c3-7fd4-4369-87cc-7fdfa24ddfcd",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 17
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:03:37.439562",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b": {
+    "id": "20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b",
+    "job_id": "47728c03-8eb4-4937-8e69-70b3236b5286",
+    "strategy_id": "ea48017e-5904-43a4-bea4-d8de71dd464e",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          },
+          {
+            "field": "days_in_trade",
+            "op": "eq",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          },
+          {
+            "field": "days_in_trade",
+            "op": "eq",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:03:52.552443",
+    "result_ref": "backtests/20fc1abd-6c9d-4ab6-a6fe-998b2396ec1b/equity.json",
+    "oracle_regime_labels": true
+  },
+  "fe5ad050-92d1-4b77-8a9d-23933d1c0a37": {
+    "id": "fe5ad050-92d1-4b77-8a9d-23933d1c0a37",
+    "job_id": "fbc01171-9f9f-4802-858b-61b1f1cf89a1",
+    "strategy_id": "9f53e668-186d-45a0-b507-b7621c3fc8fb",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "hour_of_day",
+            "op": "eq",
+            "value": 17
+          },
+          {
+            "field": "days_in_trade",
+            "op": "gte",
+            "value": 1
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:04:29.196811",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "6d76bacd-f85f-4332-85b6-018bedfd2c0f": {
+    "id": "6d76bacd-f85f-4332-85b6-018bedfd2c0f",
+    "job_id": "7bf83ac9-d109-4bc7-a250-d3a37fba951e",
+    "strategy_id": "41dbe941-410d-4474-bec9-71f91e3e08b7",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 1
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:04:47.526149",
+    "result_ref": "backtests/6d76bacd-f85f-4332-85b6-018bedfd2c0f/equity.json",
+    "oracle_regime_labels": true
+  },
+  "5850f4e6-32ab-4d3c-a027-ed29772163ef": {
+    "id": "5850f4e6-32ab-4d3c-a027-ed29772163ef",
+    "job_id": "2504bbfb-81c3-48f7-8f6f-63ea9b9a38cf",
+    "strategy_id": "372fad7c-9044-4ebb-928c-bda23ddf35b5",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 17
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:05:29.502813",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "d0a50e79-172b-472d-9469-b5985d268953": {
+    "id": "d0a50e79-172b-472d-9469-b5985d268953",
+    "job_id": "23e18111-f2b7-4314-8a46-4e80501f9c54",
+    "strategy_id": "a5805fb9-860a-4db1-add8-ecfa9e9c961d",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "close",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "close",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:05:46.004175",
+    "result_ref": "backtests/d0a50e79-172b-472d-9469-b5985d268953/equity.json",
+    "oracle_regime_labels": true
+  },
+  "b730187f-b604-4035-99e7-d9f45b071c68": {
+    "id": "b730187f-b604-4035-99e7-d9f45b071c68",
+    "job_id": "80645ecd-4f7b-4474-8f39-df59245e3115",
+    "strategy_id": "c5beb805-6ab2-4bed-ab9a-b9d4ba9432d8",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:06:30.306563",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "c1c846b2-f58b-442f-8806-ffa23cd3e836": {
+    "id": "c1c846b2-f58b-442f-8806-ffa23cd3e836",
+    "job_id": "0bccc91b-6d5e-46ea-baf6-a3eeaf7b6545",
+    "strategy_id": "c77cefa9-e599-4e01-961b-5486d157b269",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:06:50.677425",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "a67c1ca0-893b-4b25-9393-0ee3a4d45d45": {
+    "id": "a67c1ca0-893b-4b25-9393-0ee3a4d45d45",
+    "job_id": "f98c53b2-5594-4ae7-aa00-dd68b24b439c",
+    "strategy_id": "e799dcdd-feb7-45cc-9eab-40850ec8f447",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "high",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 6
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:07:07.705629",
+    "result_ref": "backtests/a67c1ca0-893b-4b25-9393-0ee3a4d45d45/equity.json",
+    "oracle_regime_labels": true
+  },
+  "8782f811-36a7-40eb-ada3-f9165c86fd4d": {
+    "id": "8782f811-36a7-40eb-ada3-f9165c86fd4d",
+    "job_id": "a9148036-37b6-4dcc-8038-53d1c2c7a663",
+    "strategy_id": "512a19e6-5960-4e7f-9e69-0e56d7076458",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:07:50.742669",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "7b3618df-a72c-48cd-9759-d18106523f0f": {
+    "id": "7b3618df-a72c-48cd-9759-d18106523f0f",
+    "job_id": "5883e26d-bccc-44db-a8d0-c5a0ee3d5a5e",
+    "strategy_id": "bf651288-049e-4ab4-952f-b1af0495eae3",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "session",
+            "op": "in",
+            "value": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 4
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:08:08.922087",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "7ae8fe3a-47ea-4236-8ad8-6357a87cadce": {
+    "id": "7ae8fe3a-47ea-4236-8ad8-6357a87cadce",
+    "job_id": "81a15717-fcf1-4c7b-ad91-ad6d052590da",
+    "strategy_id": "54040193-18ff-4d4e-917f-c3ac5d91fc31",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "low",
+            "field2": "open",
+            "op": "lt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 6
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:08:25.976587",
+    "result_ref": "backtests/7ae8fe3a-47ea-4236-8ad8-6357a87cadce/equity.json",
+    "oracle_regime_labels": true
+  },
+  "ae4e3bed-e596-4dd3-8b38-29d29c02d164": {
+    "id": "ae4e3bed-e596-4dd3-8b38-29d29c02d164",
+    "job_id": "4d18c73e-2263-437f-a242-4a757c3caad8",
+    "strategy_id": "278c925d-bbc9-4341-bd48-440d8b5fb94a",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "hour_of_day",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "hour_of_day",
+            "op": "lte",
+            "value": 16
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          }
+        ]
+      },
+      "exit": {
+        "field": "hour_of_day",
+        "op": "eq",
+        "value": 17
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:09:07.531465",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "db3ccb82-a34a-4454-bf2d-cc247c2894d2": {
+    "id": "db3ccb82-a34a-4454-bf2d-cc247c2894d2",
+    "job_id": "a71e930a-f441-4bd2-9e40-ba3a95f85dcd",
+    "strategy_id": "bc1168cb-1ecd-47df-8733-522b7c14a0d4",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 4
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          },
+          {
+            "field": "day_of_week",
+            "op": "gte",
+            "value": 1
+          },
+          {
+            "field": "day_of_week",
+            "op": "lte",
+            "value": 4
+          }
+        ]
+      },
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 1
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "failed",
+    "created_at": "2026-03-20 00:09:23.817592",
+    "result_ref": null,
+    "oracle_regime_labels": true
+  },
+  "3920a752-e241-4373-bf69-734a5975ca9e": {
+    "id": "3920a752-e241-4373-bf69-734a5975ca9e",
+    "job_id": "904a44dd-4031-4d6d-8e2d-d0a0e5f400c3",
+    "strategy_id": "626ba3e5-f878-4796-bc05-4377932edf6c",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "field": "close",
+        "field2": "low",
+        "op": "lte"
+      },
+      "entry_short": {
+        "field": "close",
+        "field2": "high",
+        "op": "gte"
+      },
+      "exit": {
+        "field": "bars_in_trade",
+        "op": "gte",
+        "value": 24
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:09:34.817557",
+    "result_ref": "backtests/3920a752-e241-4373-bf69-734a5975ca9e/equity.json",
+    "oracle_regime_labels": true
+  },
+  "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0": {
+    "id": "5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0",
+    "job_id": "0a56c429-4200-4ef6-aa86-86d697d184a5",
+    "strategy_id": "a24ec066-9e79-4176-bc3a-6937f670bede",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "open",
+            "op": "gt",
+            "value": 0.5
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "open",
+            "op": "gt",
+            "value": 0.5
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "minutes_in_trade",
+            "op": "gte",
+            "value": 480
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:41:15.332694",
+    "result_ref": "backtests/5de9fd9e-9590-4b9a-b6e8-c8b3e1c4b8a0/equity.json",
+    "oracle_regime_labels": true
+  },
+  "ed63a8d6-0403-4415-a168-c97bb83f20f7": {
+    "id": "ed63a8d6-0403-4415-a168-c97bb83f20f7",
+    "job_id": "156dc0a2-fa70-4d35-9c4f-2ddd2a208caa",
+    "strategy_id": "649a92e8-8eb7-4d82-a037-07399bbc8f03",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "open",
+            "field2": "low",
+            "op": "gt"
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "open",
+            "field2": "high",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 24
+          },
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4.0
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:42:12.363782",
+    "result_ref": "backtests/ed63a8d6-0403-4415-a168-c97bb83f20f7/equity.json",
+    "oracle_regime_labels": true
+  },
+  "7a561ca5-334e-488e-a093-d30fea58b7a2": {
+    "id": "7a561ca5-334e-488e-a093-d30fea58b7a2",
+    "job_id": "2e6663de-7eef-46d7-80b0-c99244c319fe",
+    "strategy_id": "e748ef67-8381-42db-b1da-8d9577ea002e",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "minutes_in_trade",
+            "op": "gte",
+            "value": 480
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:42:54.248905",
+    "result_ref": "backtests/7a561ca5-334e-488e-a093-d30fea58b7a2/equity.json",
+    "oracle_regime_labels": true
+  },
+  "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9": {
+    "id": "ee780e42-7e58-4aeb-bdf4-a4d1391f5af9",
+    "job_id": "8b784df9-9dd8-4a7f-8f8f-1ed0999f67d2",
+    "strategy_id": "7ffaf480-6e40-4346-a561-65888ae4a6da",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 6
+          },
+          {
+            "field": "minutes_in_trade",
+            "op": "gte",
+            "value": 360
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:43:17.067116",
+    "result_ref": "backtests/ee780e42-7e58-4aeb-bdf4-a4d1391f5af9/equity.json",
+    "oracle_regime_labels": true
+  },
+  "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f": {
+    "id": "8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f",
+    "job_id": "f2fd8360-b1c9-43dc-8e50-0c1b23f42b55",
+    "strategy_id": "a6963f63-6f42-4b89-bdd8-b3f6c544e183",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "lt"
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 24
+          },
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:44:07.964213",
+    "result_ref": "backtests/8dc4ddc6-3fc6-43e4-97fd-1789943cfa5f/equity.json",
+    "oracle_regime_labels": true
+  },
+  "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e": {
+    "id": "d9b8f585-4d7f-43c1-af1a-ab6b58f7791e",
+    "job_id": "f83d7102-d455-4095-a453-7f577ff82f2b",
+    "strategy_id": "3452a097-048d-4355-be4a-72ac306d78af",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "op": "lt",
+            "field2": "open"
+          },
+          {
+            "field": "open",
+            "op": "gt",
+            "field2": "low"
+          },
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "low"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "open"
+          },
+          {
+            "field": "open",
+            "op": "lt",
+            "field2": "high"
+          },
+          {
+            "field": "close",
+            "op": "lt",
+            "field2": "high"
+          }
+        ]
+      },
+      "stop_atr_multiplier": 2.0,
+      "take_profit_atr_multiplier": 3.0,
+      "position_size_units": 1000
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:45:00.763102",
+    "result_ref": "backtests/d9b8f585-4d7f-43c1-af1a-ab6b58f7791e/equity.json",
+    "oracle_regime_labels": true
+  },
+  "fb069006-6655-42fa-8904-42948e9cd410": {
+    "id": "fb069006-6655-42fa-8904-42948e9cd410",
+    "job_id": "f94b8614-0379-4b48-a184-0aa93efaf2ab",
+    "strategy_id": "5b94fe03-ae4f-4750-905a-b67e3c6f98a1",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "lt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "gt"
+          },
+          {
+            "field": "volume",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 8
+          },
+          {
+            "field": "close",
+            "field2": "high",
+            "op": "gte"
+          },
+          {
+            "field": "close",
+            "field2": "low",
+            "op": "lte"
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2,
+      "take_profit_atr_multiplier": 3
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:45:43.371785",
+    "result_ref": "backtests/fb069006-6655-42fa-8904-42948e9cd410/equity.json",
+    "oracle_regime_labels": true
+  },
+  "8dddc807-c390-4304-a58b-e1fa4959b400": {
+    "id": "8dddc807-c390-4304-a58b-e1fa4959b400",
+    "job_id": "1956366d-cbc6-4aa2-ac3a-78716a5e42ae",
+    "strategy_id": "46dae673-8583-4ea5-9e6c-1b14ca5e15bc",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "high",
+            "field2": "low",
+            "op": "gt"
+          }
+        ]
+      },
+      "entry_short": null,
+      "exit": {
+        "field": "days_in_trade",
+        "op": "gte",
+        "value": 2
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:46:24.065816",
+    "result_ref": "backtests/8dddc807-c390-4304-a58b-e1fa4959b400/equity.json",
+    "oracle_regime_labels": true
+  },
+  "580b08a6-5e59-479a-95f3-84e8bfe96733": {
+    "id": "580b08a6-5e59-479a-95f3-84e8bfe96733",
+    "job_id": "e346cacf-a05f-454a-ac47-cc96f69348eb",
+    "strategy_id": "a8356085-5fcf-4527-b120-31b3515e3b7f",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "op": "lt",
+            "field2": "open"
+          },
+          {
+            "field": "open",
+            "op": "gt",
+            "field2": "low"
+          },
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "low"
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "op": "gt",
+            "field2": "open"
+          },
+          {
+            "field": "open",
+            "op": "lt",
+            "field2": "high"
+          },
+          {
+            "field": "close",
+            "op": "lt",
+            "field2": "high"
+          }
+        ]
+      },
+      "stop_atr_multiplier": 2.0,
+      "take_profit_atr_multiplier": 3.0,
+      "position_size_units": 1000
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:47:12.823500",
+    "result_ref": "backtests/580b08a6-5e59-479a-95f3-84e8bfe96733/equity.json",
+    "oracle_regime_labels": true
+  },
+  "283e270b-a8ba-491f-bbd9-597bb2437a9e": {
+    "id": "283e270b-a8ba-491f-bbd9-597bb2437a9e",
+    "job_id": "2dbba680-606b-4236-891e-267d885d229f",
+    "strategy_id": "789fac17-e549-4605-9e3f-3a3c472a0546",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "field": "close",
+        "field2": "open",
+        "op": "lt"
+      },
+      "entry_short": {
+        "field": "close",
+        "field2": "open",
+        "op": "gt"
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 12
+          }
+        ]
+      },
+      "position_size_units": 1000,
+      "stop_atr_multiplier": 2.5,
+      "take_profit_atr_multiplier": 4
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:47:35.672786",
+    "result_ref": "backtests/283e270b-a8ba-491f-bbd9-597bb2437a9e/equity.json",
+    "oracle_regime_labels": true
+  },
+  "96dbb1fe-c998-4db5-8837-92169ef7ff36": {
+    "id": "96dbb1fe-c998-4db5-8837-92169ef7ff36",
+    "job_id": "65686fb4-13b3-46f9-8376-8ddea0cd5f03",
+    "strategy_id": "e226e49d-168f-4c6f-a09a-bba6cc98b5cb",
+    "inline_definition": null,
+    "instrument_id": "EUR_USD",
+    "timeframe": "H1",
+    "test_start": "2022-01-01 00:00:00",
+    "test_end": "2026-01-01 00:00:00",
+    "parameters_json": {
+      "entry_long": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "gt"
+          },
+          {
+            "field": "close",
+            "op": "gte",
+            "value": 1.0001
+          }
+        ]
+      },
+      "entry_short": {
+        "all": [
+          {
+            "field": "close",
+            "field2": "open",
+            "op": "lt"
+          },
+          {
+            "field": "close",
+            "op": "lte",
+            "value": 1.9999
+          }
+        ]
+      },
+      "exit": {
+        "any": [
+          {
+            "field": "bars_in_trade",
+            "op": "gte",
+            "value": 24
+          },
+          {
+            "all": [
+              {
+                "field": "close",
+                "field2": "open",
+                "op": "lt"
+              },
+              {
+                "field": "bars_in_trade",
+                "op": "gte",
+                "value": 4
+              }
+            ]
+          }
+        ]
+      },
+      "position_size_units": 1000
+    },
+    "cost_model_json": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.5,
+      "commission_per_unit": 0.0,
+      "pip_size": 0.0001
+    },
+    "status": "succeeded",
+    "created_at": "2026-03-20 00:48:20.025881",
+    "result_ref": "backtests/96dbb1fe-c998-4db5-8837-92169ef7ff36/equity.json",
+    "oracle_regime_labels": true
   }
 }

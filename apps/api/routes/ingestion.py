@@ -11,7 +11,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from backend.deps import get_job_manager, get_market_repo
 from backend.jobs.ingestion import run_ingestion_job
 from backend.schemas.enums import JobType
-from backend.schemas.requests import IngestionJobRequest, JobCreatedResponse
+from backend.schemas.requests import IngestionJobRequest, JobCreatedResponse, JobResponse
 
 router = APIRouter()
 
@@ -58,7 +58,7 @@ async def submit_ingestion_job(
     return JobCreatedResponse(job_id=job.id, status=job.status)
 
 
-@router.get("/jobs/{job_id}")
+@router.get("/jobs/{job_id}", response_model=JobResponse)
 async def get_ingestion_job(
     job_id: str,
     job_manager=Depends(get_job_manager),
